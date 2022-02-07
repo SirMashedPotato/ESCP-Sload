@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>ESCP_SloadThrassianImmunity</defName>
+		<label>Thrassian Plague</label>
+		<iconPath>UI/Issues/ESCP_SloadThrall_Opinion</iconPath>
+	</IssueDef>
+	
+	<!-- Immune -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadThrassianImmunity_Immune</defName>
+		<issue>ESCP_SloadThrassianImmunity</issue>
+		<label>immune</label>
+		<description>The Sload created the Thrassian Plague, so why should we fear it?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - prevents hostile Sload factions triggering the Thrassian Plague incident.</description>
+		<impact>Low</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+
+		<requiredMemes>
+		  <li>ESCP_SloadicWays</li>
+		</requiredMemes>
+	</PreceptDef>
+	
+	<!-- Divine -->
+	<!--
+	<PreceptDef>
+		<defName>ESCP_SloadThrassianImmunity_Divine</defName>
+		<issue>ESCP_SloadThrassianImmunity</issue>
+		<label>divine</label>
+		<description>The Sload created the Thrassian Plague, so we should embrace it!</description>
+		<impact>Low</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_SloadsInColony_Exalted</thought>
+				<description>Each sload in colony</description>
+			</li>
+		</comps>
+		<requiredMemes>
+		  <li>ESCP_SloadicWays</li>
+		</requiredMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Exalted</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads in colony</label>
+			<description>There are sloads living amongst us! .</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	-->
+</Defs>

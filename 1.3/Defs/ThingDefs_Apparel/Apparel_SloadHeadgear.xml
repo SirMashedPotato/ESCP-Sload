@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Fairly standard hood -->
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>ESCP_Apparel_SloadHood</defName>
+		<label>Sload hood</label>
+		<description>A draped hood which covers the head and ears, specially designed to fit on the oversized head of a Sload, and hide some of their unsightliness.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHood/ESCP_Apparel_SloadHood</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>6000</WorkToMake>
+		  <Mass>0.1</Mass>
+		  <EquipDelay>0.8</EquipDelay>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+		  <SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>
+		<costStuffCount>150</costStuffCount>	<!-- * 3 -->
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<apparel>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHood/ESCP_Apparel_SloadHood</wornGraphicPath>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>ESCP_SloadMedieval</li>
+			<li>ESCP_SloadHood</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+	
+	
+	<!-- Head cap -->
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>ESCP_Apparel_SloadHeadCap</defName>
+		<label>Sload head cap</label>
+		<description>A tight fitting cap that covers the top of the head, specially designed to fit on the oversized head of a Sload.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHeadCap/ESCP_Apparel_SloadHeadCap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>6000</WorkToMake>
+		  <Mass>0.1</Mass>
+		  <EquipDelay>0.8</EquipDelay>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<apparel>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHeadCap/ESCP_Apparel_SloadHeadCap</wornGraphicPath>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>ESCP_SloadMedieval</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<!-- Colovian Fur Helm -->
+	
+	<ThingDef ParentName="CowboyHat">
+		<defName>ESCP_Apparel_SloadColovianFurHelm</defName>
+		<label>Sload colovian fur helm</label>
+		<description>A practical, yet stylish, hat, specially designed to fit on the oversized head of a Sload. Improves social impact, and is rather warm.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadColovianHelm/ESCP_Apparel_SloadColovianHelm</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>	<!-- * 3 -->
+		<uiIconScale>1.25</uiIconScale>
+		<statBases>
+		  <WorkToMake>1800</WorkToMake>
+		  <Mass>0.14</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadColovianHelm/ESCP_Apparel_SloadColovianHelm</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <tags>
+			<li>ESCP_SloadMedieval</li>
+			<li>ESCP_SloadCultured</li>
+		  </tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>ESCP_SloadOpinion</defName>
+		<label>sloads</label>
+		<iconPath>UI/Issues/ESCP_Sload_Opinion</iconPath>
+	</IssueDef>
+	
+	<!-- Despised -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadOpinion_Despised</defName>
+		<issue>ESCP_SloadOpinion</issue>
+		<label>despised</label>
+		<description>Sloads are horrific creatures that care not for our laws, they are a threat to all of us, as such they should be killed on sight.</description>
+		<impact>High</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>5</defaultSelectionWeight>
+		<comps>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Despised</thought>
+			<description>Each Sload in colony</description>
+		  </li>
+		</comps>
+		<conflictingMemes>
+		  <li>ESCP_SloadicWays</li>
+		</conflictingMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Despised</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads in colony</label>
+			<description>There are sloads living amongst us. They taint the very ground they walk on.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Hated -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadOpinion_Hated</defName>
+		<issue>ESCP_SloadOpinion</issue>
+		<label>hated</label>
+		<description>Sloads are disgusting creatures that cover the ground with their filth, as such they should not be allowed to live with us.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+		<comps>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Hated</thought>
+			<description>Each Sload in colony</description>
+		  </li>
+		</comps>
+		<conflictingMemes>
+		  <li>ESCP_SloadicWays</li>
+		</conflictingMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Hated</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads in colony</label>
+			<description>There are sloads living amongst us. Truly disgusting things.</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Allowed -->
+	
+	<PreceptDef>
+		<defName>ESCP_SloadOpinion_Allowed</defName>
+		<issue>ESCP_SloadOpinion</issue>
+		<label>allowed</label>
+		<description>Sloads may be disgusting creatures, but they have their place in our society.</description>
+		<impact>Low</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+		</comps>
+	</PreceptDef>
+	
+	<!-- Exalted -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadOpinion_Exalted</defName>
+		<issue>ESCP_SloadOpinion</issue>
+		<label>exalted</label>
+		<description>Sloads are capable of shaping life itself, and should be revered as gods.</description>
+		<impact>Medium</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+		<comps>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Exalted</thought>
+			<description>Each Sload in colony</description>
+		  </li>
+		</comps>
+		<requiredMemes>
+		  <li>ESCP_SloadicWays</li>
+		</requiredMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Exalted</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads in colony</label>
+			<description>There are Sloads living amongst us! What a truly glorious day it is!</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

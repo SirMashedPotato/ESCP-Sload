@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef>
+		<defName>ESCP_SloadKind</defName>
+		<label>Sload</label>
+		<race>ESCP_SloadRace</race>
+		<backstoryCategories>
+		  <li>Outlander</li>
+		  <li>ESCP_SloadOutlander</li>
+		</backstoryCategories>	
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelTags>
+			<li>ESCP_SloadMedieval</li>
+			<li>ESCP_SloadIndustrial</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>350~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ESCP_SloadTribalKind</defName>
+		<label>Sload tribal</label>
+		<race>ESCP_SloadRace</race>
+		<backstoryCategories>
+		  <li>Tribal</li>
+		  <li>ESCP_SloadTribal</li>
+		</backstoryCategories>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>ESCP_SloadTribal</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>300</min>
+			<max>900</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ESCP_SloadMedievalKind</defName>
+		<label>Sload peasant</label>
+		<race>ESCP_SloadRace</race>
+		<backstoryCategories>
+		  <li>Tribal</li>
+		  <li>ESCP_SloadTribal</li>
+		</backstoryCategories>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>ESCP_SloadMedieval</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>300</min>
+			<max>900</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>	
+	</PawnKindDef>
+
+</Defs>

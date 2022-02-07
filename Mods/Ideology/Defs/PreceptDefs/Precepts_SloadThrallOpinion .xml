@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>ESCP_SloadThrallOpinion</defName>
+		<label>sload thralls</label>
+		<iconPath>UI/Issues/ESCP_SloadThrall_Opinion</iconPath>
+	</IssueDef>
+	
+	<!-- Heretical -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadThrallOpinion_Heretical</defName>
+		<issue>ESCP_SloadThrallOpinion</issue>
+		<label>heretical</label>
+		<description>The creation of thralls by Sloads is an affront to all that is divine, any sload that creates them should be burnt alive.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The creation of thralls by Sloads is outlawed, disabling the use of the &lt;color=#E5E54C&gt;create thrall&lt;/color&gt; ability.</description>
+		<impact>High</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+
+		<conflictingMemes>
+		  <li>ESCP_SloadicWays</li>
+		</conflictingMemes>
+	</PreceptDef>
+	
+	<!-- Allowed -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadThrallOpinion_Allowed</defName>
+		<issue>ESCP_SloadThrallOpinion</issue>
+		<label>allowed</label>
+		<description>A corpse is a corpse, no one should care what happens to it.</description>
+		<impact>Low</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+
+	</PreceptDef>
+	
+</Defs>

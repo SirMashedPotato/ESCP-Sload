@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>ESCP_ateSloadGrubDirect</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+		  <li>
+			<label>ate sload grub</label>
+			<description>I ate some slimy sload grubs. The way the slide down my throat was absolutely disgusting!</description>
+			<baseMoodEffect>-6</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

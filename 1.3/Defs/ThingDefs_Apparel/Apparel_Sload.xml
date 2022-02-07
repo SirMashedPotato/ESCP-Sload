@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Robes -->
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>ESCP_Apparel_SloadRobe</defName>
+		<label>Sload robe</label>
+		<description>A light robe that covers the body, specially designed to fit the oversized body of a Sload. Provides decent insulation from the heat.\n\nNo annoying buttons or belts, Sload can just slide right on in.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobe/ESCP_Apparel_SloadRobe</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<costStuffCount>210</costStuffCount> <!-- * 3 -->
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+		  <li>Apparel</li>
+		</thingCategories>
+		<statBases>
+		  <MaxHitPoints>160</MaxHitPoints>
+		  <WorkToMake>7000</WorkToMake>
+		  <Mass>1.7</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobe/ESCP_Apparel_SloadRobe</wornGraphicPath>
+		  <layers>
+			<li>Shell</li>
+		  </layers>
+		  <tags>
+			<li>ESCP_SloadMedieval</li>
+			<li>ESCP_SloadRobe</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+	
+</Defs>

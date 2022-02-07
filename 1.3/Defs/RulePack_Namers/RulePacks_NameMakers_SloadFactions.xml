@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>ESCP_NamerSettlementSload</defName>
+	<include>
+		<li>TribalWordUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [Color] [b]</li>
+        <li>r_name->The [a] [b]</li>
+        <li>r_name->[letter][a][b]'s [b]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>a->ESCP_SloadNames/ESCP_SloadFactionA</li>
+        <li>b->ESCP_SloadNames/ESCP_SloadFactionB</li>
+		
+		<li>letter->ESCP_SloadNames/ESCP_SloadLetters</li>
+		<li>nameA->ESCP_SloadNames/ESCP_SloadNamesA</li>
+		<li>nameB->ESCP_SloadNames/ESCP_SloadNamesB</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ESCP_NamerFactionSload</defName>
+	<include>
+		<li>ESCP_NamerPersonSload</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Sload kingdom of [letter][a][b]</li>
+      </rulesStrings>
+	  <rulesFiles>
+		<li>letter->ESCP_SloadNames/ESCP_SloadLetters</li>
+		<li>a->ESCP_SloadNames/ESCP_SloadNamesA</li>
+		<li>b->ESCP_SloadNames/ESCP_SloadNamesB</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

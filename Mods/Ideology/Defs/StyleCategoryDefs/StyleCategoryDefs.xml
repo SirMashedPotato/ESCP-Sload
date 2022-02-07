@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StyleCategoryDef>
+    <defName>ESCP_SloadStyle</defName>
+    <label>Sload</label>
+    <iconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</iconPath>
+
+    <thingDefStyles>
+
+    </thingDefStyles>
+
+  </StyleCategoryDef>
+
+</Defs>

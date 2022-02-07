@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ESCP_SloadSleepingSpot</defName>
+    <label>sload sleeping spot</label>
+    <description>Designates a spot on the ground where Sload should sleep. Not comfortable, but Sload don't exactly care.</description>
+    <thingClass>Building_Bed</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/SleepSpot</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(6,4.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <Comfort>0.4</Comfort>
+      <SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>False</useHitPoints>
+    <size>(2,2)</size>
+    <designationCategory>Furniture</designationCategory>
+    <passability>Standable</passability>
+    <drawGUIOverlay>True</drawGUIOverlay>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>Bed</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

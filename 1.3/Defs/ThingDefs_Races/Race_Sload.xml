@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BasePawnSload">
+		<defName>ESCP_SloadRace</defName>
+		<label>Sload</label>
+		<description>An emotionless race of slug-like creatures. The Sload are despised by almost everyone due to their tendency towards necromancy. Though Sload soap is a highly used commodity, even given its origins.\n\nSload are rather intelligent, though physically they are extremely cumbersome, and somewhat hideous. Most clothes will not fit them, which is fine, as Sload don't care.\n\nSload make for fantastic researchers and scholars, however they are quite frankly awful at everything else.</description>
+		<modExtensions>
+
+		</modExtensions>
+		
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>ESCP_Egg_Sload</eggFertilizedDef>
+				<eggUnfertilizedDef>ESCP_Egg_Sload</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>8</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
+				<eggCountRange>3~5</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+		</comps>
+		
+		<statBases>
+			  <MarketValue>2000</MarketValue>
+			  <MoveSpeed>2.6</MoveSpeed>
+			  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			  <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+			  <ComfyTemperatureMin>10</ComfyTemperatureMin>
+			  <ComfyTemperatureMax>30</ComfyTemperatureMax>
+			  <PsychicSensitivity>1.5</PsychicSensitivity>
+			  <ImmunityGainSpeed>5</ImmunityGainSpeed>
+			  <GlobalLearningFactor>1.3</GlobalLearningFactor>
+			  <DrugSynthesisSpeed>1.5</DrugSynthesisSpeed>
+			  <ResearchSpeed>1.5</ResearchSpeed>
+			  <ToxicSensitivity>0.25</ToxicSensitivity>
+			  <SocialImpact>0.2</SocialImpact>
+			  <GeneralLaborSpeed>0.5</GeneralLaborSpeed>
+			  <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+			  <PawnBeauty>-10</PawnBeauty>
+			  <FilthRate>4</FilthRate>
+			  <RoyalFavorValue>1</RoyalFavorValue>
+		</statBases>
+
+		<race>
+			<hasGenders>false</hasGenders>
+			<fleshType>ESCP_FleshSload</fleshType>
+			<bloodDef>ESCP_Filth_BloodSload</bloodDef>
+			<lifeExpectancy>300</lifeExpectancy>
+			<leatherDef>ESCP_LeatherSload</leatherDef>
+			<nameGenerator>ESCP_NamerPersonSload</nameGenerator>
+			<baseBodySize>3</baseBodySize>
+		</race>
+	
+		<alienRace>
+			<generalSettings>
+				<validBeds>
+					<li>ESCP_SloadSleepingSpot</li>
+				</validBeds>
+				<forcedRaceTraitEntries>
+				</forcedRaceTraitEntries>
+				<disallowedTraits>
+					
+				</disallowedTraits>
+				<allowHumanBios>false</allowHumanBios>
+				<humanRecipeImport>true</humanRecipeImport>
+				<alienPartGenerator>
+					<aliencrowntypes>
+						<li>Sload_normal</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Fat</li>
+					</alienbodytypes>
+					<useGenderedHeads>false</useGenderedHeads>
+					<useGenderedBodies>false</useGenderedBodies>
+					<!-- colour stuff -->
+					<colorChannels>
+					<li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+							<!-- Nasty green/blue colour -->
+							<li>
+								<weight>2</weight>
+								<only>(77,92,87,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(91,102,100,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(128,154,145,255)</only>
+							</li>
+							<!-- Mostly red -->
+							<li>
+								<weight>2</weight>
+								<only>(86,51,69,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(139,85,105,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(83,57,79,255)</only>
+							</li>
+							<!-- Mostly blue -->
+							<li>
+								<weight>2</weight>
+								<only>(97,112,130,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(73,107,105,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(106,139,139,255)</only>
+							</li>
+							<!-- Purply -->
+							<li>
+								<weight>2</weight>
+								<only>(117,93,103,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(92,75,102,255)</only>
+							</li>
+							<!-- Burgandy -->
+							<li>
+								<weight>2</weight>
+								<only>(110,85,90,255)</only>
+							</li>
+							<!-- Grey -->
+							<li>
+								<weight>2</weight>
+								<only>(71,77,78,255)</only>
+							</li>
+
+						</options>
+					</first>
+					<second Class="ColorGenerator_Options">
+						<options>
+							<!-- Yellowish -->
+							<li>
+								<weight>2</weight>
+								<only>(229,203,164,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(218,195,160,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(159,136,101,255)</only>
+							</li>
+							<!-- Green-Brown -->
+							<li>
+								<weight>2</weight>
+								<only>(151,147,118,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(218,221,201,255)</only>
+							</li>
+							<li>
+								<weight>2</weight>
+								<only>(193,205,184,255)</only>
+							</li>
+							<!-- Green-Yellow -->
+							<li>
+								<weight>2</weight>
+								<only>(200,202,161,255)</only>
+							</li>
+						</options>
+					</second>
+					</li>
+					</colorChannels>
+					<!-- -->
+					<customDrawSize>(2, 2)</customDrawSize>
+					<customHeadDrawSize>(2, 2)</customHeadDrawSize>
+					<headOffset>(0.0, 0.3)</headOffset>	<!-- TODO disable, offset in textures -->
+					
+					<customPortraitHeadDrawSize>(2, 2)</customPortraitHeadDrawSize>
+					<customPortraitDrawSize>(2, 2)</customPortraitDrawSize>
+					<bodyAddons>
+						<!-- tail, both -->
+						<li>
+							<path>Things/Pawn/Humanlike/ESCP_Sload/Tail/SloadTail</path>
+							<drawForMale>true</drawForMale>
+							<drawForFemale>true</drawForFemale>
+							<colorChannel>skin</colorChannel>
+							<!--<bodyPart>Jaw</bodyPart>-->
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>false</inFrontOfBody>
+							<alignWithHead>false</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>false</drawnDesiccated>
+							<hiddenUnderApparelFor>
+
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+	
+							</hiddenUnderApparelTag>
+							<!-- offsets -->
+							<offsets>
+								<south>
+									<layerOffset>0.0</layerOffset>
+									<bodyTypes>
+										<Fat>(0.0,0.0)</Fat>
+									</bodyTypes>
+									<crownTypes>
+
+									</crownTypes>
+								</south>
+								<north>
+									<layerOffset>-0.27</layerOffset>
+									<bodyTypes>
+										<Fat>(0.0,-1)</Fat>
+									</bodyTypes>
+									<crownTypes>
+	
+									</crownTypes>
+								</north>
+								<east>
+									<layerOffset>0.0</layerOffset>
+									<bodyTypes>
+										<Fat>(1.0,-0.79)</Fat>
+									</bodyTypes>
+									<crownTypes>
+		
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+				
+			</generalSettings>
+			
+			<graphicPaths>
+				<li>
+					<body>Things/Pawn/Humanlike/ESCP_Sload/Body/</body>
+					<head>Things/Pawn/Humanlike/ESCP_Sload/Head/</head>
+					<headMasks>Things/Pawn/Humanlike/ESCP_Sload/HeadMask/Mask</headMasks>
+				</li>
+			</graphicPaths>
+
+			<!--<pawnKindSettings>
+
+			</pawnKindSettings>-->
+			
+			<thoughtSettings>
+				<canStillReceiveThoughts>
+					<!-- Positive -->
+					<li>ESCP_SloadThought</li>
+					<li>PsychicEmanatorSoothe</li>
+					<li>ArtifactMoodBoost</li>
+					<li>Joywire</li>
+					<!-- Sitiuational negative -->
+					<li>NeedFood</li>
+					<li>NeedRest</li>
+					<li>NeedRoomSize</li>
+					<li>NeedOutdoors</li>
+					<li>NeedIndoors</li>
+					<li>DrugDesireFascination</li>
+					<li>EnvironmentCold</li>
+					<li>EnvironmentHot</li>
+					<li>Pain</li>
+					<li>Sick</li>
+					<li>PsychicDrone</li>
+					<li>MissingTongue</li>
+					<!-- Trait based 
+						TODO possibly disable certain traits-->
+					<li>MasochistPain</li>
+					<li>ProsthophileNoProsthetic</li>
+					<li>ProsthophileHappy</li>
+					<li>ProsthophobeUnhappy</li>
+					<li>BrawlerUnhappy</li>
+					<li>PyromaniacHappy</li>
+					<li>UndergrounderIndoors</li>
+					<li>UndergrounderUnderground</li>
+					<li>UndergrounderOutdoors</li>
+					<li>NightOwlDuringTheDay</li>
+					<li>NightOwlDuringTheNight</li>
+					<li>Greedy</li>
+					<li>Jealous</li>
+					<li>Ascetic</li>
+					<li>ClothedNudist</li>
+					<!-- Royalty Thoughts -->
+					<li MayRequire="Ludeon.RimWorld.Royalty">AteFoodInappropriateForTitle</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TerribleBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">UnimpressiveBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">HonorableBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GrandioseBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">ReignedInThroneroom</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeMet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeFailed</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Disinherited</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">NeuroquakeEcho</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeUnmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropyOverloaded</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">AnimaScream</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
+					<!-- Ideology Thoughts -->
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingMissing</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ConnectedTreeDied</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Major</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Grand</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Core</li>
+				</canStillReceiveThoughts>
+				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
+			</thoughtSettings>
+			
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+			</relationSettings>
+			
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>ESCP_Apparel_SloadHood</li>
+					<li>ESCP_Apparel_SloadRobe</li>
+					<li>ESCP_Apparel_SloadHeadCap</li>
+					<li>ESCP_Apparel_SloadFaceMask</li>
+					<li>ESCP_Apparel_SloadColovianFurHelm</li>
+				</apparelList>
+				<buildingList>
+				
+				</buildingList>
+				<traitList>
+
+				</traitList> 
+				<blackTraitList>
+					<li>Nudist</li>
+					<li>NaturalMood</li>
+					<li>TorturedArtist</li>
+				</blackTraitList>
+				<recipeList>
+					<li>ESCP_SloadSoapFromGrubs</li>
+					<li>ESCP_SloadSoapFromGrubs_Bulk</li>
+				</recipeList>
+			</raceRestriction>
+			
+			<compatibility>
+				<isFlesh>true</isFlesh>
+				<isSentient>true</isSentient>
+				<hasBlood>true</hasBlood>
+			</compatibility>
+			
+			<!-- New in 1.3 -->
+			
+			<styleSettings>
+
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+
+			</styleSettings>
+			
+		</alienRace>
+	
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

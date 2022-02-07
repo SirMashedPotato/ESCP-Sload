@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>ESCP_SloadRaceSettings</defName>
+		<pawnKindSettings>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_SloadKind</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_SloadPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_SloadTribalKind</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_SloadPlayerTribe</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_SloadMedievalKind</li>
+							</kindDefs>
+							<chance>100.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>ESCP_SloadPlayerKingdom</li> 
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+</Defs>

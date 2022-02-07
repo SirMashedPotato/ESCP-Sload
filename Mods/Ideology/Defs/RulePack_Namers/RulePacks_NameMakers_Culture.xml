@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>ESCP_LeaderTitleMaker_Sload</defName>
+    <include>
+      <li>LeaderTitleMaker_GlobalStructure</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li> <!-- ignore all meme nouns, tribals always use a culture noun -->
+
+        <li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+        <li>cultureLeaderAdjective->[a]</li>
+
+        <li>cultureLeaderNoun->king</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>a->ESCP_SloadNames/ESCP_SloadFactionA</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ESCP_NamerDeity_Sload</defName>
+	<include>
+      <li>NamerDeityGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[deity]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>deity->ESCP_SloadNames/ESCP_SloadDeities</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
