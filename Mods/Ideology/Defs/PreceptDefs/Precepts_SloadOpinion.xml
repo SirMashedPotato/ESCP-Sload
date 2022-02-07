@@ -6,6 +6,96 @@
 		<label>sloads</label>
 		<iconPath>UI/Issues/ESCP_Sload_Opinion</iconPath>
 	</IssueDef>
+
+	<!-- Heretical -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadOpinion_Heretical</defName>
+		<issue>ESCP_SloadOpinion</issue>
+		<label>heretical</label>
+		<description>Sloads are abominations, and it is our duty to cleanse them from this world.</description>
+		<impact>High</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>2</defaultSelectionWeight>
+		<comps>
+		  <!-- Thoughts -->
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Heretical_Faction</thought>
+			<description>Each Sload in faction</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Heretical_Map</thought>
+			<description>Each Sload on map</description>
+		  </li>
+		  <li Class="PreceptComp_SelfTookMemoryThought">
+			<eventDef>ESCP_KilledSload</eventDef>
+			<thought>ESCP_KilledSload_Heretical</thought>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsOpinion_Heretical</thought>
+			<description>Opinion of Sload</description>
+		  </li>
+		</comps>
+		<conflictingMemes>
+		  <li>ESCP_SloadicWays</li>
+		</conflictingMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Heretical_Faction</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads in faction</label>
+			<description>There are Sloads living amongst us, why have we allowed this!</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Heretical_Map</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads on map</label>
+			<description>There are Sloads nearby, they should be purged!</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_KilledSload_Heretical</defName>
+		<durationDays>5</durationDays>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>killed a Sload</label>
+			<description>We killed a Sload! The sight, the smell, the sounds, truly glorious!</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsOpinion_Heretical</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>Sload (Heretical)</label>
+			<baseOpinionOffset>-100</baseOpinionOffset>
+		  </li>
+		</stages>
+	</ThoughtDef>
 	
 	<!-- Despised -->
 
@@ -21,8 +111,16 @@
 		<defaultSelectionWeight>5</defaultSelectionWeight>
 		<comps>
 		  <li Class="PreceptComp_SituationalThought">
-			<thought>ESCP_SloadsInColony_Despised</thought>
-			<description>Each Sload in colony</description>
+			<thought>ESCP_SloadsInColony_Despised_Faction</thought>
+			<description>Each Sload in faction</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Despised_Map</thought>
+			<description>Each Sload on map</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsOpinion_Despised</thought>
+			<description>Opinion of Sload</description>
 		  </li>
 		</comps>
 		<conflictingMemes>
@@ -31,21 +129,48 @@
 	</PreceptDef>
 	
 	<ThoughtDef>
-		<defName>ESCP_SloadsInColony_Despised</defName>
+		<defName>ESCP_SloadsInColony_Despised_Faction</defName>
 		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
 		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
-			<label>Sloads in colony</label>
-			<description>There are sloads living amongst us. They taint the very ground they walk on.</description>
-			<baseMoodEffect>-10</baseMoodEffect>
+			<label>Sloads in faction</label>
+			<description>There are Sloads living amongst us, they taint the very ground they walk on!</description>
+			<baseMoodEffect>-5</baseMoodEffect>
 		  </li>
 		</stages>
 	</ThoughtDef>
 	
-	<!-- Hated -->
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Despised_Map</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads on map</label>
+			<description>There are Sloads nearby, their stench fills the air!</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsOpinion_Despised</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>Sload (Despised)</label>
+			<baseOpinionOffset>-50</baseOpinionOffset>
+		  </li>
+		</stages>
+	</ThoughtDef>
 
+	<!-- Hated -->
+	
 	<PreceptDef>
 		<defName>ESCP_SloadOpinion_Hated</defName>
 		<issue>ESCP_SloadOpinion</issue>
@@ -58,8 +183,16 @@
 		<defaultSelectionWeight>3</defaultSelectionWeight>
 		<comps>
 		  <li Class="PreceptComp_SituationalThought">
-			<thought>ESCP_SloadsInColony_Hated</thought>
-			<description>Each Sload in colony</description>
+			<thought>ESCP_SloadsInColony_Hated_Faction</thought>
+			<description>Each Sload in faction</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_Hated_Map</thought>
+			<description>Each Sload on map</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsOpinion_Hated</thought>
+			<description>Opinion of Sload</description>
 		  </li>
 		</comps>
 		<conflictingMemes>
@@ -68,15 +201,42 @@
 	</PreceptDef>
 	
 	<ThoughtDef>
-		<defName>ESCP_SloadsInColony_Hated</defName>
+		<defName>ESCP_SloadsInColony_Hated_Faction</defName>
 		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
 		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
-			<label>Sloads in colony</label>
-			<description>There are sloads living amongst us. Truly disgusting things.</description>
-			<baseMoodEffect>-5</baseMoodEffect>
+			<label>Sloads in faction</label>
+			<description>There are Sloads living amongst us. Truly disgusting things.</description>
+			<baseMoodEffect>-2</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_Hated_Map</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads in faction</label>
+			<description>There are Sloads walking amongst us. Truly disgusting things.</description>
+			<baseMoodEffect>-2</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsOpinion_Hated</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>Sload (Hated)</label>
+			<baseOpinionOffset>-25</baseOpinionOffset>
 		  </li>
 		</stages>
 	</ThoughtDef>
@@ -104,15 +264,35 @@
 		<issue>ESCP_SloadOpinion</issue>
 		<label>exalted</label>
 		<description>Sloads are capable of shaping life itself, and should be revered as gods.</description>
-		<impact>Medium</impact>
+		<impact>High</impact>
 
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<defaultSelectionWeight>3</defaultSelectionWeight>
 		<comps>
 		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_ExaltedNone</thought>
+			<description>No Sload in faction</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_ExaltedNoneMap</thought>
+			<description>No Sload on map</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
 			<thought>ESCP_SloadsInColony_Exalted</thought>
-			<description>Each Sload in colony</description>
+			<description>Each Sload in faction</description>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsInColony_ExaltedMap</thought>
+			<description>Each Sload on map</description>
+		  </li>
+		  <li Class="PreceptComp_SelfTookMemoryThought">
+			<eventDef>ESCP_KilledSload</eventDef>
+			<thought>ESCP_KilledSload_Exalted</thought>
+		  </li>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadsOpinion_Exalted</thought>
+			<description>Opinion of Sload</description>
 		  </li>
 		</comps>
 		<requiredMemes>
@@ -121,15 +301,81 @@
 	</PreceptDef>
 	
 	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_ExaltedNone</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_NoSloadInColony</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>no Sloads in faction</label>
+			<description>There are NO Sloads living amongst us! What have we done wrong?</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_ExaltedNoneMap</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_NoSloadInMap</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>no Sloads on map</label>
+			<description>There are NO Sloads walking amongst us! Why don't they want to live here?</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Exalted</defName>
 		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
 		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
-			<label>Sloads in colony</label>
+			<label>Sloads in faction</label>
 			<description>There are Sloads living amongst us! What a truly glorious day it is!</description>
-			<baseMoodEffect>10</baseMoodEffect>
+			<baseMoodEffect>5</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsInColony_ExaltedMap</defName>
+		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>Sloads on Map</label>
+			<description>There are Sloads walking amongst us! What a truly glorious day it is!</description>
+			<baseMoodEffect>5</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_KilledSload_Exalted</defName>
+		<durationDays>60</durationDays>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>killed a Sload</label>
+			<description>We killed a Sload! How could we have allowed this!</description>
+			<baseMoodEffect>-50</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_SloadsOpinion_Exalted</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>Sload (Exalted)</label>
+			<baseOpinionOffset>100</baseOpinionOffset>
 		  </li>
 		</stages>
 	</ThoughtDef>

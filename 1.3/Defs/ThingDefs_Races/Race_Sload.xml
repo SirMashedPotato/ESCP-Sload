@@ -6,7 +6,13 @@
 		<label>Sload</label>
 		<description>An emotionless race of slug-like creatures. The Sload are despised by almost everyone due to their tendency towards necromancy. Though Sload soap is a highly used commodity, even given its origins.\n\nSload are rather intelligent, though physically they are extremely cumbersome, and somewhat hideous. Most clothes will not fit them, which is fine, as Sload don't care.\n\nSload make for fantastic researchers and scholars, however they are quite frankly awful at everything else.</description>
 		<modExtensions>
-
+			<li Class="ESCP_RaceTools.RaceProperties">
+				<eventOnDeath>ESCP_KilledSload</eventOnDeath>
+				
+				<hypothermiaResistant>true</hypothermiaResistant>
+				<frostbiteResistant>false</frostbiteResistant>
+				<hypothermiaDef>HypothermicSlowdown</hypothermiaDef>
+            </li>
 		</modExtensions>
 		
 		<comps>
@@ -44,6 +50,7 @@
 
 		<race>
 			<hasGenders>false</hasGenders>
+			<deathActionWorkerClass>ESCP_RaceTools.DeathActionWorker_HistoryEventOnDeath</deathActionWorkerClass>
 			<fleshType>ESCP_FleshSload</fleshType>
 			<bloodDef>ESCP_Filth_BloodSload</bloodDef>
 			<lifeExpectancy>300</lifeExpectancy>
@@ -329,7 +336,6 @@
 					<li>ESCP_Apparel_SloadHood</li>
 					<li>ESCP_Apparel_SloadRobe</li>
 					<li>ESCP_Apparel_SloadHeadCap</li>
-					<li>ESCP_Apparel_SloadFaceMask</li>
 					<li>ESCP_Apparel_SloadColovianFurHelm</li>
 				</apparelList>
 				<buildingList>

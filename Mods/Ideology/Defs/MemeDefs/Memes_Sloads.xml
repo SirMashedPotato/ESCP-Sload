@@ -9,7 +9,7 @@
 		</exclusionTags>
 		<description>The way Sload manipulate life, to spread disease, and raise thralls, is something only a godlike being should be able to do. As such, they should be revered.</description>
 		<iconPath>UI/Memes/ESCP_SloadicWays</iconPath>
-		<impact>1</impact>
+		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->frail</li>
