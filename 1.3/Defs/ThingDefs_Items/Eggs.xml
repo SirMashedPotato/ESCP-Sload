@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="EggUnfertBase">
 		<defName>ESCP_Egg_Sload</defName>
 		<label>sload grubs</label>
 		<description>A clump of young sload, completely lacking sentience, and highly likely to never reach their polwygle stage. Often turned into soap by their parents, though it can be consumed, best not to do so when uncooked.</description>
@@ -16,7 +16,7 @@
 
 		</comps>
 		<ingestible>
-		  <specialThoughtDirect>ESCP_ateSloadGrubDirect</specialThoughtDirect>
+		  <specialThoughtDirect>ESCP_AteSloadGrubDirect</specialThoughtDirect>
 		</ingestible>
 		<tradeTags>
 			<li>Exotic</li>	<!-- TODO -->

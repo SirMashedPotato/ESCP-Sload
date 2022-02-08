@@ -2,13 +2,13 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>ESCP_ateSloadGrubDirect</defName>
+		<defName>ESCP_AteSloadGrubDirect</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
 		  <li>
 			<label>ate sload grub</label>
-			<description>I ate some slimy sload grubs. The way the slide down my throat was absolutely disgusting!</description>
+			<description>I ate some slimy sload grubs. The way they slid down my throat was absolutely disgusting!</description>
 			<baseMoodEffect>-6</baseMoodEffect>
 		  </li>
 		</stages>
