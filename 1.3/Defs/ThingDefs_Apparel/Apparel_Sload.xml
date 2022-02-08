@@ -55,4 +55,68 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>ESCP_Apparel_SloadRobeRegal</defName>
+		<label>royal Sload robe</label>
+		<description>A light robe that covers the body, adorned with solid golden pauldrons, specially designed to fit the oversized body of a Sload. Provides decent insulation from the heat, and improves social impact, though the added weight of the pauldrons slows the wearer slightly.\n\nNo annoying buttons or belts, Sload can just slide right on in.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobeRegal/ESCP_Apparel_SloadRobeRegal</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<costStuffCount>210</costStuffCount> <!-- * 3 -->
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
+		<costList>
+		  <Gold>3</Gold>
+		</costList>
+		<thingCategories>
+		  <li>Apparel</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">ApparelNoble</li>
+		</thingCategories>
+		<statBases>
+		  <MaxHitPoints>160</MaxHitPoints>
+		  <WorkToMake>7000</WorkToMake>
+		  <Mass>10</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <MoveSpeed>-0.4</MoveSpeed>
+		  <SocialImpact>0.3</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobeRegal/ESCP_Apparel_SloadRobeRegal</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers>
+			<li>Shell</li>
+		  </layers>
+		  <tags>
+			<li>ESCP_SloadRobeNoble</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">RoyalRobe</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+	
 </Defs>

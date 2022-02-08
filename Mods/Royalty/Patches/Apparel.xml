@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName="ESCP_Apparel_SloadRobeRegal"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>RoyalApparel</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+

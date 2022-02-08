@@ -21,6 +21,7 @@
 				<eggCountRange>3~5</eggCountRange>
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
+			
 		</comps>
 		
 		<statBases>
@@ -307,6 +308,14 @@
 					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropyOverloaded</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">AnimaScream</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
+					<!-- Royalty Title Thoughts -->
+					<li MayRequire="Ludeon.RimWorld.Royalty">TitleApparelRequirementNotMet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TitleApparelMinQualityNotMet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">LostTitle</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TitleThroneroomRequirementsNotMet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TitleBedroomRequirementsNotMet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TitleNoThroneRoom</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TitleNoPersonalBedroom</li>
 					<!-- Ideology Thoughts -->
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingMissing</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
@@ -332,7 +341,9 @@
 				<apparelList>
 					<li>ESCP_Apparel_SloadHood</li>
 					<li>ESCP_Apparel_SloadRobe</li>
+					<li>ESCP_Apparel_SloadRobeRegal</li>
 					<li>ESCP_Apparel_SloadHeadCap</li>
+					<li>ESCP_Apparel_SloadAshMask</li>
 					<li>ESCP_Apparel_SloadColovianFurHelm</li>
 				</apparelList>
 				<buildingList>
