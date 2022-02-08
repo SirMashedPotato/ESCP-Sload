@@ -8,10 +8,6 @@
 		<modExtensions>
 			<li Class="ESCP_RaceTools.RaceProperties">
 				<eventOnDeath>ESCP_KilledSload</eventOnDeath>
-				
-				<hypothermiaResistant>true</hypothermiaResistant>
-				<frostbiteResistant>false</frostbiteResistant>
-				<hypothermiaDef>HypothermicSlowdown</hypothermiaDef>
             </li>
 		</modExtensions>
 		
@@ -36,6 +32,7 @@
 			  <ComfyTemperatureMax>30</ComfyTemperatureMax>
 			  <PsychicSensitivity>1.5</PsychicSensitivity>
 			  <ImmunityGainSpeed>5</ImmunityGainSpeed>
+			  <InjuryHealingFactor>2.0</InjuryHealingFactor>
 			  <GlobalLearningFactor>1.3</GlobalLearningFactor>
 			  <DrugSynthesisSpeed>1.5</DrugSynthesisSpeed>
 			  <ResearchSpeed>1.5</ResearchSpeed>
@@ -222,7 +219,7 @@
 									</crownTypes>
 								</south>
 								<north>
-									<layerOffset>-0.27</layerOffset>
+									<layerOffset>-0.2824309</layerOffset>
 									<bodyTypes>
 										<Fat>(0.0,-1)</Fat>
 									</bodyTypes>
@@ -353,6 +350,9 @@
 					<li>ESCP_SloadSoapFromGrubs</li>
 					<li>ESCP_SloadSoapFromGrubs_Bulk</li>
 				</recipeList>
+				<conceptList>
+					<li>ESCP_SloadThoughts</li>
+				</conceptList>
 			</raceRestriction>
 			
 			<compatibility>

@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>ESCP_SloadSoap</defName>
-		<label>sload soap</label>
-		<description>Soap made from sload grubs. Quite the widely used commodity, and worth a reasonable amount due to the monopoly Sload hold over it.</description>
+		<label>Sload soap</label>
+		<description>Soap made from Sload grubs. Quite the widely used commodity, and worth a reasonable amount due to the monopoly Sload hold over it.</description>
 		<graphicData>
 		  <texPath>Things/Item/Resource/ESCP_SloadSoap</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>

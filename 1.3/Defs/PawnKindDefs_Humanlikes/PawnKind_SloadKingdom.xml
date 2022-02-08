@@ -11,6 +11,9 @@
     <apparelTags>
 
     </apparelTags>
+	<backstoryCategories>
+		<li>ESCP_SloadBackstory</li>
+	</backstoryCategories>
   </PawnKindDef>
 
   <!-- Poverty tier - penitent -->

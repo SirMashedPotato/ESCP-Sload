@@ -7,12 +7,12 @@
 		<iconPath>UI/Issues/ESCP_Sload_Opinion</iconPath>
 	</IssueDef>
 
-	<!-- Heretical -->
+	<!-- Reviled -->
 
 	<PreceptDef>
-		<defName>ESCP_SloadOpinion_Heretical</defName>
+		<defName>ESCP_SloadOpinion_Reviled</defName>
 		<issue>ESCP_SloadOpinion</issue>
-		<label>heretical</label>
+		<label>reviled</label>
 		<description>Sloads are abominations, and it is our duty to cleanse them from this world.</description>
 		<impact>High</impact>
 
@@ -22,19 +22,19 @@
 		<comps>
 		  <!-- Thoughts -->
 		  <li Class="PreceptComp_SituationalThought">
-			<thought>ESCP_SloadsInColony_Heretical_Faction</thought>
+			<thought>ESCP_SloadsInColony_Reviled_Faction</thought>
 			<description>Each Sload in faction</description>
 		  </li>
 		  <li Class="PreceptComp_SituationalThought">
-			<thought>ESCP_SloadsInColony_Heretical_Map</thought>
+			<thought>ESCP_SloadsInColony_Reviled_Map</thought>
 			<description>Each Sload on map</description>
 		  </li>
 		  <li Class="PreceptComp_SelfTookMemoryThought">
 			<eventDef>ESCP_KilledSload</eventDef>
-			<thought>ESCP_KilledSload_Heretical</thought>
+			<thought>ESCP_KilledSload_Reviled</thought>
 		  </li>
 		  <li Class="PreceptComp_SituationalThought">
-			<thought>ESCP_SloadsOpinion_Heretical</thought>
+			<thought>ESCP_SloadsOpinion_Reviled</thought>
 			<description>Opinion of Sload</description>
 		  </li>
 		</comps>
@@ -44,7 +44,7 @@
 	</PreceptDef>
 	
 	<ThoughtDef>
-		<defName>ESCP_SloadsInColony_Heretical_Faction</defName>
+		<defName>ESCP_SloadsInColony_Reviled_Faction</defName>
 		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
 		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
@@ -58,7 +58,7 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
-		<defName>ESCP_SloadsInColony_Heretical_Map</defName>
+		<defName>ESCP_SloadsInColony_Reviled_Map</defName>
 		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
 		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
@@ -72,7 +72,7 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
-		<defName>ESCP_KilledSload_Heretical</defName>
+		<defName>ESCP_KilledSload_Reviled</defName>
 		<durationDays>5</durationDays>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
@@ -85,13 +85,13 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
-		<defName>ESCP_SloadsOpinion_Heretical</defName>
+		<defName>ESCP_SloadsOpinion_Reviled</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
-			<label>Sload (Heretical)</label>
+			<label>Sload (Reviled)</label>
 			<baseOpinionOffset>-100</baseOpinionOffset>
 		  </li>
 		</stages>

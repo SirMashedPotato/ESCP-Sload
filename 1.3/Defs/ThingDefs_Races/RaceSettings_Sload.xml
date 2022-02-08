@@ -4,6 +4,29 @@
 	<AlienRace.RaceSettings>
 		<defName>ESCP_SloadRaceSettings</defName>
 		<pawnKindSettings>
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>ESCP_SloadMedievalKind</li>
+					</kindDefs>
+					<chance>5.0</chance>
+				</li>
+			</alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>ESCP_SloadKind</li>
+							</kindDefs>
+							<chance>1.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
 			<alienwandererkinds>
 				<li>
 					<pawnKindEntries>

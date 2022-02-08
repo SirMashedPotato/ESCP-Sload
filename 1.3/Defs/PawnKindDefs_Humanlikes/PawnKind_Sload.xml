@@ -6,8 +6,7 @@
 		<label>Sload</label>
 		<race>ESCP_SloadRace</race>
 		<backstoryCategories>
-		  <li>Outlander</li>
-		  <li>ESCP_SloadOutlander</li>
+		  <li>ESCP_SloadBackstory</li>
 		</backstoryCategories>	
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
@@ -39,8 +38,7 @@
 		<label>Sload tribal</label>
 		<race>ESCP_SloadRace</race>
 		<backstoryCategories>
-		  <li>Tribal</li>
-		  <li>ESCP_SloadTribal</li>
+		  <li>ESCP_SloadBackstory</li>
 		</backstoryCategories>
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
@@ -73,8 +71,7 @@
 		<label>Sload peasant</label>
 		<race>ESCP_SloadRace</race>
 		<backstoryCategories>
-		  <li>Tribal</li>
-		  <li>ESCP_SloadTribal</li>
+		  <li>ESCP_SloadBackstory</li>
 		</backstoryCategories>
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>

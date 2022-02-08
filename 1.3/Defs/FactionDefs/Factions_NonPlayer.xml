@@ -20,17 +20,14 @@
     <allowedCultures>
 		<li>ESCP_Sload</li>
 	</allowedCultures>
-    <!-- Don't enable unless there are actually backstories -->
-		<!--
-		<backstoryFilters>
-		  <li>
+	<backstoryFilters Inherit="False">
+		<li>
 			<categories>
-			  <li>ESCP_Sload_Tribal</li>
+			  <li>ESCP_SloadBackstory</li>
 			</categories>
-			<commonality>0.95</commonality>
-		  </li>
-		</backstoryFilters>
-		-->
+			<commonality>1</commonality>
+		</li>
+	</backstoryFilters>
 	<structureMemeWeights>
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">999</Structure_Ideological>
     </structureMemeWeights>

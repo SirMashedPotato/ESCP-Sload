@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ConceptDef ParentName="NotedOpportunisticBase">
+    <defName>ESCP_SloadThoughts</defName>
+    <label>Sloads and emotions</label>
+    <helpText>Sloads don't feel emotions, as such they don't receive many thoughts, and don't have opinions of others.</helpText>
+  </ConceptDef>
+
+</Defs>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Heretical -->
+	<!-- Reviled -->
 		
 	<GoodwillSituationDef>
-		<defName>ESCP_Sload_Heretical</defName>
-		<label>Sload (Heretical)</label>
+		<defName>ESCP_Sload_Reviled</defName>
+		<label>Sload (Reviled)</label>
 		<workerClass>ESCP_RaceTools.GoodwillSituationWorker_Sload</workerClass>
 		<naturalGoodwillOffset>-100</naturalGoodwillOffset>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.IdeoProperties">
-				<preceptDef>ESCP_SloadOpinion_Heretical</preceptDef>
+				<preceptDef>ESCP_SloadOpinion_Reviled</preceptDef>
             </li>
 		</modExtensions>
 	</GoodwillSituationDef>
