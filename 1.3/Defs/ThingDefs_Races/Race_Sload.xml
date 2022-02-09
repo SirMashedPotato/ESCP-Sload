@@ -21,6 +21,11 @@
 				<eggCountRange>3~5</eggCountRange>
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
+			<li Class="ESCP_RaceTools.CompProperties_GiveAbilityOnCreation">
+				<abilitiesList>
+
+				</abilitiesList>
+			</li>
 			
 		</comps>
 		
