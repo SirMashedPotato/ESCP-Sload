@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Precepts and Memes</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/FactionDef[defName="ESCP_SloadCorporation"]/requiredMemes</xpath>
+						<value>
+
+							<li MayRequire="Ludeon.RimWorld.Ideology">Trader</li>
+
+						</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

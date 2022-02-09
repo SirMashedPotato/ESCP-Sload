@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/FactionDef[defName="ESCP_SloadCorporation"]/requiredMemes</xpath>
+					<value>
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">VME_Elders</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/FactionDef[@Name="ESCP_SloadCorporationFactionBase"]</xpath>
+					<value>
+						<structureMemeWeights>
+							  <VME_Structure_Corporate MayRequire="Ludeon.RimWorld.Ideology">15</VME_Structure_Corporate>
+						</structureMemeWeights>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

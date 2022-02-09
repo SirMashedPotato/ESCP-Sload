@@ -48,8 +48,9 @@
     <gearHealthRange>0.2~1.1</gearHealthRange>
     <apparelMoney>150~200</apparelMoney>
 	<apparelRequired>
-		<li>ESCP_Apparel_SloadColovianFurHelm</li>
+		<li>ESCP_Apparel_SloadColovianHelm</li>
 		<li>ESCP_Apparel_SloadRobe</li>
+		<li>ESCP_Apparel_SloadAshMask</li>
     </apparelRequired>
     <weaponMoney>90~150</weaponMoney>
     <weaponTags>
@@ -93,6 +94,7 @@
     <apparelRequired>
 		<li>ESCP_Apparel_SloadHood</li>
 		<li>ESCP_Apparel_SloadRobeRegal</li>
+		<li>ESCP_Apparel_SloadAshMask</li>
     </apparelRequired>
     <weaponMoney>500~1000</weaponMoney>
     <initialWillRange>3~5</initialWillRange>

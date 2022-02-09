@@ -25,7 +25,8 @@
 		  <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.2</SocialImpact>
+		  <SocialImpact>0.05</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<costStuffCount>150</costStuffCount>	<!-- * 3 -->
 		<stuffCategories>
@@ -76,6 +77,8 @@
 		  <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
+		  <SocialImpact>0.05</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>
@@ -99,20 +102,89 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
+	
+	<!-- Ash Mask -->
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>ESCP_Apparel_SloadAshMask</defName>
+		<label>Sload ash mask</label>
+		<description>A specialised mask which allows unhindered breathing during ash storms, specially designed to fit on the oversized head of a Sload.</description>
+		<modExtensions>
+			<li MayRequire="SirMashedPotato.MorrowRim" Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<recipeMaker>
+		  <researchPrerequisite>Smithing</researchPrerequisite>
+		  <recipeUsers Inherit="False">
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		  </recipeUsers>
+		</recipeMaker>
+		<graphicData>
+		  <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadAshMask/ESCP_Apparel_SloadAshMask</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>12000</WorkToMake>
+		  <Mass>0.15</Mass>
+		  <EquipDelay>1.2</EquipDelay>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+		  <ToxicSensitivity>-0.15</ToxicSensitivity>
+		  <SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		</stuffCategories>
+		<costList>
+		</costList>
+		<apparel>
+		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadAshMask/ESCP_Apparel_SloadAshMask</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>	<!-- Fixes layering -->
+		  <forceRenderUnderHair>true</forceRenderUnderHair>
+		  <bodyPartGroups>
+			<li>Eyes</li>
+			<li>Mouth</li>
+			<li>Teeth</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>EyeCover</li>
+		  </layers>
+		  <tags>
+			<li>ESCP_SloadMedieval</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
 
 	<!-- Colovian Fur Helm -->
-	
-	<ThingDef ParentName="CowboyHat">
-		<defName>ESCP_Apparel_SloadColovianFurHelm</defName>
-		<label>Sload colovian fur helm</label>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>ESCP_Apparel_SloadColovianHelm</defName>
+		<label>Sload helm</label>
 		<description>A practical, yet stylish, hat, specially designed to fit on the oversized head of a Sload. Improves social impact, and is rather warm.</description>
+		<recipeMaker>
+		  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadColovianHelm/ESCP_Apparel_SloadColovianHelm</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!--<shaderType>CutoutComplex</shaderType>  BREAKS LAYERING -->
 		</graphicData>
-		<costStuffCount>60</costStuffCount>	<!-- * 3 -->
-		<uiIconScale>1.25</uiIconScale>
+		<uiIconScale>1.15</uiIconScale>
 		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
 		  <WorkToMake>1800</WorkToMake>
 		  <Mass>0.14</Mass>
 		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
@@ -122,15 +194,31 @@
 		</statBases>
 		<equippedStatOffsets>
 		  <SocialImpact>0.15</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
+		<costStuffCount>60</costStuffCount>	<!-- * 3 -->
+		<stuffCategories>
+		  <li>Fabric</li>
+		  <li>Leathery</li>
+		</stuffCategories>
 		<apparel>
 		  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadColovianHelm/ESCP_Apparel_SloadColovianHelm</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <!--<useWornGraphicMask>true</useWornGraphicMask> BREAKS LAYERING -->
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
 		  <tags>
 			<li>ESCP_SloadMedieval</li>
 			<li>ESCP_SloadCultured</li>
 		  </tags>
+		  <defaultOutfitTags>
+			<li>Worker</li>
+		  </defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 </Defs>

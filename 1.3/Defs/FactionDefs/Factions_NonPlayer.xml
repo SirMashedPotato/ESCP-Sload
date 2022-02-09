@@ -106,6 +106,8 @@
             <li>Jade</li>
             <li>MedicineHerbal</li>
             <li>Pemmican</li>
+			<li>ESCP_SloadSoap</li>
+            <li>ESCP_Egg_Sload</li>
           </thingDefs>
         </filter>
       </fixedParams>
@@ -132,6 +134,10 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
     </disallowedMemes>
+	<disallowedPrecepts>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+	</disallowedPrecepts>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>40</configurationListOrderPriority>
   </FactionDef>

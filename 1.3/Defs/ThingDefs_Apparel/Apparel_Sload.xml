@@ -32,6 +32,10 @@
 		  <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1.5</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+		  <SocialImpact>0.15</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.15</SlaveSuppressionOffset>
+		</equippedStatOffsets>
 		<apparel>
 		  <bodyPartGroups>
 			<li>Torso</li>
@@ -92,6 +96,7 @@
 		<equippedStatOffsets>
 		  <MoveSpeed>-0.4</MoveSpeed>
 		  <SocialImpact>0.3</SocialImpact>
+		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.30</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
 		  <bodyPartGroups>
