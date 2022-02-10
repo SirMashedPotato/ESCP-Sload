@@ -28,6 +28,7 @@
 		  <li Class="ESCP_RaceTools.CompProperties_SloadThrallCreate">
 			<skill>Intellectual</skill>
 			<hediff>ESCP_SloadThrallPassive</hediff>
+			<disablerPrecept>ESCP_SloadThrallOpinion_Heretical</disablerPrecept>
 			<levelRequirement>
 				<li>0</li>
 				<li>6</li>
