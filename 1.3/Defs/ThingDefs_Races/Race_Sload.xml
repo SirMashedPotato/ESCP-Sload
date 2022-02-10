@@ -8,6 +8,7 @@
 		<modExtensions>
 			<li Class="ESCP_RaceTools.RaceProperties">
 				<eventOnDeath>ESCP_KilledSload</eventOnDeath>
+				<sloadThrallImmune>true</sloadThrallImmune>
             </li>
 		</modExtensions>
 		
@@ -23,8 +24,10 @@
 			</li>
 			<li Class="ESCP_RaceTools.CompProperties_GiveAbilityOnCreation">
 				<abilitiesList>
-
+					<li>ESCP_SloadThrall_Create</li>
 				</abilitiesList>
+			</li>
+			<li Class="ESCP_RaceTools.CompProperties_SloadThralls">
 			</li>
 			
 		</comps>
@@ -53,7 +56,7 @@
 
 		<race>
 			<hasGenders>false</hasGenders>
-			<deathActionWorkerClass>ESCP_RaceTools.DeathActionWorker_HistoryEventOnDeath</deathActionWorkerClass>
+			<deathActionWorkerClass>ESCP_RaceTools.DeathActionWorker_Sload</deathActionWorkerClass>
 			<fleshType>ESCP_FleshSload</fleshType>
 			<bloodDef>ESCP_Filth_BloodSload</bloodDef>
 			<lifeExpectancy>300</lifeExpectancy>
@@ -339,6 +342,9 @@
 				<relationChanceModifierFiance>0</relationChanceModifierFiance>
 				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
 			</relationSettings>
 			
 			<raceRestriction>

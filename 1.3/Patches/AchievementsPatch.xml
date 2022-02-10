@@ -34,29 +34,10 @@
 						<AchievementsExpanded.AchievementDef>
 							<defName>ESCP_AchievementSload_SloadColonists</defName>
 							<label>Sload Supremacy</label>
-							<description>Have 8 Sload in your colony at the same time</description>
+							<description>Have 12 Sload in your colony at the same time</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
 							<tab>ESCP_AchievementsTab</tab>
 							<tracker Class="AchievementsExpanded.RaceDefTracker">
-								<raceDefs>
-									<li>
-										<key>ESCP_SloadRace</key>
-										<value>8</value>
-									</li>
-								</raceDefs>
-							</tracker>
-
-							<texPath>Achievements/ESCP_AchievementSload_SloadColonists</texPath>
-							<points>25</points>
-						</AchievementsExpanded.AchievementDef>
-						<!--
-						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementSload_SloadThralls</defName>
-							<label>N'Gasta! Kvata! Kvakis!</label>
-							<description>Have 12 Sload thralls in your colony at the same time</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
-							<tab>ESCP_AchievementsTab</tab>
-							<tracker Class="AchievementsExpanded.RaceDefTracker">	Probably custom tracker
 								<raceDefs>
 									<li>
 										<key>ESCP_SloadRace</key>
@@ -65,10 +46,40 @@
 								</raceDefs>
 							</tracker>
 
+							<texPath>Achievements/ESCP_AchievementSload_SloadColonists</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementSload_SloadFirstThrall</defName>
+							<label>EnThralling</label>
+							<description>Have a Sload create their first thrall</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>ESCP_SloadThrallPassive</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementSload_SloadFirstThrall</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementSload_SloadThralls</defName>
+							<label>N'Gasta! Kvata! Kvakis!</label>
+							<description>Create your 25th Sload thrall</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>ESCP_SloadThrallPassive</def>
+								<count>25</count>
+							</tracker>
+
 							<texPath>Achievements/ESCP_AchievementSload_SloadThralls</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
-						-->
+	
 						<!-- Crafting / Items -->
 						
 						<AchievementsExpanded.AchievementDef>
