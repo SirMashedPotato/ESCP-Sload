@@ -25,7 +25,7 @@
 							<label>Sload Joins</label>
 							<tab>ESCP_AchievementsTab</tab>
 							
-							<cost>200</cost>
+							<cost>250</cost>
 							<incident>ESCP_SloadJoins</incident>
 						</AchievementsExpanded.Reward_MapIncident>
 						
