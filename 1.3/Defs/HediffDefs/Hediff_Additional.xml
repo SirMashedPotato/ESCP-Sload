@@ -5,7 +5,7 @@
 		<defName>ESCP_SloadThrallPassive</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Sload thrall</label>
-		<description>A corpse puppeted by a Sload. While the corpse is technically alive again, the mind is barely consciousness, and effectively simply an extension of its masters.\n\nDisables almost all needs and thoughts, as well as providing complete immunity to pain.</description>
+		<description>A corpse puppeteered by a Sload. While the corpse is technically alive again, the mind is barely consciousness, and effectively simply an extension of its masters.\n\nDisables almost all needs and thoughts, as well as providing complete immunity to pain.</description>
 		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -22,6 +22,8 @@
 			<li>DrugDesire</li>
 			<li>RoomSize</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">Authority</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Anonymity</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Corruption</li>
 		</disablesNeeds>
 		<comps>
 		  <li>

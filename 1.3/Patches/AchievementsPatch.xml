@@ -111,6 +111,38 @@
 							<texPath>Achievements/ESCP_AchievementSload_SloadSoapCollector</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
+						
+						<!-- Thrassian Plague -->
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementSload_ThrassianPlague</defName>
+							<label>From Thras, With Love</label>
+							<description>Anger a Sload faction, and have them infect your colonists with the Thrassian Plague</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.IncidentTracker">
+								<def>ESCP_Disease_ThrassianPlague</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementSload_ThrassianPlague</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementSload_ThrassianDeath</defName>
+							<label>At Least They Didn't Die Hungry?</label>
+							<description>Have a pawn die of the Thrassian Plague</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffDeathTracker">
+								<def>ESCP_ThrassianPlague</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementSload_ThrassianDeath</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
 
 						<!-- Kills -->
 
