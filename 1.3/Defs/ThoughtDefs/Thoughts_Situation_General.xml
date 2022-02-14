@@ -5,7 +5,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_SloadLeatherApparelSad</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadLeatherApparel</workerClass>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -30,11 +30,6 @@
 		  </li>
 		</stages>
 		<nullifyingTraits>
-		<!--
-		  <li>Psychopath</li>
-		  <li>Bloodlust</li>
-		  <li>Cannibal</li>
-		-->
 		</nullifyingTraits>
 	</ThoughtDef>
 	

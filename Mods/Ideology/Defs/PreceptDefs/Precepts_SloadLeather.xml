@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>ESCP_SloadLeather</defName>
+		<label>Sload leather</label>
+		<iconPath>UI/Issues/ESCP_SloadLeather</iconPath>
+	</IssueDef>
+	
+	<!-- Divine -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadLeather_Divine</defName>
+		<issue>ESCP_SloadLeather</issue>
+		<label>divine</label>
+		<description>Sloads are divine creatures, to wear the skin of one is the only way to feel a fraction of their power!</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadLeatherApparel_Divine</thought>
+			<description>Sload leather apparel</description>
+			<tooltipShowMoodRange>true</tooltipShowMoodRange>
+		  </li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>ESCP_SloadLeatherApparel_Divine</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>Sload leather {0}</label>
+			<description>The way it glides across my skin, simply divine!</description>
+			<baseMoodEffect>4</baseMoodEffect>
+		  </li>
+		  <li>
+			<label>Sload leather {0} (+1)</label>
+			<description>The smell, what a glorious smell!</description>
+			<baseMoodEffect>8</baseMoodEffect>
+		  </li>
+		  <li>
+			<label>Sload leather {0} (+2)</label>
+			<description>What glorious clothes!</description>
+			<baseMoodEffect>12</baseMoodEffect>
+		  </li>
+		  <li>
+			<label>Sload leather {0} etc</label>
+			<description>I feel like a Sload!</description>
+			<baseMoodEffect>20</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Heretical -->
+	
+	<PreceptDef>
+		<defName>ESCP_SloadLeather_Heretical</defName>
+		<issue>ESCP_SloadLeather</issue>
+		<label>heretical</label>
+		<description>To skin a Sload is already a grave sin. But to then wear that skin as clothes! Unforgivable!</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+		  <li Class="PreceptComp_SituationalThought">
+			<thought>ESCP_SloadLeatherApparel_Heretical</thought>
+			<description>Sload leather apparel</description>
+			<tooltipShowMoodRange>true</tooltipShowMoodRange>
+		  </li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>ESCP_SloadLeatherApparel_Heretical</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		  <li>
+			<label>Sload leather {0}</label>
+			<description>How could I wear this?</description>
+			<baseMoodEffect>-4</baseMoodEffect>
+		  </li>
+		  <li>
+			<label>Sload leather {0} (+1)</label>
+			<description>I'm a disgrace!</description>
+			<baseMoodEffect>-8</baseMoodEffect>
+		  </li>
+		  <li>
+			<label>Sload leather {0} (+2)</label>
+			<description>These clothes, the poor Sloads that were hurt to make this!</description>
+			<baseMoodEffect>-12</baseMoodEffect>
+		  </li>
+		  <li>
+			<label>Sload leather {0} etc</label>
+			<description>I should be burnt at a stake!</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

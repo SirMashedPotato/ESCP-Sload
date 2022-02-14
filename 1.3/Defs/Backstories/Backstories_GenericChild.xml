@@ -21,6 +21,9 @@
 		</workDisables>
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
+		<forcedHediffs>
+			<li>ESCP_SloadDiseaseImmunity</li>
+		</forcedHediffs>
 	</AlienRace.BackstoryDef>
 	
 </Defs>

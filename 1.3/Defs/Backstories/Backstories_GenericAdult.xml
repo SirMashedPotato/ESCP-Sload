@@ -405,15 +405,15 @@
 			<li>Mining</li>
 			<li>ManualDumb</li>
 		</workDisables>
-		<maleCommonality>40</maleCommonality>
-		<femaleCommonality>40</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef>
 		<defName>ESCP_Sload_NecromancerBackstory</defName>
-		<title>necromancer</title>
+		<title>master necromancer</title>
 		<titleShort>necromancer</titleShort>
-		<baseDescription>[PAWN_nameDef] is highly skilled in the profane arts of necromancy, a practice despised by much of the civilised world. [PAWN_nameDef] never has to do anything themself, as they can just command a thrall to do it for them.</baseDescription>
+		<baseDescription>[PAWN_nameDef] is masterof the profane arts of necromancy, a practice despised by much of the civilised world. [PAWN_nameDef] never has to do anything themself, as they can just command a thrall to do it for them.</baseDescription>
 		<slot>Adulthood</slot>
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<spawnCategories>
@@ -436,8 +436,8 @@
 			<li>ManualDumb</li>
 			<li>Caring</li>
 		</workDisables>
-		<maleCommonality>10</maleCommonality>
-		<femaleCommonality>10</femaleCommonality>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	
 </Defs>

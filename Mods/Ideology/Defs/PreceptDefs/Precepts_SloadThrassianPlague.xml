@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IssueDef>
+		<defName>ESCP_SloadThrassianImmunity</defName>
+		<label>Thrassian Plague</label>
+		<iconPath>UI/Issues/ESCP_SloadThrassianPlague</iconPath>
+	</IssueDef>
+	
+	<!-- Divine -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadThrassianImmunity_Divine</defName>
+		<issue>ESCP_SloadThrassianImmunity</issue>
+		<label>divine</label>
+		<description>The Sload created the Thrassian Plague, so we should embrace it!</description>
+		<impact>Low</impact>
+		<statOffsets>
+			
+		</statOffsets>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>ESCP_HasThrassianPlague_Divine</thought>
+				<description>has Thrassian Plague</description>
+			</li>
+		</comps>
+		<requiredMemes>
+		  <li>ESCP_SloadicWays</li>
+		</requiredMemes>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>ESCP_HasThrassianPlague_Divine</defName>
+		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_ThrassianPlague</workerClass>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+		  <li>
+			<label>has Thrassian Plague</label>
+			<description>Thrassian Plague, what a divine gift!</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Immune -->
+
+	<PreceptDef>
+		<defName>ESCP_SloadThrassianImmunity_Immune</defName>
+		<issue>ESCP_SloadThrassianImmunity</issue>
+		<label>immune</label>
+		<description>The Sload created the Thrassian Plague, so why should we fear it?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - prevents hostile Sload factions triggering the Thrassian Plague incident.</description>
+		<impact>Low</impact>
+
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<defaultSelectionWeight>3</defaultSelectionWeight>
+
+		<requiredMemes>
+		  <li>ESCP_SloadicWays</li>
+		</requiredMemes>
+	</PreceptDef>
+
+</Defs>

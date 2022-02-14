@@ -36,5 +36,26 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>ESCP_SloadDiseaseImmunity</defName>
+		<label>Sload disease immunity</label>
+		<description>Sloads are immune to many common diseases, and some less common ones.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+			  <makeImmuneTo>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>ESCP_ThrassianPlague</li>
+			  </makeImmuneTo>
+			</li>
+      </stages>
+	</HediffDef>
 
 </Defs>

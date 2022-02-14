@@ -204,7 +204,7 @@
 							<drawForMale>true</drawForMale>
 							<drawForFemale>true</drawForFemale>
 							<colorChannel>skin</colorChannel>
-							<!--<bodyPart>Jaw</bodyPart>-->
+							<bodyPart>Tail</bodyPart>
 							<drawnInBed>true</drawnInBed>
 							<inFrontOfBody>false</inFrontOfBody>
 							<alignWithHead>false</alignWithHead>
