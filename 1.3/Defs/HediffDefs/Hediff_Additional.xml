@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Thrall -->
+
 	<HediffDef>
 		<defName>ESCP_SloadThrallPassive</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Sload thrall</label>
-		<description>A corpse puppeteered by a Sload. While the corpse is technically alive again, the mind is barely consciousness, and effectively simply an extension of its masters.\n\nDisables almost all needs and thoughts, as well as providing complete immunity to pain.</description>
+		<description>A corpse puppeteered by a Sload. While the corpse is technically alive again, the mind is barely consciousness, and effectively simply an extension of its masters.\n\nDisables almost all needs and thoughts, as well as providing complete immunity to pain. While thralls will not improve skills, their skill level will not decay over time.</description>
 		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
+		<!--	Now, mostly, done through Harmony patches, because doing it this way apparently breaks shit -->
 		<disablesNeeds>
+			<!--
 			<li>Mood</li>
 			<li>Food</li>
 			<li>Rest</li>
@@ -24,7 +28,9 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">Authority</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Anonymity</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Corruption</li>
+			-->
 		</disablesNeeds>
+
 		<comps>
 		  <li>
 			<compClass>ESCP_RaceTools.HediffComp_SloadThrall</compClass>
@@ -33,9 +39,22 @@
 		<stages>
 			<li>
 				<painOffset>-9.99</painOffset>
+				<makeImmuneTo>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>ESCP_ThrassianPlague</li>
+				</makeImmuneTo>
+				<statOffsets>
+					<ImmunityGainSpeed>3</ImmunityGainSpeed>
+					<ToxicSensitivity>-0.50</ToxicSensitivity>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<!-- Sload -->
 	
 	<HediffDef>
 		<defName>ESCP_SloadDiseaseImmunity</defName>
@@ -54,6 +73,30 @@
 					<li>SleepingSickness</li>
 					<li>ESCP_ThrassianPlague</li>
 			  </makeImmuneTo>
+			</li>
+      </stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>ESCP_SloadPlagueLord</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Thrassian plague lord</label>
+		<description>Intense study of diseases can occasionally give Sloads great control over plagues.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="ESCP_RaceTools.HediffCompProperties_AddAbility">
+				<abilityDef>ESCP_SloadPlague_Release</abilityDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>3</ImmunityGainSpeed>
+					<ToxicSensitivity>-0.25</ToxicSensitivity>
+				</statOffsets>
 			</li>
       </stages>
 	</HediffDef>

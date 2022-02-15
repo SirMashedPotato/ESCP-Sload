@@ -9,7 +9,7 @@
 	<AbilityDef>
 		<defName>ESCP_SloadThrall_Create</defName>
 		<label>create thrall</label>
-		<description>Puppeteer a fresh humanlike corpse, turning it into a thrall. Thralls feel no emotions, and have no needs. The connection will be severed if the controlling Sload is downed or killed.</description>
+		<description>Puppeteer a fresh corpse, turning it into a thrall. Thralls feel no emotions, and have no needs. The connection will be severed if the controlling Sload is downed or killed.</description>
 		<iconPath>UI/Abilities/ESCP_SloadCreateThrall</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/ESCP_SloadCreateThrall</warmupMoteSocialSymbol>
 		

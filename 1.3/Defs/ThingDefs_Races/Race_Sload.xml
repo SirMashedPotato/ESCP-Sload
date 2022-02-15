@@ -9,6 +9,7 @@
 			<li Class="ESCP_RaceTools.RaceProperties">
 				<eventOnDeath>ESCP_KilledSload</eventOnDeath>
 				<sloadThrallImmune>true</sloadThrallImmune>
+				<thrassianPlagueImmune>true</thrassianPlagueImmune>
             </li>
 		</modExtensions>
 		
@@ -332,6 +333,11 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Major</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Grand</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Core</li>
+					<!-- Weather thoughts -->
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_ashCovered</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_outsideInBlightStorm</li>
+					<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_outsideInAcidWeather</li>
+					<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_outsideInFireInferno</li>
 				</canStillReceiveThoughts>
 				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
 			</thoughtSettings>

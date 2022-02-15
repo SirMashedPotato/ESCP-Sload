@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseGas">
+		<defName>ESCP_Gas_ThrassianPlague</defName>
+		<thingClass>ESCP_RaceTools.Gas_ThrassianPlague</thingClass>
+		<label>Thrassian Plague miasma</label>
+		<graphicData>
+		  <texPath>Things/Gas/Puff</texPath>
+		  <drawSize>2.2</drawSize>
+		  <color>(106,57,132,50)</color>
+		</graphicData>
+		<gas>
+		  <expireSeconds>16~32</expireSeconds>
+		  <blockTurretTracking>true</blockTurretTracking>
+		  <accuracyPenalty>0.7</accuracyPenalty>
+		  <rotationSpeed>10</rotationSpeed>
+		</gas>
+	</ThingDef>
+ 
+</Defs>

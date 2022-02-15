@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.BackstoryDef ParentName="ESCP_BeastmasterBackstoryBase">
+		<defName>ESCP_Sload_ThrallMasterBackstory</defName>
+		<title>thrall master</title>
+		<titleShort>thrall master</titleShort>
+		<baseDescription>[PAWN_nameDef] is highly skilled at creating thralls, managing to control small armies of them at the same time. A skill [PAWN_nameDef] puts to great use.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<spawnCategories Inherit="False">
+		  <li>ESCP_SloadThrallMasterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>14</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>Firefighting</li>
+			<li>ManualSkilled</li>
+			<li>ManualDumb</li>
+			<li>Caring</li>
+		</workDisables>
+		
+	</AlienRace.BackstoryDef>
+	
+</Defs>

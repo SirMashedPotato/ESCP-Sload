@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>ESCP_SloadPlague</defName>
+		<cooldownTicks>800000</cooldownTicks>
+	</AbilityGroupDef>
+
+	<AbilityDef>
+		<defName>ESCP_SloadPlague_Release</defName>
+		<label>Thrassian miasma</label>
+		<description>Release an enormous cloud of miasma, inflicting the Thrassian Plague on anyone caught within.</description>
+		<iconPath>UI/Abilities/ESCP_SloadReleasePlague</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_SloadReleasePlague</warmupMoteSocialSymbol>
+		
+		<groupDef>ESCP_SloadPlague</groupDef>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<uiOrder>1</uiOrder>
+		<statBases>
+
+		</statBases>
+		<comps>
+		  <li Class="ESCP_RaceTools.CompProperties_ReleaseGas">
+			<gasDef>ESCP_Gas_ThrassianPlague</gasDef>
+			<radius>9</radius>
+		  </li>
+		</comps>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>15</warmupTime>
+		  <range>9.9</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+</Defs>
