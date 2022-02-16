@@ -37,6 +37,7 @@ namespace ESCP_Sload
         }
     }
 
+    //tabs, work, assign etc
     [HarmonyPatch(typeof(PawnColumnWorker_Label))]
     [HarmonyPatch("DoCell")]
     public static class PawnColumnWorker_Label_DoCell_Patch

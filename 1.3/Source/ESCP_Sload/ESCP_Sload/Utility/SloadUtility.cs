@@ -50,11 +50,15 @@ namespace ESCP_Sload
             return num;
         }
 
-        public static bool PawnIsThrall(Pawn p)
+        public static bool ThingIsThrall(Thing t)
         {
-            return p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
+            return t is Pawn p && PawnIsThrall(p);
         }
 
+        public static bool PawnIsThrall(Pawn p)
+        {
+            return p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
+        }
 
         public static string ThrallColourChanger(string str, Pawn p)
         {

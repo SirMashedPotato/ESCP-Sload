@@ -70,8 +70,15 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="Gas\Gas_ThrassianPlague.cs" />
     <Compile Include="Harmony\Harmony.cs" />
-    <Compile Include="Harmony\SloadThrallColours.cs" />
-    <Compile Include="Harmony\SloadThralls.cs" />
+    <Compile Include="Harmony\SloadThrall_Colours.cs" />
+    <Compile Include="Harmony\SloadThrall_Mating.cs" />
+    <Compile Include="Harmony\SloadThrall_Learning.cs" />
+    <Compile Include="Harmony\SloadThrall_Misc.cs" />
+    <Compile Include="Harmony\SloadThrall_Needs.cs" />
+    <Compile Include="Harmony\SloadThrall_ResourceProduction.cs" />
+    <Compile Include="Harmony\SloadThrall_Thoughts.cs" />
+    <Compile Include="Harmony\SloadThrall_Trading.cs" />
+    <Compile Include="Harmony\SloadThrall_Training.cs" />
     <Compile Include="HediffComp\HediffComp_SloadThrall.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_Sload.cs" />
     <Compile Include="Ideo\ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInColony.cs" />
