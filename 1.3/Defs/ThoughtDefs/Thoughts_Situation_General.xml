@@ -5,7 +5,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_SloadLeatherApparelSad</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -37,7 +37,7 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadThought</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadThought</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_SloadThought</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>

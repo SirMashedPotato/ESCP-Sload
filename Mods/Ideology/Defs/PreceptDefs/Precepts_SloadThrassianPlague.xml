@@ -34,7 +34,7 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_HasThrassianPlague_Divine</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_ThrassianPlague</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_ThrassianPlague</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>

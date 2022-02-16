@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BaseGas">
 		<defName>ESCP_Gas_ThrassianPlague</defName>
-		<thingClass>ESCP_RaceTools.Gas_ThrassianPlague</thingClass>
+		<thingClass>ESCP_Sload.Gas_ThrassianPlague</thingClass>
 		<label>Thrassian Plague miasma</label>
 		<graphicData>
 		  <texPath>Things/Gas/Puff</texPath>

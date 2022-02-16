@@ -28,7 +28,7 @@
 					<li>ESCP_SloadThrall_Create</li>
 				</abilitiesList>
 			</li>
-			<li Class="ESCP_RaceTools.CompProperties_SloadThralls">
+			<li Class="ESCP_Sload.CompProperties_SloadThralls">
 			</li>
 			
 		</comps>
@@ -57,7 +57,7 @@
 
 		<race>
 			<hasGenders>false</hasGenders>
-			<deathActionWorkerClass>ESCP_RaceTools.DeathActionWorker_Sload</deathActionWorkerClass>
+			<deathActionWorkerClass>ESCP_Sload.DeathActionWorker_Sload</deathActionWorkerClass>
 			<fleshType>ESCP_FleshSload</fleshType>
 			<bloodDef>ESCP_Filth_BloodSload</bloodDef>
 			<lifeExpectancy>300</lifeExpectancy>

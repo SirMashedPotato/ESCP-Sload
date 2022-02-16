@@ -29,7 +29,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_SloadLeatherApparel_Divine</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -77,7 +77,7 @@
 
 	<ThoughtDef>
 		<defName>ESCP_SloadLeatherApparel_Heretical</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Precept_SloadLeatherApparel</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>

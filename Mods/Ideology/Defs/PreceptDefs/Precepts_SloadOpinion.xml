@@ -45,8 +45,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Reviled_Faction</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -59,8 +59,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Reviled_Map</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInMap</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -87,7 +87,7 @@
 	<ThoughtDef>
 		<defName>ESCP_SloadsOpinion_Reviled</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_SloadOpinionThought</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -130,8 +130,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Despised_Faction</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -144,8 +144,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Despised_Map</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInMap</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -159,7 +159,7 @@
 	<ThoughtDef>
 		<defName>ESCP_SloadsOpinion_Despised</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_SloadOpinionThought</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -202,8 +202,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Hated_Faction</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -216,8 +216,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Hated_Map</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -231,7 +231,7 @@
 	<ThoughtDef>
 		<defName>ESCP_SloadsOpinion_Hated</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_SloadOpinionThought</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>
@@ -302,7 +302,7 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_ExaltedNone</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_NoSloadInColony</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_NoSloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -315,7 +315,7 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_ExaltedNoneMap</defName>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_NoSloadInMap</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_NoSloadInMap</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -328,8 +328,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_Exalted</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInColony</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInColony</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInColony</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -342,8 +342,8 @@
 	
 	<ThoughtDef>
 		<defName>ESCP_SloadsInColony_ExaltedMap</defName>
-		<thoughtClass>ESCP_RaceTools.Thought_Situational_Precept_SloadInMap</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
+		<thoughtClass>ESCP_Sload.Thought_Situational_Precept_SloadInMap</thoughtClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_Situational_Precept_SloadInMap</workerClass>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 		  <li>
@@ -370,7 +370,7 @@
 	<ThoughtDef>
 		<defName>ESCP_SloadsOpinion_Exalted</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>ESCP_RaceTools.ThoughtWorker_SloadOpinionThought</workerClass>
+		<workerClass>ESCP_Sload.ThoughtWorker_SloadOpinionThought</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 		  <li>

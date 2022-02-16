@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+	<!-- General -->
+
+	<ESCP_Sload_ModName>ESCP - Sload</ESCP_Sload_ModName>
+
+	<ESCP_PageSloadThralls>Sload Thralls</ESCP_PageSloadThralls>
+	<ESCP_PageSloadThrallsReset>Reset thrall settings</ESCP_PageSloadThrallsReset>
+	
+	<!-- Settings -->
+
+	<ESCP_RaceTools_SloadThrassianPlagueIncident>Enable the Thrassian Plague incident.</ESCP_RaceTools_SloadThrassianPlagueIncident>
+	<ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip>Sload do not raid the player. Being hostile to a Sload faction will instead enable the Thrassian Plague incident, but only if this setting is enabled.</ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip>
+
+	<!-- Sload Thralls -->
+	
+	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names are purple.</ESCP_RaceTools_SloadThrallNamesArePurple>
+	
+	<ESCP_RaceTools_SloadThrallDisableNeeds>Disable Sload thrall needs.</ESCP_RaceTools_SloadThrallDisableNeeds>
+	<ESCP_RaceTools_SloadThrallDisableMoods>Disable Sload thrall thoughts.</ESCP_RaceTools_SloadThrallDisableMoods>
+	<ESCP_RaceTools_SloadThrallIdeoCertainty>Disable Sload thrall Ideology certainty decay.</ESCP_RaceTools_SloadThrallIdeoCertainty>
+	<ESCP_RaceTools_SloadThrallSkillLearning>Disable Sload thrall skill learning.</ESCP_RaceTools_SloadThrallSkillLearning>
+	<ESCP_RaceTools_SloadThrallSkillDecay>Disable Sload thrall skill decay.</ESCP_RaceTools_SloadThrallSkillDecay>
+	
+	<ESCP_RaceTools_SloadThrallMilkable>Disable Sload thralls being milkable.</ESCP_RaceTools_SloadThrallMilkable>
+	<ESCP_RaceTools_SloadThrallShearable>Disable Sload thralls being shearable.</ESCP_RaceTools_SloadThrallShearable>
+	<ESCP_RaceTools_SloadThrallEggLaying>Disable Sload thralls laying eggs.</ESCP_RaceTools_SloadThrallEggLaying>
+	<ESCP_RaceTools_SloadThrallTrainable>Disable Sload thralls being trainable.</ESCP_RaceTools_SloadThrallTrainable>
+	<ESCP_RaceTools_SloadThrallTrainableDecay>Disable Sload thrall trainable decay.</ESCP_RaceTools_SloadThrallTrainableDecay>
+	<ESCP_RaceTools_SloadThrallMating>Disable Sload thrall mating.</ESCP_RaceTools_SloadThrallMating>
+
+</LanguageData>

@@ -25,7 +25,7 @@
 
 		</statBases>
 		<comps>
-		  <li Class="ESCP_RaceTools.CompProperties_SloadThrallCreate">
+		  <li Class="ESCP_Sload.CompProperties_SloadThrallCreate">
 			<skill>Intellectual</skill>
 			<hediff>ESCP_SloadThrallPassive</hediff>
 			<disablerPrecept>ESCP_SloadThrallOpinion_Heretical</disablerPrecept>
@@ -53,7 +53,7 @@
 		  <drawAimPie>False</drawAimPie>
 		  <range>-1</range>
 		  <warmupTime>10.0</warmupTime>
-		  <verbClass>ESCP_RaceTools.Verb_CastAbilityTouch_SloadThrallCreate</verbClass>
+		  <verbClass>ESCP_Sload.Verb_CastAbilityTouch_SloadThrallCreate</verbClass>
 		   <targetParams>
 			<canTargetItems>true</canTargetItems>
 			<canTargetSelf>false</canTargetSelf>

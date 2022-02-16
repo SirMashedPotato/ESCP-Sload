@@ -33,7 +33,7 @@
 
 		<comps>
 		  <li>
-			<compClass>ESCP_RaceTools.HediffComp_SloadThrall</compClass>
+			<compClass>ESCP_Sload.HediffComp_SloadThrall</compClass>
 		  </li>
 		</comps>
 		<stages>
