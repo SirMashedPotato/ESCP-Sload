@@ -70,6 +70,7 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="Gas\Gas_ThrassianPlague.cs" />
     <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="Harmony\SloadThrallColours.cs" />
     <Compile Include="Harmony\SloadThralls.cs" />
     <Compile Include="HediffComp\HediffComp_SloadThrall.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_Sload.cs" />

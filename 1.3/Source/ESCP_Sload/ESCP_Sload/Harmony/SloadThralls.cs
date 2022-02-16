@@ -14,22 +14,6 @@ using ESCP_RaceTools;
 
 namespace ESCP_Sload
 {
-    //Make thrall names purple, becuase why not?
-    [HarmonyPatch(typeof(PawnNameColorUtility))]
-    [HarmonyPatch("PawnNameColorOf")]
-    public static class PawnNameColorUtility_PawnNameColorOf_Patch
-    {
-        [HarmonyPrefix]
-        public static bool PawnNameColorOf_SloadThrallFix(ref Pawn pawn, ref Color __result)
-        {
-            if (SloadUtility.PawnIsThrall(pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesArePurple())
-            {
-                __result = new Color(0.8f, 0.6f, 1.0f);
-                return false;
-            }
-            return true;
-        }
-    }
 
     /*
      * Basically just a ton of patches to ensure RimWorld doesn't throw a shit fit when checking for thrall needs 
