@@ -60,14 +60,5 @@ namespace ESCP_Sload
             return p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
         }
 
-        public static string ThrallColourChanger(string str, Pawn p)
-        {
-            if (SloadUtility.PawnIsThrall(p))
-            {
-                str = str.Colorize(PawnNameColorUtility.PawnNameColorOf(p));
-            }
-            return str;
-        }
-
     }
 }

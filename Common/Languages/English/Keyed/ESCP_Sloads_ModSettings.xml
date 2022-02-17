@@ -18,6 +18,7 @@
 	<!-- Sload Thralls -->
 	
 	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names are purple.</ESCP_RaceTools_SloadThrallNamesArePurple>
+	<ESCP_RaceTools_SloadThrallNamesArePurple_Tooltip>Also disables related transpilers, however this needs a restart to take effect.</ESCP_RaceTools_SloadThrallNamesArePurple_Tooltip>
 	
 	<ESCP_RaceTools_SloadThrallDisableNeeds>Disable Sload thrall needs.</ESCP_RaceTools_SloadThrallDisableNeeds>
 	<ESCP_RaceTools_SloadThrallDisableMoods>Disable Sload thrall thoughts.</ESCP_RaceTools_SloadThrallDisableMoods>

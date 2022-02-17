@@ -61,7 +61,13 @@ namespace ESCP_Sload
 			}
 		}
 
-		public override string CompLabelInBracketsExtra => master != null ? master.Name.ToString() : null;
+        public override void CompPostPostRemoved()
+        {
+			master.GetComp<Comp_SloadThralls>().RemoveThrall(base.Pawn);
+			base.CompPostPostRemoved();
+		}
+
+        public override string CompLabelInBracketsExtra => master != null ? master.Name.ToString() : null;
 
 		private Pawn master = null;
 	}
