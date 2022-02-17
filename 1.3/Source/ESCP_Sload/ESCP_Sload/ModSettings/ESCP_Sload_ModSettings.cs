@@ -22,6 +22,8 @@ namespace ESCP_Sload
         public bool ESCP_RaceTools_SloadThrallMating = ESCP_RaceTools_SloadThrallMating_def;
 
         public bool ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
+        public bool ESCP_RaceTools_SloadThrallNamesColourTranspilerA = ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def;
+        public bool ESCP_RaceTools_SloadThrallNamesColourTranspilerB = ESCP_RaceTools_SloadThrallNamesColourTranspilerB_def;
 
         //Defaults
 
@@ -43,6 +45,8 @@ namespace ESCP_Sload
         private static readonly bool ESCP_RaceTools_SloadThrallMating_def = true;
 
         private static readonly bool ESCP_RaceTools_SloadThrallNamesArePurple_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallNamesColourTranspilerB_def = true;
 
 
 
@@ -67,6 +71,8 @@ namespace ESCP_Sload
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallMating, "ESCP_RaceTools_SloadThrallMating", ESCP_RaceTools_SloadThrallMating_def);
 
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallNamesArePurple, "ESCP_RaceTools_SloadThrallNamesArePurple", ESCP_RaceTools_SloadThrallNamesArePurple_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallNamesColourTranspilerA, "ESCP_RaceTools_SloadThrallNamesColourTranspilerA", ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallNamesColourTranspilerB, "ESCP_RaceTools_SloadThrallNamesColourTranspilerB", ESCP_RaceTools_SloadThrallNamesColourTranspilerB_def);
 
             base.ExposeData();
         }
@@ -100,6 +106,8 @@ namespace ESCP_Sload
             settings.ESCP_RaceTools_SloadThrallMating = ESCP_RaceTools_SloadThrallMating_def;
 
             settings.ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
+            settings.ESCP_RaceTools_SloadThrallNamesColourTranspilerA = ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def;
+            settings.ESCP_RaceTools_SloadThrallNamesColourTranspilerB = ESCP_RaceTools_SloadThrallNamesColourTranspilerB_def;
         }
     }
 }

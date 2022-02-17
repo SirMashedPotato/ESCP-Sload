@@ -61,9 +61,21 @@ namespace ESCP_Sload
             return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallMating;
         }
 
+        /**/
+
         public static bool ESCP_RaceTools_SloadThrallNamesArePurple()
         {
             return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallNamesArePurple;
+        }
+
+        public static bool ESCP_RaceTools_SloadThrallNamesColourTranspilerA()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallNamesColourTranspilerA;
+        }
+
+        public static bool ESCP_RaceTools_SloadThrallNamesColourTranspilerB()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallNamesColourTranspilerB;
         }
     }
 }

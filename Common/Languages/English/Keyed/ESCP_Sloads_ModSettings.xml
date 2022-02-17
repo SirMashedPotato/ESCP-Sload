@@ -18,7 +18,11 @@
 	<!-- Sload Thralls -->
 	
 	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names are purple.</ESCP_RaceTools_SloadThrallNamesArePurple>
-	<ESCP_RaceTools_SloadThrallNamesArePurple_Tooltip>Also disables related transpilers, however this needs a restart to take effect.</ESCP_RaceTools_SloadThrallNamesArePurple_Tooltip>
+	<ESCP_RaceTools_SloadThrallNamesColourTranspilerA>Enable the Harmony transpiler for pawn tabs, allowing thrall names to appear purple.</ESCP_RaceTools_SloadThrallNamesColourTranspilerA>
+	<ESCP_RaceTools_SloadThrallNamesColourTranspilerB>Enable the Harmony transpiler for travel dialogue, allowing thrall names to appear purple.</ESCP_RaceTools_SloadThrallNamesColourTranspilerB>
+	
+	<ESCP_RaceTools_SloadThrallNamesColourTranspilerTooltip>Injects an additional check into vanilla code, disable if it causes issues. As it's a transpiler, you will need to restart the game for changes to take effect.</ESCP_RaceTools_SloadThrallNamesColourTranspilerTooltip>
+
 	
 	<ESCP_RaceTools_SloadThrallDisableNeeds>Disable Sload thrall needs.</ESCP_RaceTools_SloadThrallDisableNeeds>
 	<ESCP_RaceTools_SloadThrallDisableMoods>Disable Sload thrall thoughts.</ESCP_RaceTools_SloadThrallDisableMoods>

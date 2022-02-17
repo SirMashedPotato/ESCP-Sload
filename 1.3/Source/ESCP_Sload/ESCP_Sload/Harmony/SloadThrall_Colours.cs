@@ -61,7 +61,7 @@ namespace ESCP_Sload
         [HarmonyTranspiler]
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesArePurple())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesColourTranspilerA())
             {
                 var codes = new List<CodeInstruction>(instructions);
                 //used for checking for the right function call
@@ -99,7 +99,7 @@ namespace ESCP_Sload
         [HarmonyTranspiler]
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesArePurple())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesColourTranspilerB())
             {
                 var codes = new List<CodeInstruction>(instructions);
                 //used for checking for the right function call
