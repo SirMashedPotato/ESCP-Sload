@@ -23,5 +23,20 @@ namespace ESCP_Sload
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
+
+    [HarmonyPatch(typeof(Pawn_PlayerSettings))]
+    public static class Pawn_PlayerSettings_UsesConfigurableHostilityResponse_Patch
+    {
+        [HarmonyPostfix]
+        [HarmonyPatch("UsesConfigurableHostilityResponse", MethodType.Getter)]
+        public static void UsesConfigurableHostilityResponse_ThrallPatch(ref bool __result, ref Pawn ___pawn)
+        {
+            if (SloadUtility.PawnIsThrall(___pawn) && ___pawn.RaceProps.Animal)
+            {
+                __result = true;
+                return;
+            }
+        }
+    }
 }
 

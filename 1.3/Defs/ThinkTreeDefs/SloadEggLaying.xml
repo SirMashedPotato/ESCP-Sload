@@ -2,13 +2,13 @@
 <Defs>
 
 	<ThinkTreeDef>
-		<defName>ESCP_SloadLayEggs</defName>
+		<defName>ESCP_SloadLayEggs</defName>	<!-- Change -->
 		<insertTag>Humanlike_PostMain</insertTag>
 		<insertPriority>1</insertPriority>
 		<thinkRoot Class="ThinkNode_ConditionalPlayerControlledColonist">
 			<subNodes>
-				<li Class="ESCP_RaceTools.ThinkNode_ConditionalThingDef">
-				  <thingDef>ESCP_SloadRace</thingDef>
+				<li Class="ThinkNode_ThingDef.ThinkNode_ConditionalThingDef">
+				  <thingDef>ESCP_SloadRace</thingDef>	<!-- Change -->
 				  <subNodes>
 						<li Class="JobGiver_LayEgg" />
 				   </subNodes>

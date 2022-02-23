@@ -59,10 +59,15 @@
       <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VFECore">
+      <HintPath>I:\Steam_Library\steamapps\workshop\content\294100\2023507013\1.3\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompAbility\CompAbilityEffect_SloadThrallCreate.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_SloadThrallCreate.cs" />
+    <Compile Include="Comp\CompDraftableThrall.cs" />
     <Compile Include="Comp\Comp_SloadThralls.cs" />
     <Compile Include="Comp\Properties\CompProperties_SloadThralls.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_Sload.cs" />
