@@ -38,6 +38,8 @@ namespace ESCP_Sload
 			base.Pawn.health.RemoveHediff(this.parent);
 		}
 
+		private static List<IntVec3> tmpCells = new List<IntVec3>();
+
 		public override IEnumerable<Gizmo> CompGetGizmos()
 		{
 			yield return new Command_Action
@@ -50,6 +52,32 @@ namespace ESCP_Sload
 					this.Pawn.Kill(null);
 				}
 			};
+
+			if (SloadUtility.SloadIsPlagueLord(Master))
+			{
+				yield return new Command_Action
+				{
+					defaultLabel = "ESCP_SloadThrall_KillThrall_PlagueLord".Translate(),
+					defaultDesc = "ESCP_SloadThrall_KillThrall_PlagueLord_Tooltip".Translate(this.master.Name),
+					icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_SloadDisbandThrall_Miasma", true),
+					onHover = delegate ()
+                    {
+						tmpCells.Clear();
+						int num = GenRadial.NumCellsInRadius(3);
+						for (int i = 0; i < num; i++)
+						{
+							IntVec3 intVec = this.Pawn.Position + GenRadial.RadialPattern[i];
+							tmpCells.Add(intVec);
+						}
+						GenDraw.DrawFieldEdges(tmpCells);
+					},
+					action = delegate ()
+					{
+						GenExplosion.DoExplosion(this.Pawn.Position, this.Pawn.Map, 3, DamageDefOf.Extinguish, parent.pawn, -1, -1f, null, null, null, null, ThingDefOf.ESCP_Gas_ThrassianPlague, 1f, 1, false, null, 0f, 1, 0f, false, null, null);
+						this.Pawn.Kill(null);
+					}
+				};
+			}
 		}
 
 		public override void CompPostTick(ref float severityAdjustment)

@@ -60,5 +60,10 @@ namespace ESCP_Sload
             return p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
         }
 
+        public static bool SloadIsPlagueLord(Pawn p)
+        {
+            return p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadPlagueLord) != null;
+        }
+
     }
 }

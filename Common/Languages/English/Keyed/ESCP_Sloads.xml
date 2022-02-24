@@ -11,7 +11,13 @@
 	<!-- Sload thralls -->
 	<ESCP_SloadThrall_KillThrall>Sever Connection</ESCP_SloadThrall_KillThrall>
 	<ESCP_SloadThrall_KillThrall_Tooltip>Sever this thralls connection to {0}, effectively killing it... again.</ESCP_SloadThrall_KillThrall_Tooltip>
+	
+	<ESCP_SloadThrall_KillThrall_PlagueLord>Sever Connection (Miasma)</ESCP_SloadThrall_KillThrall_PlagueLord>
+	<ESCP_SloadThrall_KillThrall_PlagueLord_Tooltip>Release a cloud of Thrassian Miasma from this thrall, severing its connection to {0} at the same time, effectively killing it... again.</ESCP_SloadThrall_KillThrall_PlagueLord_Tooltip>
+	
 	<ESCP_SloadThrall_KillAllThrall>Sever Connections</ESCP_SloadThrall_KillAllThrall>
 	<ESCP_SloadThrall_KillAllThrall_Tooltip>Sever the connection to all thralls, effectively killing them... again.</ESCP_SloadThrall_KillAllThrall_Tooltip>
+	
 	<ESCP_SloadThrall_PreceptDisabled>due to precept: Sload Thralls (Heretical)</ESCP_SloadThrall_PreceptDisabled>
+	
 </LanguageData>
