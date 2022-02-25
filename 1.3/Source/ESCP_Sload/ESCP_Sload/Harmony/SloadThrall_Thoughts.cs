@@ -33,4 +33,20 @@ namespace ESCP_Sload
         }
     }
 
+    [HarmonyPatch(typeof(ThoughtHandler))]
+    [HarmonyPatch("GetAllMoodThoughts")]
+    public static class ThoughtHandler_GetAllMoodThoughts_Patch
+    {
+        [HarmonyPrefix]
+        public static bool GetAllMoodThoughts_SloadThrallFix(ref Pawn ___pawn, List<Thought> outThoughts)
+        {
+            if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableMoods())
+            {
+                outThoughts.Clear();
+                return false;
+            }
+            return true;
+        }
+    }
+
 }

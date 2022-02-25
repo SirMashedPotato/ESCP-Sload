@@ -16,16 +16,32 @@ namespace ESCP_Sload
 {
 
     //maxes out needs
-    [HarmonyPatch(typeof(ThoughtHandler))]
-    [HarmonyPatch("GetAllMoodThoughts")]
-    public static class ThoughtHandler_GetAllMoodThoughts_Patch
+    [HarmonyPatch(typeof(Need))]
+    class Need_CurLevel_Patch
     {
         [HarmonyPrefix]
-        public static bool GetAllMoodThoughts_SloadThrallFix(ref Pawn ___pawn, List<Thought> outThoughts)
+        [HarmonyPatch("CurLevel", MethodType.Getter)]
+        public static bool CurLevelInt_SloadThrallFix(ref Need __instance, ref Pawn ___pawn, ref float __result)
         {
-            if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableMoods())
+            if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableNeeds())
             {
-                outThoughts.Clear();
+                __result = __instance.MaxLevel;
+                return false;
+            }
+            return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(Need))]
+    class Need_CurLevelPercentage_Patch
+    {
+        [HarmonyPrefix]
+        [HarmonyPatch("CurLevelPercentage", MethodType.Getter)]
+        public static bool CurLevelPercentage_SloadThrallFix(ref Pawn ___pawn, ref float __result)
+        {
+            if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableNeeds())
+            {
+                __result = 1f;
                 return false;
             }
             return true;
