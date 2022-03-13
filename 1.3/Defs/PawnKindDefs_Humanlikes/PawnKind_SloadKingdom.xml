@@ -11,9 +11,15 @@
     <apparelTags>
 
     </apparelTags>
-	<backstoryCategories>
-		<li>ESCP_SloadBackstory</li>
-	</backstoryCategories>
+
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ESCP_SloadBackstory</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	
   </PawnKindDef>
 
   <!-- Poverty tier - penitent -->
@@ -107,15 +113,6 @@
     <weaponTags>
       <li>ESCP_SloadMelee</li>
     </weaponTags>
-  </PawnKindDef>
-  
-  <PawnKindDef ParentName="ESCP_SloadKingdomLordBase">
-    <defName>ESCP_SloadKingdom_PlagueLord</defName>
-    <label>plague lord</label>
-    <weaponTags>
-      <li>ESCP_SloadPlagueMelee</li>
-    </weaponTags>
-    <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
 
 </Defs>

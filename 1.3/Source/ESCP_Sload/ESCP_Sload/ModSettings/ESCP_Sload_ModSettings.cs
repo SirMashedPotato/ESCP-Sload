@@ -8,6 +8,8 @@ namespace ESCP_Sload
         public bool ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
 
         //Sload thralls
+        public bool ESCP_RaceTools_SloadThrallCanDryad = ESCP_RaceTools_SloadThrallCanDryad_def;
+
         public bool ESCP_RaceTools_SloadThrallDisableNeeds = ESCP_RaceTools_SloadThrallDisableNeeds_def;
         public bool ESCP_RaceTools_SloadThrallDisableMoods = ESCP_RaceTools_SloadThrallDisableMoods_def;
         public bool ESCP_RaceTools_SloadThrallIdeoCertainty = ESCP_RaceTools_SloadThrallIdeoCertainty_def;
@@ -31,6 +33,8 @@ namespace ESCP_Sload
         private static readonly bool ESCP_RaceTools_LeatherThoughtSload_def = true;
 
         //Sload thralls
+        private static readonly bool ESCP_RaceTools_SloadThrallCanDryad_def = false;
+
         private static readonly bool ESCP_RaceTools_SloadThrallDisableNeeds_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallDisableMoods_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallIdeoCertainty_def = true;
@@ -57,6 +61,8 @@ namespace ESCP_Sload
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtSload, "ESCP_RaceTools_LeatherThoughtSload", ESCP_RaceTools_LeatherThoughtSload_def);
 
             //Sload thralls
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallCanDryad, "ESCP_RaceTools_SloadThrallCanDryad", ESCP_RaceTools_SloadThrallCanDryad_def);
+
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableNeeds, "ESCP_RaceTools_SloadThrallDisableNeeds", ESCP_RaceTools_SloadThrallDisableNeeds_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableMoods, "ESCP_RaceTools_SloadThrallDisableMoods", ESCP_RaceTools_SloadThrallDisableMoods_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallIdeoCertainty, "ESCP_RaceTools_SloadThrallIdeoCertainty", ESCP_RaceTools_SloadThrallIdeoCertainty_def);
@@ -92,6 +98,8 @@ namespace ESCP_Sload
 
         public static void ResetSettings_Thrall(ESCP_Sload_ModSettings settings)
         {
+            settings.ESCP_RaceTools_SloadThrallCanDryad = ESCP_RaceTools_SloadThrallCanDryad_def;
+
             settings.ESCP_RaceTools_SloadThrallDisableNeeds = ESCP_RaceTools_SloadThrallDisableNeeds_def;
             settings.ESCP_RaceTools_SloadThrallDisableMoods = ESCP_RaceTools_SloadThrallDisableMoods_def;
             settings.ESCP_RaceTools_SloadThrallIdeoCertainty = ESCP_RaceTools_SloadThrallIdeoCertainty_def;

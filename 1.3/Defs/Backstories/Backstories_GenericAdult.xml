@@ -418,7 +418,6 @@
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<spawnCategories>
 		  <li>ESCP_SloadBackstory</li>
-		  <li>ESCP_SloadPlagueLordBackstory</li>
 		</spawnCategories>
 		<skillGains>
 			<li>

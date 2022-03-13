@@ -153,6 +153,7 @@ namespace ESCP_Sload
 
             //settings
 
+            //name colours
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallNamesArePurple".Translate(), ref settings.ESCP_RaceTools_SloadThrallNamesArePurple);
             listing_Standard.Gap();
 
@@ -160,6 +161,13 @@ namespace ESCP_Sload
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallNamesColourTranspilerB".Translate(), ref settings.ESCP_RaceTools_SloadThrallNamesColourTranspilerB, "ESCP_RaceTools_SloadThrallNamesColourTranspilerTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            //random misc disabley shite
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallCanDryad".Translate(), ref settings.ESCP_RaceTools_SloadThrallCanDryad);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

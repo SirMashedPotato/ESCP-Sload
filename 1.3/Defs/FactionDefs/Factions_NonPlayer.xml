@@ -48,7 +48,6 @@
           <Tribal_Archer>10</Tribal_Archer>
 		  <ESCP_SloadKingdom_PlagueBearer>5</ESCP_SloadKingdom_PlagueBearer>
           <ESCP_SloadKingdom_Lord>1.5</ESCP_SloadKingdom_Lord>
-          <ESCP_SloadKingdom_PlagueLord>0.5</ESCP_SloadKingdom_PlagueLord>
 	   </options>
       </li>
       <li>
@@ -60,7 +59,6 @@
 		  
           <ESCP_SloadKingdom_Subject>5</ESCP_SloadKingdom_Subject>
           <ESCP_SloadKingdom_Lord>1.5</ESCP_SloadKingdom_Lord>
-          <ESCP_SloadKingdom_PlagueLord>0.5</ESCP_SloadKingdom_PlagueLord>
         </options>
       </li>
       <li>
@@ -87,7 +85,6 @@
 		  
           <ESCP_SloadKingdom_PlagueBearer>7</ESCP_SloadKingdom_PlagueBearer>
           <ESCP_SloadKingdom_Lord>10</ESCP_SloadKingdom_Lord>
-          <ESCP_SloadKingdom_PlagueLord>5</ESCP_SloadKingdom_PlagueLord>
         </options>
       </li>
     </pawnGroupMakers>

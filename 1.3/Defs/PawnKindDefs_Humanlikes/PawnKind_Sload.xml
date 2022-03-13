@@ -5,9 +5,15 @@
 		<defName>ESCP_SloadKind</defName>
 		<label>Sload</label>
 		<race>ESCP_SloadRace</race>
-		<backstoryCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</backstoryCategories>	
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>ESCP_SloadBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.65</baseRecruitDifficulty>
 		<isFighter>false</isFighter>
@@ -37,9 +43,15 @@
 		<defName>ESCP_SloadTribalKind</defName>
 		<label>Sload tribal</label>
 		<race>ESCP_SloadRace</race>
-		<backstoryCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</backstoryCategories>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>ESCP_SloadBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<isFighter>false</isFighter>
@@ -70,9 +82,15 @@
 		<defName>ESCP_SloadMedievalKind</defName>
 		<label>Sload peasant</label>
 		<race>ESCP_SloadRace</race>
-		<backstoryCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</backstoryCategories>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>ESCP_SloadBackstory</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.80</baseRecruitDifficulty>
 		<isFighter>false</isFighter>

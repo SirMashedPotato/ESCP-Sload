@@ -31,6 +31,13 @@ namespace ESCP_Sload
 
         /**/
 
+        public static bool ESCP_RaceTools_SloadThrallCanDryad()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallCanDryad;
+        }
+
+        /**/
+
         public static bool ESCP_RaceTools_SloadThrallMilkable()
         {
             return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallMilkable;
