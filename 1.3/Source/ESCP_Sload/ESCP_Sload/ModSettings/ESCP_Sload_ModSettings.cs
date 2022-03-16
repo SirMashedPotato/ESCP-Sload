@@ -6,6 +6,8 @@ namespace ESCP_Sload
     {
         public bool ESCP_RaceTools_SloadThrassianPlagueIncident = ESCP_RaceTools_SloadThrassianPlagueIncident_def;
         public bool ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
+        public bool ESCP_RaceTools_SloadThrassianFogAlert = ESCP_RaceTools_SloadThrassianFogAlert_def;
+        public bool ESCP_RaceTools_SloadInspirations = ESCP_RaceTools_SloadInspirations_def;
 
         //Sload thralls
         public bool ESCP_RaceTools_SloadThrallCanDryad = ESCP_RaceTools_SloadThrallCanDryad_def;
@@ -22,6 +24,10 @@ namespace ESCP_Sload
         public bool ESCP_RaceTools_SloadThrallTrainable = ESCP_RaceTools_SloadThrallTrainable_def;
         public bool ESCP_RaceTools_SloadThrallTrainableDecay = ESCP_RaceTools_SloadThrallTrainableDecay_def;
         public bool ESCP_RaceTools_SloadThrallMating = ESCP_RaceTools_SloadThrallMating_def;
+        public bool ESCP_RaceTools_SloadThrallInspirations = ESCP_RaceTools_SloadThrallInspirations_def;
+
+        public bool ESCP_RaceTools_SloadThrallVEF_AnimalProducts = ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def;
+        public bool ESCP_RaceTools_SloadThrallVEF_AsexualReproduction = ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def;
 
         public bool ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
         public bool ESCP_RaceTools_SloadThrallNamesColourTranspilerA = ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def;
@@ -31,6 +37,8 @@ namespace ESCP_Sload
 
         private static readonly bool ESCP_RaceTools_SloadThrassianPlagueIncident_def = true;
         private static readonly bool ESCP_RaceTools_LeatherThoughtSload_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrassianFogAlert_def = true;
+        private static readonly bool ESCP_RaceTools_SloadInspirations_def = true;
 
         //Sload thralls
         private static readonly bool ESCP_RaceTools_SloadThrallCanDryad_def = false;
@@ -47,6 +55,10 @@ namespace ESCP_Sload
         private static readonly bool ESCP_RaceTools_SloadThrallTrainable_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallTrainableDecay_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallMating_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallInspirations_def = true;
+
+        private static readonly bool ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def = true;
+        private static readonly bool ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def = true;
 
         private static readonly bool ESCP_RaceTools_SloadThrallNamesArePurple_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def = true;
@@ -59,6 +71,8 @@ namespace ESCP_Sload
         {
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrassianPlagueIncident, "ESCP_RaceTools_SloadThrassianPlagueIncident", ESCP_RaceTools_SloadThrassianPlagueIncident_def);
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtSload, "ESCP_RaceTools_LeatherThoughtSload", ESCP_RaceTools_LeatherThoughtSload_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrassianFogAlert, "ESCP_RaceTools_SloadThrassianFogAlert", ESCP_RaceTools_SloadThrassianFogAlert_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadInspirations, "ESCP_RaceTools_SloadInspirations", ESCP_RaceTools_SloadInspirations_def);
 
             //Sload thralls
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallCanDryad, "ESCP_RaceTools_SloadThrallCanDryad", ESCP_RaceTools_SloadThrallCanDryad_def);
@@ -75,6 +89,10 @@ namespace ESCP_Sload
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallTrainable, "ESCP_RaceTools_SloadThrallTrainable", ESCP_RaceTools_SloadThrallTrainable_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallTrainableDecay, "ESCP_RaceTools_SloadThrallTrainableDecay", ESCP_RaceTools_SloadThrallTrainableDecay_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallMating, "ESCP_RaceTools_SloadThrallMating", ESCP_RaceTools_SloadThrallMating_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallInspirations, "ESCP_RaceTools_SloadThrallInspirations", ESCP_RaceTools_SloadThrallInspirations_def);
+
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallVEF_AnimalProducts, "ESCP_RaceTools_SloadThrallVEF_AnimalProducts", ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallVEF_AsexualReproduction, "ESCP_RaceTools_SloadThrallVEF_AsexualReproduction", ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def);
 
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallNamesArePurple, "ESCP_RaceTools_SloadThrallNamesArePurple", ESCP_RaceTools_SloadThrallNamesArePurple_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallNamesColourTranspilerA, "ESCP_RaceTools_SloadThrallNamesColourTranspilerA", ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def);
@@ -94,6 +112,8 @@ namespace ESCP_Sload
         {
             settings.ESCP_RaceTools_SloadThrassianPlagueIncident = ESCP_RaceTools_SloadThrassianPlagueIncident_def;
             settings.ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
+            settings.ESCP_RaceTools_SloadThrassianFogAlert = ESCP_RaceTools_SloadThrassianFogAlert_def;
+            settings.ESCP_RaceTools_SloadInspirations = ESCP_RaceTools_SloadInspirations_def;
         }
 
         public static void ResetSettings_Thrall(ESCP_Sload_ModSettings settings)
@@ -112,6 +132,10 @@ namespace ESCP_Sload
             settings.ESCP_RaceTools_SloadThrallTrainable = ESCP_RaceTools_SloadThrallTrainable_def;
             settings.ESCP_RaceTools_SloadThrallTrainableDecay = ESCP_RaceTools_SloadThrallTrainableDecay_def;
             settings.ESCP_RaceTools_SloadThrallMating = ESCP_RaceTools_SloadThrallMating_def;
+            settings.ESCP_RaceTools_SloadThrallInspirations = ESCP_RaceTools_SloadThrallInspirations_def;
+
+            settings.ESCP_RaceTools_SloadThrallVEF_AnimalProducts = ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def;
+            settings.ESCP_RaceTools_SloadThrallVEF_AsexualReproduction = ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def;
 
             settings.ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
             settings.ESCP_RaceTools_SloadThrallNamesColourTranspilerA = ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def;

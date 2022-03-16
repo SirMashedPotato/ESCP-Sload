@@ -57,7 +57,7 @@ namespace ESCP_Sload
 
         public static bool PawnIsThrall(Pawn p)
         {
-            return p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
+            return !p.Dead && p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
         }
 
         public static bool SloadIsPlagueLord(Pawn p)

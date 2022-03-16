@@ -68,7 +68,26 @@ namespace ESCP_Sload
             return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallMating;
         }
 
+        public static bool ESCP_RaceTools_SloadThrallInspirations()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallInspirations;
+        }
+
         /**/
+
+        public static bool ESCP_RaceTools_SloadThrallVEF_AnimalProducts()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallVEF_AnimalProducts;
+        }
+
+        public static bool ESCP_RaceTools_SloadThrallVEF_AsexualReproduction()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrallVEF_AsexualReproduction;
+        }
+
+        /**/
+
+
 
         public static bool ESCP_RaceTools_SloadThrallNamesArePurple()
         {

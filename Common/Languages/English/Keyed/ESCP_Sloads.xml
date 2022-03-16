@@ -8,6 +8,11 @@
 	<ESCP_SloadThrall_ExtraTooltip_Count>Current thralls:  {0}/{1}</ESCP_SloadThrall_ExtraTooltip_Count>
 	<ESCP_SloadThrall_ExtraTooltip_Limit>\nThrall limit increased by {0} at {1} {2}</ESCP_SloadThrall_ExtraTooltip_Limit>
 	
+	<ESCP_Sload_Alert_ThrassianFog>Thrassian Fog</ESCP_Sload_Alert_ThrassianFog>
+	<ESCP_Sload_Alert_ThrassianFogDescription>A dense cloud of Thrassian Fog surrounds the area. Raids will be forced to travel through the fog, likely infecting everyone with the Thrassian Plague.\n\nIt will dissipate in {0} days.</ESCP_Sload_Alert_ThrassianFogDescription>
+	
+	<ESCP_Sload_AlreadyHasHediff>{0} will not benefit from consuming the {1}.</ESCP_Sload_AlreadyHasHediff>
+	
 	<!-- Sload thralls -->
 	<ESCP_SloadThrall_KillThrall>Sever Connection</ESCP_SloadThrall_KillThrall>
 	<ESCP_SloadThrall_KillThrall_Tooltip>Sever this thralls connection to {0}, effectively killing it... again.</ESCP_SloadThrall_KillThrall_Tooltip>
@@ -16,7 +21,7 @@
 	<ESCP_SloadThrall_KillThrall_PlagueLord_Tooltip>Release a cloud of Thrassian Miasma from this thrall, severing its connection to {0} at the same time, effectively killing it... again.</ESCP_SloadThrall_KillThrall_PlagueLord_Tooltip>
 	
 	<ESCP_SloadThrall_KillAllThrall>Sever Connections</ESCP_SloadThrall_KillAllThrall>
-	<ESCP_SloadThrall_KillAllThrall_Tooltip>Sever the connection to all thralls, effectively killing them... again.</ESCP_SloadThrall_KillAllThrall_Tooltip>
+	<ESCP_SloadThrall_KillAllThrall_Tooltip>Sever the connection to all thralls, effectively killing them... again.\n\nCurrent thralls:\n{0}</ESCP_SloadThrall_KillAllThrall_Tooltip>
 	
 	<ESCP_SloadThrall_PreceptDisabled>due to precept: Sload Thralls (Heretical)</ESCP_SloadThrall_PreceptDisabled>
 	

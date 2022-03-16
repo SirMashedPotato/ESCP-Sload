@@ -65,8 +65,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert_ThrassianFog.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_ReleaseThrassianFog.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_SloadThrallCreate.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_ReleaseThrassianFog.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_SloadThrallCreate.cs" />
+    <Compile Include="CompUse\CompUseEffect_ThrassianElixir.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectThrassianElixir.cs" />
     <Compile Include="Comp\CompDraftableThrall.cs" />
     <Compile Include="Comp\Comp_SloadThralls.cs" />
     <Compile Include="Comp\Properties\CompProperties_SloadThralls.cs" />
@@ -75,6 +80,7 @@
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="Gas\Gas_ThrassianPlague.cs" />
     <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="Harmony\Inspirations.cs" />
     <Compile Include="Harmony\SloadThrall_Colours.cs" />
     <Compile Include="Harmony\SloadThrall_Mating.cs" />
     <Compile Include="Harmony\SloadThrall_Learning.cs" />
@@ -84,6 +90,8 @@
     <Compile Include="Harmony\SloadThrall_Thoughts.cs" />
     <Compile Include="Harmony\SloadThrall_Trading.cs" />
     <Compile Include="Harmony\SloadThrall_Training.cs" />
+    <Compile Include="Harmony\SloadThrall_VEF.cs" />
+    <Compile Include="Harmony\ThrassianFog.cs" />
     <Compile Include="HediffComp\HediffComp_SloadThrall.cs" />
     <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_Sload.cs" />
     <Compile Include="Ideo\ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInColony.cs" />
@@ -96,6 +104,7 @@
     <Compile Include="IncidentWorkers\IncidentWorker_ThrassianPlague.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_SloadLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_SloadLeatherApparel.cs" />
+    <Compile Include="MapComp_ThrassianMiasma.cs" />
     <Compile Include="ModSettings\ESCP_Sload_Mod.cs" />
     <Compile Include="ModSettings\ESCP_Sload_ModSettings.cs" />
     <Compile Include="ModSettings\ModSettingsUtility.cs" />

@@ -18,6 +18,7 @@
     <allowedCultures>
 		<li>ESCP_Sload</li>
 	</allowedCultures>
+	<!-- HANDLED IN PAWNKINDS
 	<backstoryFilters Inherit="False">
 		<li>
 			<categories>
@@ -26,14 +27,18 @@
 			<commonality>1</commonality>
 		</li>
 	</backstoryFilters>
+	-->
 	<structureMemeWeights>
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">999</Structure_Ideological>
     </structureMemeWeights>
-    <caravanTraderKinds>
+    <caravanTraderKinds Inherit="False">
+		<li>ESCP_SloadTrader</li>
+		<li>ESCP_SloadTrader_Drug</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
     </visitorTraderKinds>
-    <baseTraderKinds>
+    <baseTraderKinds Inherit="False">
+		<li>ESCP_SloadTrader</li>
     </baseTraderKinds>
     <raidLootMaker>ESCP_SloadTribeRaidLootMaker</raidLootMaker>
 	<canSiege>false</canSiege>

@@ -1,16 +1,9 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
-using System;
 using System.Collections.Generic;
-using System.Reflection.Emit;
 using System.Linq;
 using RimWorld.Planet;
-using UnityEngine;
-using ESCP_RaceTools;
 
 namespace ESCP_Sload
 {
@@ -47,7 +40,7 @@ namespace ESCP_Sload
         }
     }
 
-    //For trading directly with settleemnts
+    //For trading directly with settlements
     [HarmonyPatch(typeof(Settlement_TraderTracker))]
     [HarmonyPatch("ColonyThingsWillingToBuy")]
     public static class Settlement_TraderTracker_ColonyThingsWillingToBuy_Patch
@@ -108,5 +101,4 @@ namespace ESCP_Sload
 
         }
     }
-
 }

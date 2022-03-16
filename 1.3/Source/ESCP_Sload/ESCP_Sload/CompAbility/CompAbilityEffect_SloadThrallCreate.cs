@@ -107,7 +107,14 @@ namespace ESCP_Sload
                     index = i;
                 }
             }
-            return Props.thrallLimit[index];
+
+            int limit = Props.thrallLimit[index];
+
+            if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrassianElixir_Thrall) != null)
+            {
+                limit += 5;
+            }
+            return limit;
         }
     }
 }

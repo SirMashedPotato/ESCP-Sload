@@ -14,5 +14,15 @@ namespace ESCP_Sload
         {
             return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrassianPlagueIncident;
         }
+
+        public static bool ESCP_RaceTools_SloadThrassianFogAlert()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadThrassianFogAlert;
+        }
+
+        public static bool ESCP_RaceTools_SloadInspirations()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadInspirations;
+        }
     }
 }

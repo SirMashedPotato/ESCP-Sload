@@ -47,6 +47,10 @@ namespace ESCP_Sload
 				defaultLabel = "ESCP_SloadThrall_KillThrall".Translate(),
 				defaultDesc = "ESCP_SloadThrall_KillThrall_Tooltip".Translate(this.master.Name),
 				icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_SloadDisbandThrall", true),
+				onHover = delegate ()
+				{
+					ShowSload();
+				},
 				action = delegate ()
 				{
 					this.Pawn.Kill(null);
@@ -70,6 +74,7 @@ namespace ESCP_Sload
 							tmpCells.Add(intVec);
 						}
 						GenDraw.DrawFieldEdges(tmpCells);
+						ShowSload();
 					},
 					action = delegate ()
 					{
@@ -80,12 +85,30 @@ namespace ESCP_Sload
 			}
 		}
 
+
+		public void ShowSload()
+		{
+			LookTargets target = new LookTargets(Master);
+			if (target != null)
+			{
+				target.Highlight(true, true, false);
+			}
+		}
+
+
+		int ticks = 0;
+
 		public override void CompPostTick(ref float severityAdjustment)
 		{
 			base.CompPostTick(ref severityAdjustment);
-			if (this.Pawn.Faction == null || this.Pawn.Faction != Faction.OfPlayer)
-			{
-				this.Pawn.Kill(null);
+			ticks++;
+            if (ticks >= 500)
+            {
+				if (this.Pawn.Faction == null || this.Pawn.Faction != Faction.OfPlayer || Master.Destroyed)
+				{
+					this.Pawn.Kill(null);
+				}
+				ticks = 0;
 			}
 		}
 

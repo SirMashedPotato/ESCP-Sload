@@ -17,5 +17,6 @@ namespace ESCP_Sload
 		public static HediffDef ESCP_SloadThrallPassive;
 		public static HediffDef ESCP_SloadDiseaseImmunity;
 		public static HediffDef ESCP_SloadPlagueLord;
+		public static HediffDef ESCP_SloadThrassianElixir_Thrall;
 	}
 }

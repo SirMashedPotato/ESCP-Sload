@@ -11,9 +11,15 @@
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
     </apparelTags>
-	<backstoryCategories>
-		<li>ESCP_SloadBackstory</li>
-	</backstoryCategories>
+	
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ESCP_SloadBackstory</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	
   </PawnKindDef>
 
   <PawnKindDef ParentName="ESCP_SloadOutlanderBase">
@@ -94,6 +100,7 @@
       <li>ESCP_Apparel_SloadHood</li>
 	  <li>ESCP_Apparel_SloadRobeRegal</li>
 	  <li>ESCP_Apparel_SloadAshMask</li>
+	  <li>ESCP_Apparel_SloadBarrierBelt</li>
     </apparelRequired>
     <techHediffsChance>0.15</techHediffsChance>
     <techHediffsMoney>600~1500</techHediffsMoney>

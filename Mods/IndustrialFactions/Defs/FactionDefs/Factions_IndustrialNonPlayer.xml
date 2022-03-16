@@ -20,6 +20,7 @@
     <allowedCultures>
 		<li>ESCP_Sload</li>
 	</allowedCultures>
+	<!-- HANDLED IN PAWNKINDS
 	<backstoryFilters Inherit="False">
 		<li>
 			<categories>
@@ -28,6 +29,15 @@
 			<commonality>1</commonality>
 		</li>
 	</backstoryFilters>
+	-->
+	<caravanTraderKinds Inherit="False">
+		<li>ESCP_SloadTrader_Industrial</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+		<li>ESCP_SloadTrader_Industrial</li>
+    </baseTraderKinds>
     <raidLootMaker>ESCP_SloadCorporationRaidLootMaker</raidLootMaker>
     <pawnGroupMakers Inherit="false">
       <li>

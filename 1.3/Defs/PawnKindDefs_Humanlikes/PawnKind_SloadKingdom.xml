@@ -101,6 +101,7 @@
 		<li>ESCP_Apparel_SloadHood</li>
 		<li>ESCP_Apparel_SloadRobeRegal</li>
 		<li>ESCP_Apparel_SloadAshMask</li>
+		<li>ESCP_Apparel_SloadBarrierBelt</li>
     </apparelRequired>
     <weaponMoney>500~1000</weaponMoney>
     <initialWillRange>3~5</initialWillRange>

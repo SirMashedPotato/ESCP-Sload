@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase" Name="ESCP_SloadElixirBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Medieval</techLevel>
+		<thingCategories>
+		  <li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>Artifact</li>
+		  <li>ESCP_SloadElixir</li>
+		</tradeTags>
+		<statBases>
+		  <MarketValue>1000</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.5</Mass>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeability>Buyable</tradeability>
+		<comps>
+		  <li Class="CompProperties_Usable">
+			<useJob>UseArtifact</useJob>
+			<useLabel>ingest elixir</useLabel>
+		  </li>
+		  <li Class="CompProperties_UseEffect">
+			<compClass>CompUseEffect_DestroySelf</compClass>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ESCP_SloadElixirBase">
+		<defName>ESCP_SloadThrassianElixir_Plague</defName>
+		<label>Thrassian plague elixir</label>
+		<description>An extremely rare elixir, containing a strange purple mixture. Capable of granting Sloads enhanced control over the Thrassian Plague.\n\nProbably not safe for ingestion by anyone who is not a Sload.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="ESCP_Sload.CompProperties_UseEffectThrassianElixir">
+			<hediff>ESCP_SloadPlagueLord</hediff>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ESCP_SloadElixirBase">
+		<defName>ESCP_SloadThrassianElixir_Thrall</defName>
+		<label>Thrassian thrall elixir</label>
+		<description>An extremely rare elixir, containing a strange purple mixture. Capable of granting Sloads enhanced control over thralls, increasing their thrall limit by 5.\n\nProbably not safe for ingestion by anyone who is not a Sload.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="ESCP_Sload.CompProperties_UseEffectThrassianElixir">
+			<hediff>ESCP_SloadThrassianElixir_Thrall</hediff>
+		  </li>
+		</comps>
+	</ThingDef>
+ 
+</Defs>

@@ -1,16 +1,10 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Reflection;
 using Verse;
-using Verse.AI;
-using Verse.AI.Group;
 using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
-using System.Linq;
-using RimWorld.Planet;
 using UnityEngine;
-using ESCP_RaceTools;
 
 namespace ESCP_Sload
 {
@@ -32,7 +26,7 @@ namespace ESCP_Sload
 
         public static Color GetThrallColour(Color other, Pawn p)
         {
-            return SloadUtility.PawnIsThrall(p) ? thrallTextColor : other;
+            return p != null && SloadUtility.PawnIsThrall(p) ? thrallTextColor : other;
         }
     }
 

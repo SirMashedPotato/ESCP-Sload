@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>ESCP_Apparel_SloadBarrierBelt</defName>
+    <label>Sload barrier belt</label>
+    <description>An enchanted belt, which projects a protective barrier around the wearer, specially designed to fit the oversized body of a Sload. It will attempt to stop all incoming damage, but takes quite a while to recharge after depletion.</description>
+    <thingClass>ESCP_Barrier.BarrierBelt</thingClass>
+	
+	<modExtensions>
+		<li Class="ESCP_Barrier.BarrierProperties">
+			<MinDrawSize>2</MinDrawSize>
+			<MaxDrawSize>3</MaxDrawSize>
+			<BubblePath>Other/ESCP_BarrierShield</BubblePath>
+			<EnergyBarColor>0.4, 0.3, 0.4</EnergyBarColor>
+			<absorbMelee>true</absorbMelee>
+			<absorbRanged>true</absorbRanged>
+			<absorbExplosive>true</absorbExplosive>
+			<!-- should probably change -->
+			<soundBarrierBroken>EnergyShield_Broken</soundBarrierBroken>
+			<soundBarrierReset>EnergyShield_Reset</soundBarrierReset>
+			<soundAbsorbedDamage>EnergyShield_AbsorbDamage</soundAbsorbedDamage>
+        </li>
+	</modExtensions>
+	
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ESCP_SloadBarrierBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+
+    <statBases>
+      <Mass>2</Mass>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.0</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+	
+    </thingSetMakerTags>
+
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+	
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

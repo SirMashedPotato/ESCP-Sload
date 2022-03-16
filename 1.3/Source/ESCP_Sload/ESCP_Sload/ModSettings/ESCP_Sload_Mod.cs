@@ -136,7 +136,16 @@ namespace ESCP_Sload
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_LeatherThought".Translate(ThingDefOf.ESCP_LeatherSload.label), ref settings.ESCP_RaceTools_LeatherThoughtSload);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrassianFogAlert".Translate(), ref settings.ESCP_RaceTools_SloadThrassianPlagueIncident);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrassianPlagueIncident".Translate(), ref settings.ESCP_RaceTools_SloadThrassianPlagueIncident, "ESCP_RaceTools_SloadThrassianPlagueIncidentTooltip".Translate());
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadInspirations".Translate(), ref settings.ESCP_RaceTools_SloadInspirations);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();
@@ -174,6 +183,9 @@ namespace ESCP_Sload
             listing_Standard.Gap();
 
             //Disables
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallInspirations".Translate(), ref settings.ESCP_RaceTools_SloadThrallInspirations);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableNeeds".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableNeeds);
             listing_Standard.Gap();
 
@@ -205,6 +217,15 @@ namespace ESCP_Sload
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallMating".Translate(), ref settings.ESCP_RaceTools_SloadThrallMating);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallVEF_AnimalProducts".Translate(), ref settings.ESCP_RaceTools_SloadThrallVEF_AnimalProducts);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallVEF_AsexualReproduction".Translate(), ref settings.ESCP_RaceTools_SloadThrallVEF_AsexualReproduction);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

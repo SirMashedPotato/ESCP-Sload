@@ -2,6 +2,31 @@
 <Defs>
 
 	<!-- Generic -->
+	
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Sload_NewlyLandedBackstory</defName>
+		<title>late bloomer</title>
+		<titleShort>late bloomer</titleShort>
+		<baseDescription>[PAWN_nameDef] was a bit of a late bloomer, and has only just recently matured and made it to land. Even still [PAWN_nameDef] is excited to see wait mysteries await [PAWN_nameDef] on land, or they would be, if [PAWN_nameDef] actually felt emotions.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_SloadBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		
+		</skillGains>
+		<forcedTraits>
+
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+	</AlienRace.BackstoryDef>
 
 	<AlienRace.BackstoryDef>
 		<defName>ESCP_Sload_SoapTraderBackstory</defName>
@@ -405,8 +430,8 @@
 			<li>Mining</li>
 			<li>ManualDumb</li>
 		</workDisables>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>25</maleCommonality>
+		<femaleCommonality>25</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef>
@@ -418,6 +443,7 @@
 		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<spawnCategories>
 		  <li>ESCP_SloadBackstory</li>
+		  <li>ESCP_SloadPlagueLordBackstory</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -438,8 +464,8 @@
 			<li>ManualDumb</li>
 			<li>Mining</li>
 		</workDisables>
-		<maleCommonality>10</maleCommonality>
-		<femaleCommonality>10</femaleCommonality>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
 		<forcedHediffs>
 			<li>ESCP_SloadPlagueLord</li>
 		</forcedHediffs>
@@ -475,6 +501,9 @@
 		</workDisables>
 		<maleCommonality>5</maleCommonality>
 		<femaleCommonality>5</femaleCommonality>
+		<forcedHediffs>
+			<li>ESCP_SloadThrassianElixir_Thrall</li>
+		</forcedHediffs>
 	</AlienRace.BackstoryDef>
 
 </Defs>

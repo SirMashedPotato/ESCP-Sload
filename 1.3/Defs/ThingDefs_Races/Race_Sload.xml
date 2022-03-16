@@ -51,6 +51,7 @@
 			  <GeneralLaborSpeed>0.5</GeneralLaborSpeed>
 			  <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
 			  <PawnBeauty>-10</PawnBeauty>
+			  <RestRateMultiplier>0.7</RestRateMultiplier>
 			  <FilthRate>4</FilthRate>
 			  <RoyalFavorValue>1</RoyalFavorValue>
 		</statBases>
@@ -64,6 +65,7 @@
 			<leatherDef>ESCP_LeatherSload</leatherDef>
 			<nameGenerator>ESCP_NamerPersonSload</nameGenerator>
 			<baseBodySize>3</baseBodySize>
+			<baseHungerRate>0.7</baseHungerRate>
 		</race>
 	
 		<alienRace>
@@ -362,7 +364,20 @@
 					<li>ESCP_Apparel_SloadHeadCap</li>
 					<li>ESCP_Apparel_SloadAshMask</li>
 					<li>ESCP_Apparel_SloadColovianHelm</li>
+					<li>ESCP_Apparel_SloadBarrierBelt</li>
 				</apparelList>
+				<whiteApparelList>
+					<!-- Belts [Vanilla] -->
+					<li>Apparel_PsychicShockLance</li>
+					<li>Apparel_PsychicInsanityLance</li>
+					<li>Apparel_SmokepopBelt</li>
+					<!--<li>Apparel_ShieldBelt</li> Sloads are too big, the shield isn't made for their immenseness -->
+					<!-- Belts [MorrowRim] -->
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_Apparel_DaedraSummoningStone</li>
+					<li MayRequire="SirMashedPotato.MorrowRim.JustTheAnimals">MorrowRim_Apparel_DaedraSummoningStone</li>
+					<li MayRequire="SirMashedPotato.MorrowRim.Bloodmoon">MorrowRim_Apparel_PsychicShifter</li>
+					<li MayRequire="SirMashedPotato.MorrowRim.Bloodmoon">MorrowRim_Apparel_WolfsbaneBelt</li>
+				</whiteApparelList>
 				<buildingList>
 				
 				</buildingList>

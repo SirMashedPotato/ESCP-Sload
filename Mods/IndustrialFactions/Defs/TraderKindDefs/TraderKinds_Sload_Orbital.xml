@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>ESCP_SloadTrader_Industrial_OrbitalCorpse</defName>
+    <label>Sload corpse collector</label>
+    <orbital>true</orbital>
+    <commonality>0.2</commonality>
+	<requestable>false</requestable>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000~4000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ESCP_SloadSoap</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="ESCP_RaceTools.StockGenerator_BuyCorpses" />
+      
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

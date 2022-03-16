@@ -4,6 +4,7 @@ using RimWorld;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text;
 
 namespace ESCP_Sload
 {
@@ -59,20 +60,53 @@ namespace ESCP_Sload
             }
         }
 
+        /* Gizmo stuff */
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             Pawn sload = this.parent as Pawn;
             yield return new Command_Action
             {
                 defaultLabel = "ESCP_SloadThrall_KillAllThrall".Translate(),
-                defaultDesc = "ESCP_SloadThrall_KillAllThrall_Tooltip".Translate(),
+                defaultDesc = "ESCP_SloadThrall_KillAllThrall_Tooltip".Translate(GetThrallList()),
                 icon = ContentFinder<Texture2D>.Get("UI/Gizmos/ESCP_SloadDisbandThrall", true),
                 disabled = thralls.Count <= 0,
+                onHover = delegate ()
+                {
+                    ShowThralls();
+                },
                 action = delegate ()
                 {
                     KillThralls();
                 }
             };
+        }
+
+        public StringBuilder GetThrallList()
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            if (ThrallCount() == 0)
+            {
+                stringBuilder.Append("  - None");
+            }
+            for (int i = 0; i < ThrallCount(); i++)
+            {
+                if (stringBuilder.Length != 0)
+                {
+                    stringBuilder.AppendLine();
+                }
+                stringBuilder.Append("  - " + thralls[i].LabelNoCountColored.Resolve() + " (" + thralls[i].def.label + ")");
+            }
+            return stringBuilder;
+        }
+
+        public void ShowThralls()
+        {
+            LookTargets targets = new LookTargets(thralls);
+            if (targets != null)
+            {
+                targets.Highlight(true, true, false);
+            }
         }
     }
 }
