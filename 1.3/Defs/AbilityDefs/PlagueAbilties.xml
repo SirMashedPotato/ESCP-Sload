@@ -28,7 +28,7 @@
 		<comps>
 		  <li Class="ESCP_RaceTools.CompProperties_ReleaseGas">
 			<gasDef>ESCP_Gas_ThrassianPlague</gasDef>
-			<radius>9</radius>
+			<radius>9.9</radius>
 		  </li>
 		</comps>
 		<verbProperties>
