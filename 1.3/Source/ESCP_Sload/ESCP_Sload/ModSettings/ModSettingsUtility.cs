@@ -24,5 +24,10 @@ namespace ESCP_Sload
         {
             return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadInspirations;
         }
+
+        public static bool ESCP_RaceTools_SloadCanEquipAllWeapons()
+        {
+            return LoadedModManager.GetMod<ESCP_Sload_Mod>().GetSettings<ESCP_Sload_ModSettings>().ESCP_RaceTools_SloadCanEquipAllWeapons;
+        }
     }
 }

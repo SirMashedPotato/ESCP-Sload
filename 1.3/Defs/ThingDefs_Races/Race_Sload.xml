@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ESCP_BasePawnSload">
 		<defName>ESCP_SloadRace</defName>
 		<label>Sload</label>
-		<description>An emotionless race of slug-like creatures. The Sload are despised by almost everyone due to their tendency towards necromancy. Though Sload soap is a highly used commodity, even given its origins.\n\nSload are rather intelligent, though physically they are extremely cumbersome, and somewhat hideous. Most clothes will not fit them, which is fine, as Sload don't care.\n\nSload make for fantastic researchers and scholars, however they are quite frankly awful at everything else.</description>
+		<description>An emotionless race of slug-like creatures. The Sload are despised by almost everyone due to their tendency towards necromancy. Though Sload soap is a highly used commodity, even given its origins.\n\nSload are rather intelligent, though physically they are extremely cumbersome, and somewhat hideous. Most clothes will not fit them, which is fine, as Sload don't care. And they are unable to wield certain weapons, such as bows and greatswords.\n\nSload make for fantastic researchers and scholars, however they are quite frankly awful at everything else.</description>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.RaceProperties">
 				<eventOnDeath>ESCP_KilledSload</eventOnDeath>
@@ -260,6 +260,10 @@
 					<body>Things/Pawn/Humanlike/ESCP_Sload/Body/</body>
 					<head>Things/Pawn/Humanlike/ESCP_Sload/Head/</head>
 					<headMasks>Things/Pawn/Humanlike/ESCP_Sload/HeadMask/Mask</headMasks>
+
+					<!--<skeleton>Things/Pawn/Humanlike/ESCP_Sload/Dessicated/</skeleton>-->
+					<!--<skull></skull>-->
+
 				</li>
 			</graphicPaths>
 
@@ -287,8 +291,7 @@
 					<li>Sick</li>
 					<li>PsychicDrone</li>
 					<li>MissingTongue</li>
-					<!-- Trait based 
-						TODO possibly disable certain traits-->
+					<!-- Trait based -->
 					<li>MasochistPain</li>
 					<li>ProsthophileNoProsthetic</li>
 					<li>ProsthophileHappy</li>
@@ -356,6 +359,7 @@
 			</relationSettings>
 			
 			<raceRestriction>
+				<!-- Apparel -->
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
 					<li>ESCP_Apparel_SloadHood</li>
@@ -378,6 +382,11 @@
 					<li MayRequire="SirMashedPotato.MorrowRim.Bloodmoon">MorrowRim_Apparel_PsychicShifter</li>
 					<li MayRequire="SirMashedPotato.MorrowRim.Bloodmoon">MorrowRim_Apparel_WolfsbaneBelt</li>
 				</whiteApparelList>
+
+				<weaponList>
+					<li>ESCP_SloadStave_Miasma</li>
+				</weaponList>
+				
 				<buildingList>
 				
 				</buildingList>
@@ -388,6 +397,34 @@
 					<li>Nudist</li>
 					<li>NaturalMood</li>
 					<li>TorturedArtist</li>
+					<li>Beauty</li>
+					<li>Bloodlust</li>
+					<li>Kind</li>
+					<li>Psychopath</li>
+					<li>Cannibal</li>
+					<li>TorturedArtist</li>
+					<li>Gourmand</li>
+					<!-- Romance -->
+					<li>Gay</li>
+					<li>Bisexual</li>
+					<li>Asexual</li>
+					<li MayRequire="Mlie.RationalRomance2">Straight</li>
+					<li MayRequire="Mlie.RationalRomance2">Faithful</li>
+					<li MayRequire="Mlie.RationalRomance2">Philanderer</li>
+					<li MayRequire="Mlie.RationalRomance2">Polyamorous</li>
+					<!-- VE Traits -->
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AnimalLover</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AnimalHater</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_FunLoving</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_MartialArtist</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Squeamish</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Prude</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_CatPerson</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_DogPerson</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_DrunkenMaster</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Desensitized</li>
+					<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Groundbreaker</li>
 				</blackTraitList>
 				<recipeList>
 					<li>ESCP_SloadSoapFromGrubs</li>
@@ -395,6 +432,8 @@
 				</recipeList>
 				<conceptList>
 					<li>ESCP_SloadThoughts</li>
+					<li>ESCP_SloadEquipment</li>
+					<li>ESCP_SloadThralls</li>
 				</conceptList>
 			</raceRestriction>
 			

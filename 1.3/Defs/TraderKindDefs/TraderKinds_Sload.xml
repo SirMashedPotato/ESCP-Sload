@@ -9,7 +9,7 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>500~750</countRange>
+        <countRange>150~500</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Jade</thingDef>
@@ -52,6 +52,11 @@
       <li Class="StockGenerator_WeaponsRanged">
         <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
         <countRange>2~4</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ESCP_SloadStaff</tradeTag>
+        <thingDefCountRange>-2~1</thingDefCountRange>
+        <countRange>1~1</countRange>
       </li>
       
       <!-- Apparel -->
@@ -96,7 +101,6 @@
       <!-- Animals -->
 
       <!-- Buying -->
-	  <li Class="StockGenerator_BuySlaves" />
 	  <li Class="ESCP_RaceTools.StockGenerator_BuyCorpses" />
       <li Class="StockGenerator_BuyExpensiveSimple" />
 	  <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
@@ -112,7 +116,7 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>500~750</countRange>
+        <countRange>150~500</countRange>
       </li>
 	  
       <!-- Drugs -->
@@ -168,10 +172,8 @@
       <!-- Animals -->
 
       <!-- Buying -->
-	  <li Class="StockGenerator_BuySlaves" />
 	  <li Class="ESCP_RaceTools.StockGenerator_BuyCorpses" />
       <li Class="StockGenerator_BuyExpensiveSimple" />
-	  <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
       
     </stockGenerators>
   </TraderKindDef>

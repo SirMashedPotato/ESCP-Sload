@@ -13,7 +13,7 @@
 		<defName>ESCP_SloadOpinion_Reviled</defName>
 		<issue>ESCP_SloadOpinion</issue>
 		<label>reviled</label>
-		<description>Sloads are abominations, and it is our duty to cleanse them from this world.</description>
+		<description>Sloads are abominations, and it is our duty to cleanse them from this world.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: -100</description>
 		<impact>High</impact>
 
 		<displayOrderInIssue>50</displayOrderInIssue>
@@ -103,7 +103,7 @@
 		<defName>ESCP_SloadOpinion_Despised</defName>
 		<issue>ESCP_SloadOpinion</issue>
 		<label>despised</label>
-		<description>Sloads are horrific creatures that care not for our laws, they are a threat to all of us, as such they should be killed on sight.</description>
+		<description>Sloads are horrific creatures that care not for our laws, they are a threat to all of us, as such they should be killed on sight.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: -50</description>
 		<impact>High</impact>
 
 		<displayOrderInIssue>50</displayOrderInIssue>
@@ -175,7 +175,7 @@
 		<defName>ESCP_SloadOpinion_Hated</defName>
 		<issue>ESCP_SloadOpinion</issue>
 		<label>hated</label>
-		<description>Sloads are disgusting creatures that cover the ground with their filth, as such they should not be allowed to live with us.</description>
+		<description>Sloads are disgusting creatures that cover the ground with their filth, as such they should not be allowed to live with us.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: -25</description>
 		<impact>Medium</impact>
 
 		<displayOrderInIssue>50</displayOrderInIssue>
@@ -263,7 +263,7 @@
 		<defName>ESCP_SloadOpinion_Exalted</defName>
 		<issue>ESCP_SloadOpinion</issue>
 		<label>exalted</label>
-		<description>Sloads are capable of shaping life itself, and should be revered as gods.</description>
+		<description>Sloads are capable of shaping life itself, and should be revered as gods.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: +100</description>
 		<impact>High</impact>
 
 		<displayOrderInIssue>50</displayOrderInIssue>

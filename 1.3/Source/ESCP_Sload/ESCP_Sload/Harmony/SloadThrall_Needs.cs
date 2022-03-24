@@ -15,8 +15,11 @@ namespace ESCP_Sload
         {
             if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableNeeds())
             {
-                __result = __instance.MaxLevel;
-                return false;
+                if (__instance.def.defName != "TM_Mana" && __instance.def.defName != "TM_Stamina")
+                {
+                    __result = __instance.MaxLevel;
+                    return false;
+                }
             }
             return true;
         }
@@ -27,12 +30,15 @@ namespace ESCP_Sload
     {
         [HarmonyPrefix]
         [HarmonyPatch("CurLevelPercentage", MethodType.Getter)]
-        public static bool CurLevelPercentage_SloadThrallFix(ref Pawn ___pawn, ref float __result)
+        public static bool CurLevelPercentage_SloadThrallFix(ref Need __instance, ref Pawn ___pawn, ref float __result)
         {
             if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableNeeds())
             {
-                __result = 1f;
-                return false;
+                if (__instance.def.defName != "TM_Mana" && __instance.def.defName != "TM_Stamina")
+                {
+                    __result = 1f;
+                    return false;
+                }
             }
             return true;
         }

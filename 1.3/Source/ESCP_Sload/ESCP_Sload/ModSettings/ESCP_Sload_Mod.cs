@@ -148,6 +148,9 @@ namespace ESCP_Sload
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadInspirations".Translate(), ref settings.ESCP_RaceTools_SloadInspirations);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadCanEquipAllWeapons".Translate(), ref settings.ESCP_RaceTools_SloadCanEquipAllWeapons, "ESCP_RaceTools_SloadCanEquipAllWeapons_Tooltip".Translate());
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

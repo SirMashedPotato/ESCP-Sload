@@ -18,6 +18,8 @@
 	<ESCP_RaceTools_SloadThrassianFogAlert>Enable the alert for Thrassian Fog, displaying how many days it will remain for.</ESCP_RaceTools_SloadThrassianFogAlert>
 	
 	<ESCP_RaceTools_SloadInspirations>Disable Sload receiving inspirations.</ESCP_RaceTools_SloadInspirations>
+	<ESCP_RaceTools_SloadCanEquipAllWeapons>Disable Sload being able to wield two-handed weapons.</ESCP_RaceTools_SloadCanEquipAllWeapons>
+	<ESCP_RaceTools_SloadCanEquipAllWeapons_Tooltip>Works off the same system as Vanilla Expanded shields. If a weapon can't be used with a shield, a Sload can't wield it.</ESCP_RaceTools_SloadCanEquipAllWeapons_Tooltip>
 	<!-- Sload Thralls -->
 	
 	<ESCP_RaceTools_SloadThrallNamesArePurple>Sload thrall names are purple.</ESCP_RaceTools_SloadThrallNamesArePurple>

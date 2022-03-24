@@ -60,7 +60,8 @@
     </apparelRequired>
     <weaponMoney>90~150</weaponMoney>
     <weaponTags>
-
+		<li>ESCP_Stave</li>
+		<li>MorrowRim_TelvanniStave</li>
     </weaponTags>
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
@@ -75,11 +76,12 @@
     <canBeSapper>true</canBeSapper>
     <apparelMoney>200~550</apparelMoney>
     <apparelRequired>
-
+		<li>ESCP_Apparel_SloadRobe</li>
+		<li>ESCP_Apparel_SloadHeadCap</li>
     </apparelRequired>
-    <weaponMoney>300~300</weaponMoney>
+    <weaponMoney>600~600</weaponMoney>
     <weaponTags>
-      <li>ESCP_SloadPlagueMelee</li>
+		<li>ESCP_SloadPlagueStaff</li>
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>13~20</initialResistanceRange>
@@ -103,7 +105,7 @@
 		<li>ESCP_Apparel_SloadAshMask</li>
 		<li>ESCP_Apparel_SloadBarrierBelt</li>
     </apparelRequired>
-    <weaponMoney>500~1000</weaponMoney>
+    <weaponMoney>600~1000</weaponMoney>
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>38~58</initialResistanceRange>
   </PawnKindDef>
@@ -112,7 +114,7 @@
     <defName>ESCP_SloadKingdom_Lord</defName>
     <label>lord</label>
     <weaponTags>
-      <li>ESCP_SloadMelee</li>
+      <li>ESCP_SloadPlagueStaff</li>
     </weaponTags>
   </PawnKindDef>
 

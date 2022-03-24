@@ -119,9 +119,9 @@
     <label>Sload kingdom</label>
 	<description>A collection of Sload outposts, under the rule of a King. Sload aren't exactly the most welcoming, though most aren't exactly welcoming to Sload.\n\nThese particular outposts pursue a, relatively, gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.\n\nWhile Sload Kindgoms will not raid their enemies, they will unleash the Thrassian Plague upon them.</description>
 	<colorSpectrum>
-      <li>(0.3, 0.6, 0.7)</li>
-      <li>(0.4, 0.4, 0.7)</li>
-	  <li>(0.6, 0.6, 0.8)</li>
+      <li>(0.0, 0.9, 0.7)</li>
+      <li>(0.2, 0.9, 0.5)</li>
+	  <li>(0.7, 0.2, 1.0)</li>
     </colorSpectrum>
 	<requiredMemes>
 		<li MayRequire="Ludeon.RimWorld.Ideology">ESCP_SloadicWays</li>

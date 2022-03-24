@@ -12,7 +12,5 @@ namespace ESCP_Sload
         }
 
         public int days = 5;
-
-        public ThingDef moteDef;
     }
 }

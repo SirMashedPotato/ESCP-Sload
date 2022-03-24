@@ -13,7 +13,7 @@
 		<defName>ESCP_SloadThrallOpinion_Heretical</defName>
 		<issue>ESCP_SloadThrallOpinion</issue>
 		<label>heretical</label>
-		<description>The creation of thralls by Sloads is an affront to all that is divine, any sload that creates them should be burnt alive.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The creation of thralls by Sloads is outlawed, disabling the use of the &lt;color=#E5E54C&gt;create thrall&lt;/color&gt; ability.</description>
+		<description>The creation of thralls by Sloads is an affront to all that is divine, any sload that creates them should be burnt alive.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nThe creation of thralls by Sloads is outlawed, disabling the use of the &lt;color=#E5E54C&gt;create thrall&lt;/color&gt; ability.</description>
 		<impact>High</impact>
 
 		<displayOrderInIssue>50</displayOrderInIssue>

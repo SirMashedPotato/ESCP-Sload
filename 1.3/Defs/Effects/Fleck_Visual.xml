@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>ESCP_Sload_AbilityFleck</defName>
+
+      <fadeInTime>3</fadeInTime>
+      <solidTime>10</solidTime>
+      <fadeOutTime>3</fadeOutTime>
+
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <texPath>Things/Gas/Puff</texPath>
+	  <color>(106,57,132,100)</color>
+      <drawSize>5</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase">
+    <defName>ESCP_Sload_AbilityFleck_Long</defName>
+
+      <fadeInTime>5</fadeInTime>
+      <solidTime>30</solidTime>
+      <fadeOutTime>5</fadeOutTime>
+
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <texPath>Things/Gas/Puff</texPath>
+	  <color>(106,57,132,100)</color>
+      <drawSize>5</drawSize>
+    </graphicData>
+  </FleckDef>
+
+</Defs>

@@ -10,8 +10,11 @@
 	
 	<ESCP_Sload_Alert_ThrassianFog>Thrassian Fog</ESCP_Sload_Alert_ThrassianFog>
 	<ESCP_Sload_Alert_ThrassianFogDescription>A dense cloud of Thrassian Fog surrounds the area. Raids will be forced to travel through the fog, likely infecting everyone with the Thrassian Plague.\n\nIt will dissipate in {0} days.</ESCP_Sload_Alert_ThrassianFogDescription>
+	<ESCP_Sload_Message_ThrassianFog>A fog of Thrassian Miasma surrounds the area, which will dissipate in {0} days.</ESCP_Sload_Message_ThrassianFog>
 	
 	<ESCP_Sload_AlreadyHasHediff>{0} will not benefit from consuming the {1}.</ESCP_Sload_AlreadyHasHediff>
+	
+	<ESCP_Sload_CantEquipWeapon>Sloads can't wield two handed weapons.</ESCP_Sload_CantEquipWeapon>
 	
 	<!-- Sload thralls -->
 	<ESCP_SloadThrall_KillThrall>Sever Connection</ESCP_SloadThrall_KillThrall>

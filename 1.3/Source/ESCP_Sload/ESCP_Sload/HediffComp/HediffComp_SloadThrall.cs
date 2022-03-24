@@ -85,7 +85,6 @@ namespace ESCP_Sload
 			}
 		}
 
-
 		public void ShowSload()
 		{
 			LookTargets target = new LookTargets(Master);
@@ -94,7 +93,6 @@ namespace ESCP_Sload
 				target.Highlight(true, true, false);
 			}
 		}
-
 
 		int ticks = 0;
 

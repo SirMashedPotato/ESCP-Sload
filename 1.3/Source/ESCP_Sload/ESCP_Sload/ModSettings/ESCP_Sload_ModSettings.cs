@@ -8,6 +8,7 @@ namespace ESCP_Sload
         public bool ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
         public bool ESCP_RaceTools_SloadThrassianFogAlert = ESCP_RaceTools_SloadThrassianFogAlert_def;
         public bool ESCP_RaceTools_SloadInspirations = ESCP_RaceTools_SloadInspirations_def;
+        public bool ESCP_RaceTools_SloadCanEquipAllWeapons = ESCP_RaceTools_SloadCanEquipAllWeapons_def;
 
         //Sload thralls
         public bool ESCP_RaceTools_SloadThrallCanDryad = ESCP_RaceTools_SloadThrallCanDryad_def;
@@ -39,6 +40,7 @@ namespace ESCP_Sload
         private static readonly bool ESCP_RaceTools_LeatherThoughtSload_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrassianFogAlert_def = true;
         private static readonly bool ESCP_RaceTools_SloadInspirations_def = true;
+        private static readonly bool ESCP_RaceTools_SloadCanEquipAllWeapons_def = true;
 
         //Sload thralls
         private static readonly bool ESCP_RaceTools_SloadThrallCanDryad_def = false;
@@ -73,6 +75,7 @@ namespace ESCP_Sload
             Scribe_Values.Look(ref ESCP_RaceTools_LeatherThoughtSload, "ESCP_RaceTools_LeatherThoughtSload", ESCP_RaceTools_LeatherThoughtSload_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrassianFogAlert, "ESCP_RaceTools_SloadThrassianFogAlert", ESCP_RaceTools_SloadThrassianFogAlert_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadInspirations, "ESCP_RaceTools_SloadInspirations", ESCP_RaceTools_SloadInspirations_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadCanEquipAllWeapons, "ESCP_RaceTools_SloadCanEquipAllWeapons", ESCP_RaceTools_SloadCanEquipAllWeapons_def);
 
             //Sload thralls
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallCanDryad, "ESCP_RaceTools_SloadThrallCanDryad", ESCP_RaceTools_SloadThrallCanDryad_def);
@@ -114,6 +117,7 @@ namespace ESCP_Sload
             settings.ESCP_RaceTools_LeatherThoughtSload = ESCP_RaceTools_LeatherThoughtSload_def;
             settings.ESCP_RaceTools_SloadThrassianFogAlert = ESCP_RaceTools_SloadThrassianFogAlert_def;
             settings.ESCP_RaceTools_SloadInspirations = ESCP_RaceTools_SloadInspirations_def;
+            settings.ESCP_RaceTools_SloadCanEquipAllWeapons = ESCP_RaceTools_SloadCanEquipAllWeapons_def;
         }
 
         public static void ResetSettings_Thrall(ESCP_Sload_ModSettings settings)

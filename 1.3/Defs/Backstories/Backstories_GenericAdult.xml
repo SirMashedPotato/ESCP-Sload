@@ -24,8 +24,8 @@
 		<workDisables>
 			<li>Caring</li>
 		</workDisables>
-		<maleCommonality>50</maleCommonality>
-		<femaleCommonality>50</femaleCommonality>
+		<maleCommonality>30</maleCommonality>
+		<femaleCommonality>30</femaleCommonality>
 	</AlienRace.BackstoryDef>
 
 	<AlienRace.BackstoryDef>

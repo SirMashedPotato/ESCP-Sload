@@ -16,24 +16,10 @@ namespace ESCP_Sload
             }
         }
 
-		public override IEnumerable<PreCastAction> GetPreCastActions()
-		{
-			if (true)
-			{
-				yield return new PreCastAction
-				{
-					action = delegate (LocalTargetInfo t, LocalTargetInfo d)
-					{
-						Log.Message("Baaaaa");
-					},
-				};
-			}
-			yield break;
-		}
-
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             parent.pawn.Map.GetComponent<MapComp_ThrassianMiasma>().IncreaseDays(Props.days);
+            Messages.Message("ESCP_Sload_Message_ThrassianFog".Translate(Props.days), null, MessageTypeDefOf.PositiveEvent, true);
         }
     }
 }

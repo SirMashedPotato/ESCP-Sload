@@ -11,7 +11,6 @@
 		<label>create thrall</label>
 		<description>Puppeteer a fresh corpse, turning it into a thrall. Thralls feel no emotions, and have no needs. The connection will be severed if the controlling Sload is downed or killed.</description>
 		<iconPath>UI/Abilities/ESCP_SloadCreateThrall</iconPath>
-		<warmupMoteSocialSymbol>UI/Abilities/ESCP_SloadCreateThrall</warmupMoteSocialSymbol>
 		
 		<groupDef>ESCP_SloadThrall</groupDef>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
@@ -25,6 +24,10 @@
 
 		</statBases>
 		<comps>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
+			<preCastTicks>99999</preCastTicks>
+		  </li>
 		  <li Class="ESCP_Sload.CompProperties_SloadThrallCreate">
 			<skill>Intellectual</skill>
 			<hediff>ESCP_SloadThrallPassive</hediff>
