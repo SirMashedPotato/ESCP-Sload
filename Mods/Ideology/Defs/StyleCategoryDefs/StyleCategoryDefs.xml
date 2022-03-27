@@ -3,9 +3,10 @@
 
   <StyleCategoryDef>
     <defName>ESCP_SloadStyle</defName>
-    <label>Sload</label>
+    <label>Sloadic</label>
     <iconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</iconPath>
-
+	<soundOngoingRitual>RitualSustainer_Morbid</soundOngoingRitual>
+	<ritualVisualEffectDef>ESCP_Sloadic</ritualVisualEffectDef>
     <thingDefStyles>
 
     </thingDefStyles>

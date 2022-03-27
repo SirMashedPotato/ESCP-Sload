@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RitualVisualEffectDef>
+		<defName>ESCP_Sloadic</defName>
+		<!-- <tintColor>(36, 20, 25)</tintColor> -->
+		<tintColor>(76,27,102)</tintColor>
+		<comps>
+		  <li>
+			<compClass>CompRitualEffect_ConstantCenter</compClass>
+			<moteDef>Mote_RitualSmokeThick</moteDef>
+			<scaleWithRoom>true</scaleWithRoom>
+		  </li>
+		</comps>
+	</RitualVisualEffectDef>
+
+</Defs>

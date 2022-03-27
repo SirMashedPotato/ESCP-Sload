@@ -10,7 +10,7 @@
       <rulesStrings>
         <li>r_name->The [Color] [b]</li>
         <li>r_name->The [a] [b]</li>
-        <li>r_name->[letter]'[nameA][nameB]'s [b]</li>
+        <li>r_name->[letter][nameA][nameB]'s [b]</li>
       </rulesStrings>
 	  <rulesFiles>
         <li>a->ESCP_SloadNames/ESCP_SloadFactionA</li>
@@ -30,7 +30,7 @@
 	</include>
     <rulePack>
       <rulesStrings>
-        <li>r_name->Sload kingdom of [letter]'[a][b]</li>
+        <li>r_name->Sload kingdom of [letter][a][b]</li>
       </rulesStrings>
 	  <rulesFiles>
 		<li>letter->ESCP_SloadNames/ESCP_SloadLetters</li>

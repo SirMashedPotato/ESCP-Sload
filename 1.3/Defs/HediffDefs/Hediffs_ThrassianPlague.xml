@@ -4,7 +4,7 @@
   <HediffDef ParentName="InfectionBase">
     <defName>ESCP_ThrassianPlague</defName>
     <label>Thrassian Plague</label>
-    <description>An infectious disease created by the Sload, and spread as a bio-weapon. While symptoms are somewhat similar to those of other plagues, those with infected with Thrassian Plague often experience an insatiable hunger, regularly partaking in food binges.</description>
+    <description>An infectious disease created by the Sload, and spread as a bio-weapon. While symptoms are somewhat similar to those of other plagues, those infected with the Thrassian Plague often experience an insatiable hunger, regularly partaking in food binges.</description>
     <makesSickThought>true</makesSickThought>
     <lethalSeverity>1</lethalSeverity>
     <tendable>true</tendable>
