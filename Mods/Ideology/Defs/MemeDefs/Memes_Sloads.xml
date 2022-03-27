@@ -12,14 +12,15 @@
 		<impact>2</impact>
 		<generalRules>
 			<rulesStrings>
-				<li>memeAdjective->frail</li>
-				<li>memeAdjective->weak</li>
-				<li>memeAdjective->fragile</li>
-				<li>memeLeaderAdjective->steel plated</li>
+				<li>memeAdjective->divine</li>
+				<li>memeAdjective->corpulent</li>
+				<li>memeAdjective->slimy</li>
+				<li>memeLeaderAdjective->Thrassian</li>
 				<li>memeConcept->flesh</li>
 				<li>memeConcept->bone</li>
 				<li>memeConcept->muscle</li>
-				<li>memeLeaderNoun->guider</li>
+				<li>memeConcept->plague</li>
+				<li>memeLeaderNoun->lord</li>
 
 			</rulesStrings>
 		</generalRules>
