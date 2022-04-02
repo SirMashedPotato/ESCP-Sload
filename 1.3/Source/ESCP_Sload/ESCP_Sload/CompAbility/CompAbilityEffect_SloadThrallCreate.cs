@@ -29,13 +29,14 @@ namespace ESCP_Sload
                     p.health.hediffSet.GetFirstHediffOfDef(Props.hediff).TryGetComp<HediffComp_SloadThrall>().SetMaster(parent.pawn);
                 }
 
-                ResurrectionUtility.Resurrect(c.InnerPawn);
-
                 p.SetFaction(parent.pawn.Faction, parent.pawn);
                 if (ModsConfig.IdeologyActive && p.RaceProps.Humanlike)
                 {
                     p.ideo.SetIdeo(parent.pawn.Ideo);
                 }
+
+                ResurrectionUtility.Resurrect(c.InnerPawn);
+
                 parent.pawn.GetComp<Comp_SloadThralls>().AddThrall(p);
             }
         }

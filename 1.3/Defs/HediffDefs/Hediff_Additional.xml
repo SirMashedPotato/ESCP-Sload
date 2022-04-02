@@ -38,7 +38,7 @@
 		</comps>
 		<stages>
 			<li>
-				<painOffset>-9.99</painOffset>
+				<painFactor>0</painFactor>
 				<makeImmuneTo>
 					<li>Flu</li>
 					<li>Plague</li>
