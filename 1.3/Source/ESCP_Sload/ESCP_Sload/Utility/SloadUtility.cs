@@ -58,6 +58,7 @@ namespace ESCP_Sload
         public static bool PawnIsThrall(Pawn p)
         {
             return !p.Dead && p.Faction != null && p.Faction == Faction.OfPlayer    //very bandaid solution
+                && p.RaceProps.IsFlesh
                 && p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
         }
 

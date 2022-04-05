@@ -29,13 +29,16 @@ namespace ESCP_Sload
             }
             */
         }
-        
     }
 
     public static class EquipmentUtility_SloadCanEquip_Patch
     {
         public static void SloadWeapon_PostFix(Thing thing, Pawn pawn, ref string cantReason, ref bool __result)
         {
+            if (thing is Apparel)
+            {
+                return;
+            }
             if (__result && pawn.def == ThingDefOf.ESCP_SloadRace && ModSettingsUtility.ESCP_RaceTools_SloadCanEquipAllWeapons())
             {
                 var thingProps = VFECore.ThingDefExtension.Get(thing.def);
