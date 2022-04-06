@@ -12,7 +12,7 @@ namespace ESCP_Sload
         [HarmonyPatch("Active", MethodType.Getter)]
         public static bool CompMilkable_Active_SloadThrallFix(ref CompMilkable __instance, ref bool __result)
         {
-            if (SloadUtility.PawnIsThrall(__instance.parent as Pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallMilkable())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallMilkable() && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
             {
                 __result = false;
                 return false;
@@ -28,7 +28,7 @@ namespace ESCP_Sload
         [HarmonyPatch("Active", MethodType.Getter)]
         public static bool CompShearable_Active_SloadThrallFix(ref CompShearable __instance, ref bool __result)
         {
-            if (SloadUtility.PawnIsThrall(__instance.parent as Pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallShearable())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallShearable() && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
             {
                 __result = false;
                 return false;
@@ -44,7 +44,7 @@ namespace ESCP_Sload
         [HarmonyPatch("Active", MethodType.Getter)]
         public static bool CompEggLayer_Active_SloadThrallFix(ref CompEggLayer __instance, ref bool __result)
         {
-            if (SloadUtility.PawnIsThrall(__instance.parent as Pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallEggLaying())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallEggLaying() && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
             {
                 __result = false;
                 return false;

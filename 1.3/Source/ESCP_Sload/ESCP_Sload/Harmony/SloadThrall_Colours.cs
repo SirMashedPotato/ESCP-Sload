@@ -38,7 +38,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool PawnNameColorOf_SloadThrallFix(ref Pawn pawn, ref Color __result)
         {
-            if (SloadUtility.PawnIsThrall(pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesArePurple())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesArePurple() && SloadUtility.PawnIsThrall(pawn))
             {
                 __result = ThrallTextColour.thrallTextColor;
                 return false;

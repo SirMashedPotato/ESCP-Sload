@@ -13,7 +13,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool JobGiver_Mate_TryGiveJob_SloadThrallFix(Pawn pawn, ref Job __result)
         {
-            if (SloadUtility.PawnIsThrall(pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallMating())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallMating() && SloadUtility.PawnIsThrall(pawn))
             {
                 __result = null;
                 return false;
@@ -29,7 +29,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool FertileMateTarget_SloadThrallFix(Pawn male, Pawn female, ref bool __result)
         {
-            if ((SloadUtility.PawnIsThrall(male) || SloadUtility.PawnIsThrall(female)) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallMating())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallMating() && (SloadUtility.PawnIsThrall(male) || SloadUtility.PawnIsThrall(female)))
             {
                 __result = false;
                 return false;

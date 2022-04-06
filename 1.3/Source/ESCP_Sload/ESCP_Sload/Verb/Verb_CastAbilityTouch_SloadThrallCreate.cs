@@ -2,6 +2,7 @@
 using Verse;
 using RimWorld;
 using ESCP_RaceTools;
+using AlienRace;
 
 namespace ESCP_Sload
 {
@@ -14,15 +15,22 @@ namespace ESCP_Sload
 
         public bool IsValidCorpse(Thing t)
         {
-            if (t is Corpse c && c.InnerPawn.RaceProps.IsFlesh && c.GetRotStage() == RotStage.Fresh 
-                && (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallCanDryad() || !c.InnerPawn.RaceProps.Dryad))
+            if (t is Corpse c)
             {
-                var props = ESCP_RaceTools.RaceProperties.Get(c.InnerPawn.def);
-                if (props != null && props.sloadThrallImmune)
+                if (c.InnerPawn.def is AlienRace.ThingDef_AlienRace a && !a.alienRace.compatibility.IsFlesh)
                 {
                     return false;
                 }
-                return true;
+                if (c.InnerPawn.RaceProps.IsFlesh && c.GetRotStage() == RotStage.Fresh
+               && (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallCanDryad() || !c.InnerPawn.RaceProps.Dryad))
+                {
+                    var props = ESCP_RaceTools.RaceProperties.Get(c.InnerPawn.def);
+                    if (props != null && props.sloadThrallImmune)
+                    {
+                        return false;
+                    }
+                    return true;
+                }
             }
 
             return false;

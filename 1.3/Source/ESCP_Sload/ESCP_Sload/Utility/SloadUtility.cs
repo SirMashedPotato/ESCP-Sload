@@ -57,9 +57,27 @@ namespace ESCP_Sload
 
         public static bool PawnIsThrall(Pawn p)
         {
-            return !p.Dead && p.Faction != null && p.Faction == Faction.OfPlayer    //very bandaid solution
-                && p.RaceProps.IsFlesh
-                && p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) != null;
+            if (p != null && !p.Dead)
+            {
+                if (p.Faction == null || p.Faction != Faction.OfPlayer)
+                {
+                    return false;
+                }
+                if (p.def is AlienRace.ThingDef_AlienRace a && !a.alienRace.compatibility.IsFlesh)
+                {
+                    return false;
+                }
+                if (!p.RaceProps.IsFlesh)
+                {
+                    return false;
+                }
+                if (p.health == null || p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrallPassive) == null)
+                {
+                    return false;
+                }
+                return true;
+            }
+            return false;
         }
 
         public static bool SloadIsPlagueLord(Pawn p)

@@ -13,7 +13,7 @@ namespace ESCP_Sload
         [HarmonyPatch("CertaintyChangePerDay", MethodType.Getter)]
         public static bool CertaintyChangePerDay_SloadThrallFix(ref Pawn ___pawn, ref float __result)
         {
-            if (SloadUtility.PawnIsThrall(___pawn) && ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallIdeoCertainty())
+            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallIdeoCertainty() && SloadUtility.PawnIsThrall(___pawn))
             {
                 __result = 1f;
                 return false;
