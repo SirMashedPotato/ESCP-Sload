@@ -59,7 +59,7 @@ namespace ESCP_Sload
         {
             if (p != null && !p.Dead)
             {
-                if (p.Faction == null || p.Faction != Faction.OfPlayer)
+                if (p.Faction == null || Faction.OfPlayerSilentFail == null || p.Faction != Faction.OfPlayerSilentFail)
                 {
                     return false;
                 }
