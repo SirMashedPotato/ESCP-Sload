@@ -37,6 +37,17 @@ namespace ESCP_Sload
 
                 ResurrectionUtility.Resurrect(c.InnerPawn);
 
+                if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallResSkillDecay())
+                {
+                    foreach(SkillRecord sr in p.skills.skills)
+                    {
+                        if (!sr.TotallyDisabled && sr.Level > 3 && Rand.Chance(0.75f))
+                        {
+                            sr.Level -= sr.Level / 4;
+                        }
+                    }
+                }
+
                 parent.pawn.GetComp<Comp_SloadThralls>().AddThrall(p);
             }
         }

@@ -179,6 +179,9 @@ namespace ESCP_Sload
             listing_Standard.Gap();
 
             //random misc disabley shite
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallResSkillDecay".Translate(), ref settings.ESCP_RaceTools_SloadThrallResSkillDecay, "ESCP_RaceTools_SloadThrallResSkillDecayTooltip".Translate());
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallCanDryad".Translate(), ref settings.ESCP_RaceTools_SloadThrallCanDryad);
             listing_Standard.Gap();
 
