@@ -11,6 +11,21 @@
 				<sloadThrallImmune>true</sloadThrallImmune>
 				<thrassianPlagueImmune>true</thrassianPlagueImmune>
             </li>
+			<li Class="ESCP_RaceTools.StuffKnowledge">
+				<stuffKnowledgeList>
+					<li>
+						<stuffList>
+							<li>ESCP_Resource_Buoyant_Steel_Ingot</li>	<!-- ESCP Core Resources -->
+						</stuffList>
+						<skillList>
+							<li>Crafting</li>
+						</skillList>
+						<notJustStuff>true</notJustStuff>
+						<requiredBackstory>ESCP_Maormer_StuffKnowledge_BuoyantSteelBackstory</requiredBackstory>
+						<chance>1.0</chance>
+					</li>
+				</stuffKnowledgeList>
+            </li>
 		</modExtensions>
 		
 		<comps>
@@ -72,8 +87,24 @@
 			<generalSettings>
 				<validBeds>
 					<li>ESCP_SloadSleepingSpot</li>
+					<li>ESCP_SloadBed</li>
 				</validBeds>
 				<forcedRaceTraitEntries>
+					<li>
+						<defName>ESCP_Mage</defName>
+						<degree>1</degree>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName>ESCP_Mage</defName>
+						<degree>2</degree>
+						<chance>25</chance>
+					</li>
+					<li>
+						<defName>ESCP_Mage</defName>
+						<degree>3</degree>
+						<chance>25</chance>
+					</li>
 				</forcedRaceTraitEntries>
 				<disallowedTraits>
 					

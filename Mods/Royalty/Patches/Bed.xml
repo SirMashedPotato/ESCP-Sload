@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
+		<value>
+			<li>ESCP_SloadBed</li>
+		</value>
+	</Operation>
+</Patch>

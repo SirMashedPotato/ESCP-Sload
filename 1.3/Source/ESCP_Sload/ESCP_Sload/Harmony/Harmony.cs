@@ -50,26 +50,21 @@ namespace ESCP_Sload
             }
         }
     }
-    /*
-    [HarmonyPatch(typeof(CompRottable))]
-    [HarmonyPatch("StageChanged")]
-    public static class CompRottable_StageChanged_Patch
+
+    [HarmonyPatch(typeof(RestUtility))]
+    [HarmonyPatch("GetBedSleepingSlotPosFor")]
+    public static class RestUtility_GetBedSleepingSlotPosFor_Patch
     {
-        [HarmonyPostfix]
-        public static void CompRottable_SloadChange(ref CompRottable __instance)
+        [HarmonyPrefix]
+        public static bool GetBedSleepingSlotPosFor_SloadChange(Building_Bed bed, ref IntVec3 __result)
         {
-            Corpse corpse = __instance.parent as Corpse;
-            if (corpse.InnerPawn. def.defName == "ESCP_SloadRace")
+            if(bed.def == ThingDefOf.ESCP_SloadBed)
             {
-                if (__instance.Stage == RotStage.Dessicated)
-                {
-                    FilthMaker.TryMakeFilth(corpse.Position, corpse.Map, RimWorld.ThingDefOf.Filth_CorpseBile, 10);
-                    GenExplosion.DoExplosion(corpse.Position, corpse.Map, 2, DamageDefOf.Extinguish, corpse, -1, -1f, null, null, null, null, corpse.InnerPawn.def.race.BloodDef, 1f, 3, false, null, 0f, 1, 0f, false, null, null);
-                    //corpse.Destroy();
-                }
+                __result = new IntVec3(bed.Position.x, bed.Position.y, bed.Position.z);
+                return false;
             }
+            return true;
         }
     }
-    */
 }
 

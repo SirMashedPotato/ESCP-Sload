@@ -430,8 +430,8 @@
 			<li>Mining</li>
 			<li>ManualDumb</li>
 		</workDisables>
-		<maleCommonality>25</maleCommonality>
-		<femaleCommonality>25</femaleCommonality>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	
 	<AlienRace.BackstoryDef>
@@ -464,8 +464,8 @@
 			<li>ManualDumb</li>
 			<li>Mining</li>
 		</workDisables>
-		<maleCommonality>15</maleCommonality>
-		<femaleCommonality>15</femaleCommonality>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
 		<forcedHediffs>
 			<li>ESCP_SloadPlagueLord</li>
 		</forcedHediffs>
@@ -504,6 +504,39 @@
 		<forcedHediffs>
 			<li>ESCP_SloadThrassianElixir_Thrall</li>
 		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Sload_StuffKnowledge_BuoyantSteelBackstory</defName>
+		<title>master buoyant steel smith</title>
+		<titleShort>master smith</titleShort>
+		<baseDescription>On one of [PAWN_nameDef]'s excursions into the abyss, they came across a shipwreck, and in that shipwreck, a strange metal. The metal seemed to be a magically infused alloy, far lighter than steel, yet stronger as well. Such a metal would make for good armour, [PAWN_nameDef] thought. And so [PAWN_nameDef] decided to spend a few decades studying it, hoping to learn how best to work it.\n\nAnything [PAWN_nameDef] crafts out of buoyant steel will be one quality level higher than normal.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_SloadBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>10</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Caring</li>
+		</workDisables>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
 	</AlienRace.BackstoryDef>
 
 </Defs>
