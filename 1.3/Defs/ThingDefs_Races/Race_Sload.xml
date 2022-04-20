@@ -120,6 +120,8 @@
 					</alienbodytypes>
 					<useGenderedHeads>false</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
+					<borderScale>2.0</borderScale>
+					<atlasScale>2</atlasScale>
 					<!-- colour stuff -->
 					<colorChannels>
 					<li>
