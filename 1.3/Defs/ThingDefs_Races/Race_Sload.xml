@@ -21,7 +21,7 @@
 							<li>Crafting</li>
 						</skillList>
 						<notJustStuff>true</notJustStuff>
-						<requiredBackstory>ESCP_Maormer_StuffKnowledge_BuoyantSteelBackstory</requiredBackstory>
+						<requiredBackstory>ESCP_Sload_StuffKnowledge_BuoyantSteelBackstory</requiredBackstory>
 						<chance>1.0</chance>
 					</li>
 				</stuffKnowledgeList>
