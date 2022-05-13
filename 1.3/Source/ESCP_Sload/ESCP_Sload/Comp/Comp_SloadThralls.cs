@@ -64,7 +64,6 @@ namespace ESCP_Sload
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            Pawn sload = this.parent as Pawn;
             yield return new Command_Action
             {
                 defaultLabel = "ESCP_SloadThrall_KillAllThrall".Translate(),
