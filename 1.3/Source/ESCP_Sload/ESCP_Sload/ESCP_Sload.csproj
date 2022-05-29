@@ -75,7 +75,9 @@
     <Compile Include="CompAbility\Properties\CompProperties_ReleaseThrassianFog.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_SloadThrallCreate.cs" />
     <Compile Include="CompUse\CompUseEffect_ThrassianElixir.cs" />
+    <Compile Include="CompUse\CompUseEffect_ThrassianElixir_Refresh.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectThrassianElixir.cs" />
+    <Compile Include="CompUse\Properties\CompProperties_UseEffectThrassianElixir_Refresh.cs" />
     <Compile Include="Comp\CompDraftableThrall.cs" />
     <Compile Include="Comp\Comp_SloadThralls.cs" />
     <Compile Include="Comp\Properties\CompProperties_SloadThralls.cs" />

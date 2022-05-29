@@ -64,5 +64,24 @@
 		  </li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="ESCP_SloadElixirBase">
+		<defName>ESCP_SloadThrassianElixir_ThrallRefresh</defName>
+		<label>Thrassian refreshment elixir</label>
+		<description>An extremely rare elixir, containing a strange purple mixture. Instantly refreshes the cooldown of the 'Create Thrall' ability.\n\nProbably not safe for ingestion by anyone who is not a Sload.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>500</MarketValue>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="ESCP_Sload.CompProperties_UseEffectThrassianElixir_Refresh">
+			<ability>ESCP_SloadThrall_Create</ability>
+		  </li>
+		</comps>
+	</ThingDef>
  
 </Defs>

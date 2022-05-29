@@ -49,6 +49,11 @@
           <thingDef>MedicineHerbal</thingDef>
           <count>5</count>
         </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ESCP_SloadThrassianElixir_ThrallRefresh</thingDef>
+          <count>1</count>
+        </li>
 		
 		<!-- Starting Corpses -->
 		<li Class="ESCP_RaceTools.ScenPart_StartingCorpse">
