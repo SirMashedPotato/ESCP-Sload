@@ -10,6 +10,9 @@
         </li>
 		<li Class="ESCP_RaceTools.FactionProperties">
 			<isSloadFaction>true</isSloadFaction>
+			<factionTags>
+				<li>ESCP_Sload</li>
+			</factionTags>
         </li>
 	</modExtensions>
     <factionIconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</factionIconPath>

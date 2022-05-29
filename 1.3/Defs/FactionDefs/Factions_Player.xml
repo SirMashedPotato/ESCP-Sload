@@ -42,6 +42,9 @@
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionProperties">
 				<isSloadFaction>true</isSloadFaction>
+				<factionTags>
+					<li>ESCP_Sload</li>
+				</factionTags>
 			</li>
 		</modExtensions>
 		<disallowedPrecepts>
@@ -95,6 +98,9 @@
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionProperties">
 				<isSloadFaction>true</isSloadFaction>
+				<factionTags>
+					<li>ESCP_Sload</li>
+				</factionTags>
 			</li>
 		</modExtensions>
 		<disallowedPrecepts>
@@ -147,6 +153,9 @@
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionProperties">
 				<isSloadFaction>true</isSloadFaction>
+				<factionTags>
+					<li>ESCP_Sload</li>
+				</factionTags>
 			</li>
 		</modExtensions>
 		<disallowedPrecepts>
