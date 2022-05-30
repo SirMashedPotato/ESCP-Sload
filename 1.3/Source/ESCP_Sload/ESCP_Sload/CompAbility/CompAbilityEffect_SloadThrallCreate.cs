@@ -22,17 +22,17 @@ namespace ESCP_Sload
             if (t != null && t is Corpse c)
             {
                 Pawn p = c.InnerPawn;
-                
-                if (Props.hediff != null)
-                {
-                    p.health.AddHediff(Props.hediff);
-                    p.health.hediffSet.GetFirstHediffOfDef(Props.hediff).TryGetComp<HediffComp_SloadThrall>().SetMaster(parent.pawn);
-                }
 
                 p.SetFaction(parent.pawn.Faction, parent.pawn);
                 if (ModsConfig.IdeologyActive && p.RaceProps.Humanlike)
                 {
                     p.ideo.SetIdeo(parent.pawn.Ideo);
+                }
+
+                if (Props.hediff != null)
+                {
+                    p.health.AddHediff(Props.hediff);
+                    p.health.hediffSet.GetFirstHediffOfDef(Props.hediff).TryGetComp<HediffComp_SloadThrall>().SetMaster(parent.pawn);
                 }
 
                 ResurrectionUtility.Resurrect(c.InnerPawn);

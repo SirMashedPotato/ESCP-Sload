@@ -25,10 +25,10 @@
 		  <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.05</SocialImpact>
+		  <SocialImpact>0.08</SocialImpact>
 		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-		<costStuffCount>150</costStuffCount>	<!-- * 3 -->
+		<costStuffCount>65</costStuffCount>	<!-- * 3 -->
 		<stuffCategories>
 		  <li>Fabric</li>
 		  <li>Leathery</li>
@@ -80,7 +80,7 @@
 		  <SocialImpact>0.05</SocialImpact>
 		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-		<costStuffCount>120</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 		  <li>Fabric</li>
 		  <li>Leathery</li>
@@ -196,7 +196,7 @@
 		  <SocialImpact>0.15</SocialImpact>
 		  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-		<costStuffCount>60</costStuffCount>	<!-- * 3 -->
+		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 		  <li>Fabric</li>
 		  <li>Leathery</li>
