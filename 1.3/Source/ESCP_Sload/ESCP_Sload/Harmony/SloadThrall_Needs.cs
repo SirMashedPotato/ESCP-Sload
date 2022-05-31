@@ -13,7 +13,7 @@ namespace ESCP_Sload
         [HarmonyPatch("CurLevel", MethodType.Getter)]
         public static bool CurLevel_SloadThrallFix(ref Need __instance, ref Pawn ___pawn, ref float __result)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableNeeds() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallDisableNeeds && SloadUtility.PawnIsThrall(___pawn))
             {
                 if (__instance.def.defName != "TM_Mana" && __instance.def.defName != "TM_Stamina")
                 {
@@ -32,7 +32,7 @@ namespace ESCP_Sload
         [HarmonyPatch("CurInstantLevel", MethodType.Getter)]
         public static bool CurInstantLevel_SloadThrallFix(ref Need __instance, ref Pawn ___pawn, ref float __result)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableNeeds() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallDisableNeeds && SloadUtility.PawnIsThrall(___pawn))
             {
                 if (__instance.def.defName != "TM_Mana" && __instance.def.defName != "TM_Stamina")
                 {

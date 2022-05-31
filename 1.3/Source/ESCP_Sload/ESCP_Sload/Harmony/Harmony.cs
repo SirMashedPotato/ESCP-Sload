@@ -39,7 +39,7 @@ namespace ESCP_Sload
             {
                 return;
             }
-            if (__result && pawn.def == ThingDefOf.ESCP_SloadRace && ModSettingsUtility.ESCP_RaceTools_SloadCanEquipAllWeapons())
+            if (__result && pawn.def == ThingDefOf.ESCP_SloadRace && ESCP_Sload_ModSettings.SloadCanEquipAllWeapons)
             {
                 var thingProps = VFECore.ThingDefExtension.Get(thing.def);
                 if (thingProps != null && !thingProps.usableWithShields)

@@ -1,8 +1,6 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 using System.Linq;
-using System.Collections.Generic;
 
 namespace ESCP_Sload
 {
@@ -37,7 +35,7 @@ namespace ESCP_Sload
 
                 ResurrectionUtility.Resurrect(c.InnerPawn);
 
-                if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallResSkillDecay())
+                if (ESCP_Sload_ModSettings.SloadThrallResSkillDecay)
                 {
                     foreach(SkillRecord sr in p.skills.skills)
                     {

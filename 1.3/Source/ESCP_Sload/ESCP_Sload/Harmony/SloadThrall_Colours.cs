@@ -38,7 +38,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool PawnNameColorOf_SloadThrallFix(ref Pawn pawn, ref Color __result)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesArePurple() && SloadUtility.PawnIsThrall(pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallNamesArePurple && SloadUtility.PawnIsThrall(pawn))
             {
                 __result = ThrallTextColour.thrallTextColor;
                 return false;
@@ -55,7 +55,7 @@ namespace ESCP_Sload
         [HarmonyTranspiler]
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesColourTranspilerA())
+            if (ESCP_Sload_ModSettings.SloadThrallNamesColourTranspilerA)
             {
                 var codes = new List<CodeInstruction>(instructions);
                 //used for checking for the right function call
@@ -93,7 +93,7 @@ namespace ESCP_Sload
         [HarmonyTranspiler]
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallNamesColourTranspilerB())
+            if (ESCP_Sload_ModSettings.SloadThrallNamesColourTranspilerB)
             {
                 var codes = new List<CodeInstruction>(instructions);
                 //used for checking for the right function call

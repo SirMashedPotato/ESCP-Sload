@@ -13,7 +13,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool SkillRecord_Learn_SloadThrallFix(ref Pawn ___pawn)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallSkillLearning() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallSkillLearning && SloadUtility.PawnIsThrall(___pawn))
             {
                 return false;
             }
@@ -29,7 +29,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool SkillRecord_Interval_SloadThrallFix(ref Pawn ___pawn)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallSkillDecay() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallSkillDecay && SloadUtility.PawnIsThrall(___pawn))
             {
                 return false;
             }

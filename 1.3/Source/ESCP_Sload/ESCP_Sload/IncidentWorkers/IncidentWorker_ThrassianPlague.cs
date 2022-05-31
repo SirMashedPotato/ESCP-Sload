@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using RimWorld.Planet;
-using UnityEngine;
 using Verse;
 using RimWorld;
 using ESCP_RaceTools;
@@ -13,7 +10,7 @@ namespace ESCP_Sload
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            return ModSettingsUtility.ESCP_RaceTools_SloadThrassianPlagueIncident() && this.PotentialVictims(parms.target).Any<Pawn>() && !Immune() && Hostile();
+            return ESCP_Sload_ModSettings.SloadThrassianPlagueIncident && this.PotentialVictims(parms.target).Any<Pawn>() && !Immune() && Hostile();
         }
 
         private bool Immune()

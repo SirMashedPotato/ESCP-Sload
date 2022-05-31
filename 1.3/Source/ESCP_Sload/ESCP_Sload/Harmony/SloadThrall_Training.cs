@@ -13,7 +13,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool CanBeTrained_SloadThrallFix(ref Pawn ___pawn, ref bool __result)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallTrainable() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallTrainable && SloadUtility.PawnIsThrall(___pawn))
             {
                 __result = false;
                 return false;
@@ -30,7 +30,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool TrainingTrackerTickRare_SloadThrallFix(ref Pawn ___pawn)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallTrainableDecay() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallTrainableDecay && SloadUtility.PawnIsThrall(___pawn))
             {
                 return false;
             }

@@ -16,7 +16,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool GetSocialThoughts_SloadThrallFix(ref Pawn ___pawn, List<ISocialThought> outThoughts)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableMoods() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallDisableMoods && SloadUtility.PawnIsThrall(___pawn))
             {
                 outThoughts.Clear();
                 return false;
@@ -32,7 +32,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool GetAllMoodThoughts_SloadThrallFix(ref Pawn ___pawn, List<Thought> outThoughts)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallDisableMoods() && SloadUtility.PawnIsThrall(___pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallDisableMoods && SloadUtility.PawnIsThrall(___pawn))
             {
                 outThoughts.Clear();
                 return false;

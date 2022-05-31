@@ -22,7 +22,7 @@ namespace ESCP_Sload
                     return false;
                 }
                 if (c.InnerPawn.RaceProps.IsFlesh && c.GetRotStage() == RotStage.Fresh
-               && (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallCanDryad() || !c.InnerPawn.RaceProps.Dryad))
+               && (ESCP_Sload_ModSettings.SloadThrallCanDryad || !c.InnerPawn.RaceProps.Dryad))
                 {
                     var props = ESCP_RaceTools.RaceProperties.Get(c.InnerPawn.def);
                     if (props != null && props.sloadThrallImmune)

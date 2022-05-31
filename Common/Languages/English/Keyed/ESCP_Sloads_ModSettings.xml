@@ -39,6 +39,10 @@
 	<ESCP_RaceTools_SloadThrallSkillLearning>Disable Sload thrall skill learning.</ESCP_RaceTools_SloadThrallSkillLearning>
 	<ESCP_RaceTools_SloadThrallSkillDecay>Disable Sload thrall skill decay.</ESCP_RaceTools_SloadThrallSkillDecay>
 	
+	<ESCP_RaceTools_SloadThrallDisableBloodloss>Disable Sload thralls suffering from bloodloss.</ESCP_RaceTools_SloadThrallDisableBloodloss>
+	<ESCP_RaceTools_SloadThrallDisableHeatstroke>Disable Sload thralls suffering from heatstroke.</ESCP_RaceTools_SloadThrallDisableHeatstroke>
+	<ESCP_RaceTools_SloadThrallDisableHypothermia>Disable Sload thralls suffering from hypothermia.</ESCP_RaceTools_SloadThrallDisableHypothermia>
+	
 	<ESCP_RaceTools_SloadThrallMilkable>Disable Sload thralls being milkable.</ESCP_RaceTools_SloadThrallMilkable>
 	<ESCP_RaceTools_SloadThrallShearable>Disable Sload thralls being shearable.</ESCP_RaceTools_SloadThrallShearable>
 	<ESCP_RaceTools_SloadThrallEggLaying>Disable Sload thralls laying eggs.</ESCP_RaceTools_SloadThrallEggLaying>

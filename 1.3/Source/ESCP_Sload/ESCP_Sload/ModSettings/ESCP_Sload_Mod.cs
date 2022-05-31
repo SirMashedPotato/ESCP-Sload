@@ -87,7 +87,7 @@ namespace ESCP_Sload
             TooltipHandler.TipRegion(rectDefault, "ESCP_Reset".Translate());
             if (Widgets.ButtonText(rectDefault, "ESCP_Reset".Translate(), true, true, true))
             {
-                ESCP_Sload_ModSettings.ResetSettings(settings);
+                ESCP_Sload_ModSettings.ResetSettings();
             }
             listing_Standard.Gap();
             ResetButtonForPage(listing_Standard);
@@ -105,7 +105,7 @@ namespace ESCP_Sload
                     TooltipHandler.TipRegion(rectDefault, "ESCP_PageGeneralReset".Translate());
                     if (Widgets.ButtonText(rectDefault, "ESCP_PageGeneralReset".Translate(), true, true, true))
                     {
-                        ESCP_Sload_ModSettings.ResetSettings_General(settings);
+                        ESCP_Sload_ModSettings.ResetSettings_General();
                     }
                     break;
 
@@ -114,7 +114,7 @@ namespace ESCP_Sload
                     TooltipHandler.TipRegion(rectDefault, "ESCP_PageSloadThrallsReset".Translate());
                     if (Widgets.ButtonText(rectDefault, "ESCP_PageSloadThrallsReset".Translate(), true, true, true))
                     {
-                        ESCP_Sload_ModSettings.ResetSettings_Thrall(settings);
+                        ESCP_Sload_ModSettings.ResetSettings_Thrall();
                     }
                     break;
 
@@ -223,6 +223,18 @@ namespace ESCP_Sload
             listing_Standard.Gap();
 
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallMating".Translate(), ref settings.ESCP_RaceTools_SloadThrallMating);
+            listing_Standard.Gap();
+
+            listing_Standard.GapLine();
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableBloodloss".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableBloodloss);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableHeatstroke".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableHeatstroke);
+            listing_Standard.Gap();
+
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableHypothermia".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableHypothermia);
             listing_Standard.Gap();
 
             listing_Standard.GapLine();

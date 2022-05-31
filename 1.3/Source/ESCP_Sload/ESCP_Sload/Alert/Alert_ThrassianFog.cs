@@ -23,7 +23,7 @@ namespace ESCP_Sload
 
         public override AlertReport GetReport()
         {
-            return ModSettingsUtility.ESCP_RaceTools_SloadThrassianFogAlert() && MapHasFog() > 0 ? AlertReport.Active : AlertReport.Inactive;
+            return ESCP_Sload_ModSettings.SloadThrassianFogAlert && MapHasFog() > 0 ? AlertReport.Active : AlertReport.Inactive;
         }
 
         public override TaggedString GetExplanation()

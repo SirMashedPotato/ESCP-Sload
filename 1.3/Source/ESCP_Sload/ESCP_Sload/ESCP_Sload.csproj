@@ -69,7 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alert_ThrassianFog.cs" />
+    <Compile Include="Alert\Alert_ThrassianFog.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_ReleaseThrassianFog.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_SloadThrallCreate.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_ReleaseThrassianFog.cs" />
@@ -88,6 +88,7 @@
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Inspirations.cs" />
     <Compile Include="Harmony\SloadThrall_Colours.cs" />
+    <Compile Include="Harmony\SloadThrall_HediffGivers.cs" />
     <Compile Include="Harmony\SloadThrall_Mating.cs" />
     <Compile Include="Harmony\SloadThrall_Learning.cs" />
     <Compile Include="Harmony\SloadThrall_Misc.cs" />
@@ -110,11 +111,9 @@
     <Compile Include="IncidentWorkers\IncidentWorker_ThrassianPlague.cs" />
     <Compile Include="LeatherThoughtWorkers\Ideo\ThoughtWorker_Precept_SloadLeatherApparel.cs" />
     <Compile Include="LeatherThoughtWorkers\ThoughtWorker_SloadLeatherApparel.cs" />
-    <Compile Include="MapComp_ThrassianMiasma.cs" />
+    <Compile Include="MapComp\MapComp_ThrassianMiasma.cs" />
     <Compile Include="ModSettings\ESCP_Sload_Mod.cs" />
     <Compile Include="ModSettings\ESCP_Sload_ModSettings.cs" />
-    <Compile Include="ModSettings\ModSettingsUtility.cs" />
-    <Compile Include="ModSettings\ModSettingsUtility_SloadThralls.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadOpinionThought.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadThought.cs" />

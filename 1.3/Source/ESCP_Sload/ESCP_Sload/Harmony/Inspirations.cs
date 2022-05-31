@@ -12,8 +12,8 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool SloadInspirationCanOccurPatch(Pawn pawn, ref bool __result)
         {
-            if ((ModSettingsUtility.ESCP_RaceTools_SloadInspirations() && pawn.def == ThingDefOf.ESCP_SloadRace) 
-                || (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallInspirations() && SloadUtility.PawnIsThrall(pawn)))
+            if ((ESCP_Sload_ModSettings.SloadInspirations && pawn.def == ThingDefOf.ESCP_SloadRace) 
+                || (ESCP_Sload_ModSettings.SloadThrallInspirations && SloadUtility.PawnIsThrall(pawn)))
             {
                 return false;
             }

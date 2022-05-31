@@ -1,7 +1,6 @@
 ﻿using RimWorld;
 using Verse;
 using System.Collections.Generic;
-using ESCP_RaceTools;
 
 //Big thanks to Razza for letting me use MorrowRim Leather Thoughts as a base
 
@@ -12,7 +11,7 @@ namespace ESCP_Sload
 		public static ThoughtState CurrentThoughtState(Pawn p)
 		{
 			//settings check
-			if (!ModSettingsUtility.ESCP_RaceTools_LeatherThoughtSload())
+			if (!ESCP_Sload_ModSettings.LeatherThoughtSload)
 			{
 				return ThoughtState.Inactive;
 			}

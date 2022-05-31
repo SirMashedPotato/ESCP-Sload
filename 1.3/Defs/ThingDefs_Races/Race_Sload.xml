@@ -441,7 +441,7 @@
 					<!-- Romance -->
 					<li>Gay</li>
 					<li>Bisexual</li>
-					<li>Asexual</li>
+					<!--<li>Asexual</li>-->
 					<li MayRequire="Mlie.RationalRomance2">Straight</li>
 					<li MayRequire="Mlie.RationalRomance2">Faithful</li>
 					<li MayRequire="Mlie.RationalRomance2">Philanderer</li>

@@ -11,7 +11,7 @@ namespace ESCP_Sload
         [HarmonyPatch("Active", MethodType.Getter)]
         public static bool CompAnimalProduct_Active_SloadThrallFix(ref CompAnimalProduct __instance, ref bool __result)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallVEF_AnimalProducts() && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallVEF_AnimalProducts && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
             {
                 __result = false;
                 return false;
@@ -27,7 +27,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool CompAsexualReproduction_SloadThrallFix(ref CompAsexualReproduction __instance)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallVEF_AsexualReproduction() && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallVEF_AsexualReproduction && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
             {
                 return false;
             }
@@ -42,7 +42,7 @@ namespace ESCP_Sload
         [HarmonyPrefix]
         public static bool CompAsexualReproduction_SloadThrallFix(ref CompAsexualReproduction __instance, ref string __result)
         {
-            if (ModSettingsUtility_SloadThralls.ESCP_RaceTools_SloadThrallVEF_AsexualReproduction() && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
+            if (ESCP_Sload_ModSettings.SloadThrallVEF_AsexualReproduction && SloadUtility.PawnIsThrall(__instance.parent as Pawn))
             {
                 __result = "VFE_AsexualReproductionDisabled".Translate();
                 return false;
