@@ -41,7 +41,9 @@
 				<painFactor>0</painFactor>
 				<makeImmuneTo>
 					<li>Flu</li>
+					<li>Animal_Flu</li>
 					<li>Plague</li>
+					<li>Animal_Plague</li>
 					<li>Malaria</li>
 					<li>SleepingSickness</li>
 					<li>ESCP_ThrassianPlague</li>
@@ -77,7 +79,7 @@
       </stages>
 	</HediffDef>
 	
-	<!-- Thrassian elixirs -->
+	<!-- Thrassian elixirs (Plague) -->
 	
 	<HediffDef>
 		<defName>ESCP_SloadPlagueLord</defName>
@@ -107,6 +109,8 @@
       </stages>
 	</HediffDef>
 	
+	<!-- Thrassian elixirs (Thrall) -->
+	
 	<HediffDef>
 		<defName>ESCP_SloadThrassianElixir_Thrall</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -129,6 +133,66 @@
 				</capMods>
 				<statOffsets>
 					<PsychicSensitivity>0.25</PsychicSensitivity>
+					<MarketValue>+1000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+	<!--
+	<HediffDef>
+		<defName>ESCP_SloadThrassianElixir_Subjugation</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>enhanced mind manipulation</label>
+		<description>Intense study of corpses can occasionally give Sloads great control over thralls. Special elixirs may exist, allowing one to circumvent the many decades of study.\n\nAllows Sloads to enthrall living flesh, though only if the pawn is downed first.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.15</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
+					<MarketValue>+1000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+	-->
+	<HediffDef>
+		<defName>ESCP_SloadThrassianElixir_ThrallEmpowerment</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>enhanced thrall knowledge</label>
+		<description>Intense study of corpses can occasionally give Sloads great control over thralls. Special elixirs may exist, allowing one to circumvent the many decades of study.\n\nAllows Sloads to improve the skills of the thralls they control.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="ESCP_RaceTools.HediffCompProperties_AddAbility">
+				<abilityDefList>
+					<li>ESCP_SloadThrall_ImproveSkill</li>
+				</abilityDefList>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.15</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
 					<MarketValue>+1000</MarketValue>
 				</statOffsets>
 			</li>

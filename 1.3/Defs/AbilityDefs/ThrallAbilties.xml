@@ -70,5 +70,52 @@
 		  </targetParams>
 		</verbProperties>
 	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>ESCP_SloadThrall_ImproveSkill</defName>
+		<label>improve thrall skills</label>
+		<description>Improve the skills of a thrall this Sload controls by 1 level, with the chance of improvement based on the Sload's intellectual skill.</description>
+		<iconPath>UI/Abilities/ESCP_SloadImproveThrall</iconPath>
+		
+		<groupDef>ESCP_SloadThrall</groupDef>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<warmupSound>AnimalCalm_Resolve</warmupSound>
+		<uiOrder>1</uiOrder>
+		<statBases>
+
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
+			<preCastTicks>99999</preCastTicks>
+		  </li>
+		  <li Class="ESCP_Sload.CompProperties_SloadThrallImproveSkill">
+			<skill>Intellectual</skill>
+			<improvement>1</improvement>
+			<chancePerLevel>0.05</chancePerLevel>
+		  </li>
+		</comps>
+		<verbProperties>
+		  <drawAimPie>False</drawAimPie>
+		  <range>-1</range>
+		  <warmupTime>10.0</warmupTime>
+		  <verbClass>ESCP_Sload.Verb_CastAbilityTouch_SloadThrallImprove</verbClass>
+		   <targetParams>
+			<canTargetItems>false</canTargetItems>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>true</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<mustBeSelectable>true</mustBeSelectable>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
 
 </Defs>

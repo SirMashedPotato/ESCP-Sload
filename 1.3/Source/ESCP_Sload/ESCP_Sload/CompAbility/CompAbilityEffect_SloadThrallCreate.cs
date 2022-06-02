@@ -77,7 +77,7 @@ namespace ESCP_Sload
             Pawn p = parent.pawn;
             int limit = CurrentLimit(p);
             int count = p.GetComp<Comp_SloadThralls>().ThrallCount();
-            int skillLevel = p.skills.GetSkill(Props.skill != null ? Props.skill : SkillDefOf.Intellectual).Level;
+            int skillLevel = p.skills.GetSkill(Props.skill ?? SkillDefOf.Intellectual).Level;
 
             extra += "ESCP_SloadThrall_ExtraTooltip_Count".Translate(count, limit);
             if (skillLevel != 20)
@@ -108,7 +108,7 @@ namespace ESCP_Sload
 
         public int CurrentLimit(Pawn p)
         {
-            int curLevel = p.skills.GetSkill(Props.skill != null ? Props.skill : SkillDefOf.Intellectual).Level;
+            int curLevel = p.skills.GetSkill(Props.skill ?? SkillDefOf.Intellectual).Level;
             int index = 0;
             for (int i = 0; i < Props.levelRequirement.Count; i++)
             {

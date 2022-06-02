@@ -83,5 +83,37 @@
 		  </li>
 		</comps>
 	</ThingDef>
- 
+	<!--
+	<ThingDef ParentName="ESCP_SloadElixirBase">
+		<defName>ESCP_SloadThrassianElixir_ThrallSubjugation</defName>
+		<label>Thrassian subjugation elixir</label>
+		<description>An extremely rare elixir, containing a strange purple mixture. Allows Sloads to enthrall living flesh, though only if the pawn is downed first.\n\nProbably not safe for ingestion by anyone who is not a Sload.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="ESCP_Sload.CompProperties_UseEffectThrassianElixir">
+			<hediff>ESCP_SloadThrassianElixir_Subjugation</hediff>
+		  </li>
+		</comps>
+	</ThingDef>
+	-->
+	<ThingDef ParentName="ESCP_SloadElixirBase">
+		<defName>ESCP_SloadThrassianElixir_ThrallEmpowerment</defName>
+		<label>Thrassian empowerment elixir</label>
+		<description>An extremely rare elixir, containing a strange purple mixture. Allows Sloads to improve the skills of the thralls they control.\n\nProbably not safe for ingestion by anyone who is not a Sload.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="ESCP_Sload.CompProperties_UseEffectThrassianElixir">
+			<hediff>ESCP_SloadThrassianElixir_ThrallEmpowerment</hediff>
+		  </li>
+		</comps>
+	</ThingDef>
+
 </Defs>

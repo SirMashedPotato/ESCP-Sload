@@ -72,10 +72,12 @@
     <Compile Include="Alert\Alert_ThrassianFog.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_ReleaseThrassianFog.cs" />
     <Compile Include="CompAbility\CompAbilityEffect_SloadThrallCreate.cs" />
+    <Compile Include="CompAbility\CompAbilityEffect_SloadThrallImproveSkill.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_ReleaseThrassianFog.cs" />
     <Compile Include="CompAbility\Properties\CompProperties_SloadThrallCreate.cs" />
     <Compile Include="CompUse\CompUseEffect_ThrassianElixir.cs" />
     <Compile Include="CompUse\CompUseEffect_ThrassianElixir_Refresh.cs" />
+    <Compile Include="CompAbility\Properties\CompProperties_SloadThrallImproveSkill.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectThrassianElixir.cs" />
     <Compile Include="CompUse\Properties\CompProperties_UseEffectThrassianElixir_Refresh.cs" />
     <Compile Include="Comp\CompDraftableThrall.cs" />
@@ -117,8 +119,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadOpinionThought.cs" />
     <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadThought.cs" />
+    <Compile Include="ThoughtWorkerClass\ThoughtWorker_SloadThrallThought.cs" />
     <Compile Include="Utility\SloadUtility.cs" />
     <Compile Include="Verb\Verb_CastAbilityTouch_SloadThrallCreate.cs" />
+    <Compile Include="Verb\Verb_CastAbilityTouch_SloadThrallImprove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -58,7 +58,7 @@
 			  <PsychicSensitivity>1.5</PsychicSensitivity>
 			  <ImmunityGainSpeed>5</ImmunityGainSpeed>
 			  <InjuryHealingFactor>2.0</InjuryHealingFactor>
-			  <GlobalLearningFactor>1.3</GlobalLearningFactor>
+			  <GlobalLearningFactor>0.75</GlobalLearningFactor>
 			  <DrugSynthesisSpeed>1.5</DrugSynthesisSpeed>
 			  <ResearchSpeed>1.5</ResearchSpeed>
 			  <ToxicSensitivity>0.25</ToxicSensitivity>
@@ -311,12 +311,13 @@
 					<li>PsychicEmanatorSoothe</li>
 					<li>ArtifactMoodBoost</li>
 					<li>Joywire</li>
-					<!-- Sitiuational negative -->
+					<!-- Situational negative -->
 					<li>NeedFood</li>
 					<li>NeedRest</li>
 					<li>NeedRoomSize</li>
 					<li>NeedOutdoors</li>
 					<li>NeedIndoors</li>
+					<li>NeedJoy</li>
 					<li>DrugDesireFascination</li>
 					<li>EnvironmentCold</li>
 					<li>EnvironmentHot</li>
@@ -324,6 +325,13 @@
 					<li>Sick</li>
 					<li>PsychicDrone</li>
 					<li>MissingTongue</li>
+					<li>DoingPassionateWork</li>
+					<!-- Memory -->
+					<li>SleepDisturbed</li>
+					<li>SleptInCold</li>
+					<li>SleptInHeat</li>
+					<li>WasImprisoned</li>
+					<li>MyOrganHarvested</li>
 					<!-- Trait based -->
 					<li>MasochistPain</li>
 					<li>ProsthophileNoProsthetic</li>
@@ -376,6 +384,9 @@
 					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_outsideInBlightStorm</li>
 					<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_outsideInAcidWeather</li>
 					<li MayRequire="SirMashedPotato.MorrowRim.VolcanicAshlands">MorrowRim_outsideInFireInferno</li>
+					<!-- Other -->
+					<li MayRequire="SirMashedPotato.BlackPlague">BlackPlague_TouchedVessel</li>
+					<li MayRequire="SirMashedPotato.BlackPlague">BlackPlague_TouchedVessel_Infected</li>
 				</canStillReceiveThoughts>
 				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
 			</thoughtSettings>
