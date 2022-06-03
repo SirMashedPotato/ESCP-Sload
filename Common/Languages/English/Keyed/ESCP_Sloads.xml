@@ -7,6 +7,7 @@
 	<ESCP_SloadThrall_LimitReached>Current limit of {0} thralls reached.</ESCP_SloadThrall_LimitReached>
 	<ESCP_SloadThrall_ExtraTooltip_Count>Current thralls:  {0}/{1}</ESCP_SloadThrall_ExtraTooltip_Count>
 	<ESCP_SloadThrall_ExtraTooltip_Limit>\nThrall limit increased by {0} at {1} {2}</ESCP_SloadThrall_ExtraTooltip_Limit>
+	<ESCP_SloadThrall_ExtraTooltip_LimitUncapped>\nThrall limit increased by 1 every 10 levels past 20</ESCP_SloadThrall_ExtraTooltip_LimitUncapped>
 	
 	<ESCP_SloadThrall_ExtraTooltip_ChanceSkillIncrease>\nChance for major passion: 100%\nChance for minor passion: {0}\nChance for no passion: {1}</ESCP_SloadThrall_ExtraTooltip_ChanceSkillIncrease>
 	

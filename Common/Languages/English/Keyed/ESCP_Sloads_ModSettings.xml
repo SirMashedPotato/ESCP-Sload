@@ -29,6 +29,7 @@
 	<ESCP_RaceTools_SloadThrallNamesColourTranspilerTooltip>Injects an additional check into vanilla code, disable if it causes issues. As it's a transpiler, you will need to restart the game for changes to take effect.</ESCP_RaceTools_SloadThrallNamesColourTranspilerTooltip>
 
 	<ESCP_RaceTools_SloadThrallCanDryad>Allow enthralling Ideology dryad corpses.</ESCP_RaceTools_SloadThrallCanDryad>
+	<ESCP_RaceTools_SloadThrallSkillLimit>Allow the 'improve thrall skills' ability increasing levels past 20.</ESCP_RaceTools_SloadThrallSkillLimit>
 	
 	<ESCP_RaceTools_SloadThrallResSkillDecay>Enable thrall resurrection skill decay.</ESCP_RaceTools_SloadThrallResSkillDecay>
 	<ESCP_RaceTools_SloadThrallResSkillDecayTooltip>If enabled, resurrecting a pawn as a thrall will cause the level of all skills to decay, with a 25% chance the level does not decrease at all.\n\nA skill at level 20 will decrease by 5.\nA skill at level 10 will decrease by 2.\nA skill at level 5 will decrease by 1.\nA skill at, or below, level 3 will not decrease at all.</ESCP_RaceTools_SloadThrallResSkillDecayTooltip>

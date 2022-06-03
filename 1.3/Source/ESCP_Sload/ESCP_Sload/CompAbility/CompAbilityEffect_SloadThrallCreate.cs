@@ -80,9 +80,16 @@ namespace ESCP_Sload
             int skillLevel = p.skills.GetSkill(Props.skill ?? SkillDefOf.Intellectual).Level;
 
             extra += "ESCP_SloadThrall_ExtraTooltip_Count".Translate(count, limit);
-            if (skillLevel != 20)
+            if (skillLevel < 20)
             {
                 extra += GetTooltipExtra_Limit(p, skillLevel);
+            }
+            else
+            {
+                if(skillLevel > 20)
+                {
+                    extra += "ESCP_SloadThrall_ExtraTooltip_LimitUncapped".Translate();
+                }
             }
 
             return extra;
@@ -119,6 +126,12 @@ namespace ESCP_Sload
             }
 
             int limit = Props.thrallLimit[index];
+
+            if (curLevel > 20)
+            {
+                int temp = curLevel - 20;
+                limit += temp / 10;
+            }
 
             if (p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrassianElixir_Thrall) != null)
             {

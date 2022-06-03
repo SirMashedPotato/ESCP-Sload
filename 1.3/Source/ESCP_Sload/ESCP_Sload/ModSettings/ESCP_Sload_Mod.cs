@@ -185,6 +185,9 @@ namespace ESCP_Sload
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallCanDryad".Translate(), ref settings.ESCP_RaceTools_SloadThrallCanDryad);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallSkillLimit".Translate(), ref settings.ESCP_RaceTools_SloadThrallSkillLimit);
+            listing_Standard.Gap();
+
             listing_Standard.GapLine();
             listing_Standard.Gap();
 

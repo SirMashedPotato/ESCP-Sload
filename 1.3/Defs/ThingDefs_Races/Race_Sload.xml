@@ -387,6 +387,7 @@
 					<!-- Other -->
 					<li MayRequire="SirMashedPotato.BlackPlague">BlackPlague_TouchedVessel</li>
 					<li MayRequire="SirMashedPotato.BlackPlague">BlackPlague_TouchedVessel_Infected</li>
+					<li MayRequire="pphhyy.ESCP.Spriggan">ESCP_AnimaSprigganPsychicSoothe</li>
 				</canStillReceiveThoughts>
 				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
 			</thoughtSettings>

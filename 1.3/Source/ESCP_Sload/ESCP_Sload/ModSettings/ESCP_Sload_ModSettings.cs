@@ -16,6 +16,7 @@ namespace ESCP_Sload
         //Sload thralls
         public static bool SloadThrallCanDryad => _instance.ESCP_RaceTools_SloadThrallCanDryad;
         public static bool SloadThrallResSkillDecay => _instance.ESCP_RaceTools_SloadThrallResSkillDecay;
+        public static bool SloadThrallSkillLimit => _instance.ESCP_RaceTools_SloadThrallSkillLimit;
 
         public static bool SloadThrallDisableNeeds => _instance.ESCP_RaceTools_SloadThrallDisableNeeds;
         public static bool SloadThrallDisableMoods => _instance.ESCP_RaceTools_SloadThrallDisableMoods;
@@ -52,6 +53,7 @@ namespace ESCP_Sload
         //Sload thralls
         public bool ESCP_RaceTools_SloadThrallCanDryad = ESCP_RaceTools_SloadThrallCanDryad_def;
         public bool ESCP_RaceTools_SloadThrallResSkillDecay = ESCP_RaceTools_SloadThrallResSkillDecay_def;
+        public bool ESCP_RaceTools_SloadThrallSkillLimit = ESCP_RaceTools_SloadThrallSkillLimit_def;
 
         public bool ESCP_RaceTools_SloadThrallDisableNeeds = ESCP_RaceTools_SloadThrallDisableNeeds_def;
         public bool ESCP_RaceTools_SloadThrallDisableMoods = ESCP_RaceTools_SloadThrallDisableMoods_def;
@@ -88,6 +90,7 @@ namespace ESCP_Sload
         //Sload thralls
         private static readonly bool ESCP_RaceTools_SloadThrallCanDryad_def = false;
         private static readonly bool ESCP_RaceTools_SloadThrallResSkillDecay_def = false;
+        private static readonly bool ESCP_RaceTools_SloadThrallSkillLimit_def = false;
 
         private static readonly bool ESCP_RaceTools_SloadThrallDisableNeeds_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallDisableMoods_def = true;
@@ -131,6 +134,7 @@ namespace ESCP_Sload
             //Sload thralls
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallCanDryad, "ESCP_RaceTools_SloadThrallCanDryad", ESCP_RaceTools_SloadThrallCanDryad_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallResSkillDecay, "ESCP_RaceTools_SloadThrallResSkillDecay", ESCP_RaceTools_SloadThrallResSkillDecay_def);
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallSkillLimit, "ESCP_RaceTools_SloadThrallSkillLimit", ESCP_RaceTools_SloadThrallSkillLimit_def);
 
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableNeeds, "ESCP_RaceTools_SloadThrallDisableNeeds", ESCP_RaceTools_SloadThrallDisableNeeds_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableMoods, "ESCP_RaceTools_SloadThrallDisableMoods", ESCP_RaceTools_SloadThrallDisableMoods_def);
@@ -180,6 +184,7 @@ namespace ESCP_Sload
         {
             _instance.ESCP_RaceTools_SloadThrallCanDryad = ESCP_RaceTools_SloadThrallCanDryad_def;
             _instance.ESCP_RaceTools_SloadThrallResSkillDecay = ESCP_RaceTools_SloadThrallResSkillDecay_def;
+            _instance.ESCP_RaceTools_SloadThrallSkillLimit = ESCP_RaceTools_SloadThrallSkillLimit_def;
 
             _instance.ESCP_RaceTools_SloadThrallDisableNeeds = ESCP_RaceTools_SloadThrallDisableNeeds_def;
             _instance.ESCP_RaceTools_SloadThrallDisableMoods = ESCP_RaceTools_SloadThrallDisableMoods_def;

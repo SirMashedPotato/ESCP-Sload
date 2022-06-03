@@ -27,7 +27,8 @@ namespace ESCP_Sload
                 List<SkillRecord> list = thrall.skills.skills.Where(x=>!x.TotallyDisabled).ToList();
                 foreach(SkillRecord sr in list)
                 {
-                    int temp = Mathf.Clamp(sr.levelInt + 1, 0, 20);
+                    bool flag = ESCP_Sload_ModSettings.SloadThrallSkillLimit;
+                    int temp = !flag ? Mathf.Clamp(sr.levelInt + 1, 1, 20) : sr.levelInt + 1;
                     switch (sr.passion)
                     {
                         case Passion.Major:
