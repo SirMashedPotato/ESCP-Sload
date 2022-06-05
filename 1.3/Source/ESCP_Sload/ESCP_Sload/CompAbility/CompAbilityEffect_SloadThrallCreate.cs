@@ -35,7 +35,7 @@ namespace ESCP_Sload
 
                 ResurrectionUtility.Resurrect(c.InnerPawn);
 
-                if (ESCP_Sload_ModSettings.SloadThrallResSkillDecay)
+                if (ESCP_Sload_ModSettings.SloadThrallResSkillDecay && p.RaceProps.Humanlike)
                 {
                     foreach(SkillRecord sr in p.skills.skills)
                     {
@@ -45,7 +45,6 @@ namespace ESCP_Sload
                         }
                     }
                 }
-
                 parent.pawn.GetComp<Comp_SloadThralls>().AddThrall(p);
             }
         }
