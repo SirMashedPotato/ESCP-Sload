@@ -54,7 +54,7 @@ namespace ESCP_Sload
             base.CompTick();
 
             Pawn p = this.parent as Pawn;
-            if (p.Downed)
+            if (p.Downed && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadThrassianElixir_ThrallControl) == null)
             {
                 KillThralls();
             }

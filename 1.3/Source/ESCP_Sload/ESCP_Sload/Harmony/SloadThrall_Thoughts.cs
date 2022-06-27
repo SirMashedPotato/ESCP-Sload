@@ -24,7 +24,7 @@ namespace ESCP_Sload
             return true;
         }
     }
-
+    /* Ye Olde patch
     [HarmonyPatch(typeof(ThoughtHandler))]
     [HarmonyPatch("GetAllMoodThoughts")]
     public static class ThoughtHandler_GetAllMoodThoughts_Patch
@@ -40,5 +40,20 @@ namespace ESCP_Sload
             return true;
         }
     }
-
+    */
+    [HarmonyPatch(typeof(SituationalThoughtHandler))]
+    [HarmonyPatch("AppendMoodThoughts")]
+    public static class SituationalThoughtHandler_AppendMoodThoughts_Patch
+    {
+        [HarmonyPostfix]
+        public static void AppendMoodThoughts_SloadThrallFix(List<Thought> outThoughts)
+        {
+            if (ESCP_Sload_ModSettings.SloadThrallDisableMoods && outThoughts.Find(x=>x.def == ThoughtDefOf.ESCP_SloadThrallThought) != null)
+            {
+                Thought temp = outThoughts.Find(x => x.def == ThoughtDefOf.ESCP_SloadThrallThought);
+                outThoughts.Clear();
+                outThoughts.Add(temp);
+            }
+        }
+    }
 }

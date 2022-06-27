@@ -22,7 +22,9 @@
 			<soundAbsorbedDamage>EnergyShield_AbsorbDamage</soundAbsorbedDamage>
         </li>
 	</modExtensions>
-	
+	<costList>
+		<Silver>1000</Silver>
+	</costList>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/ESCP_SloadBarrierBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -30,7 +32,6 @@
     <tickerType>Normal</tickerType>
 
     <statBases>
-	  <MarketValue>1000</MarketValue>
       <Mass>2</Mass>
       <Flammability>0.4</Flammability>
       <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>

@@ -79,6 +79,37 @@
 							<texPath>Achievements/ESCP_AchievementSload_SloadThralls</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementSload_SloadUpgrades</defName>
+							<label>Thrassian Lord</label>
+							<description>Fully upgrade a Sload with Thrassian Elixirs</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundSload</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.MultiHediffTracker">
+								<defs>
+									<li>
+										<key>ESCP_SloadPlagueLord</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>ESCP_SloadThrassianElixir_Thrall</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>ESCP_SloadThrassianElixir_ThrallEmpowerment</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>ESCP_SloadThrassianElixir_ThrallControl</key>
+										<value>1</value>
+									</li>
+								</defs>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementSload_SloadUpgrades</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
 	
 						<!-- Crafting / Items -->
 						

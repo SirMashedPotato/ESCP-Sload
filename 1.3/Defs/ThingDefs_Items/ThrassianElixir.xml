@@ -115,5 +115,24 @@
 		  </li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="ESCP_SloadElixirBase">
+		<defName>ESCP_SloadThrassianElixir_ThrallControl</defName>
+		<label>Thrassian control elixir</label>
+		<description>An extremely rare elixir, containing a strange purple mixture. Allows Sloads to control thralls, even when downed or unconscious.\n\nProbably not safe for ingestion by anyone who is not a Sload.</description>
+		<graphicData>
+		  <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>5000</MarketValue>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+		  <li Class="ESCP_Sload.CompProperties_UseEffectThrassianElixir">
+			<hediff>ESCP_SloadThrassianElixir_ThrallControl</hediff>
+		  </li>
+		</comps>
+	</ThingDef>
 
 </Defs>

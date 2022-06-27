@@ -86,6 +86,7 @@
     <Compile Include="DeathActionWorker\DeathActionWorker_Sload.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
+    <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Gas\Gas_ThrassianPlague.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Inspirations.cs" />
