@@ -31,4 +31,7 @@
 	
 	<ESCP_SloadThrall_PreceptDisabled>due to precept: Sload Thralls (Heretical)</ESCP_SloadThrall_PreceptDisabled>
 	
+	<!-- Other -->
+	<ESCP_Sload_CleanThrallList>Cleaned thrall list for {0}, removing {1} missing pawns</ESCP_Sload_CleanThrallList>
+	
 </LanguageData>

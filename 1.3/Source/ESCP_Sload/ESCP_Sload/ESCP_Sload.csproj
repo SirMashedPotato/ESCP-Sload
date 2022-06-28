@@ -84,6 +84,7 @@
     <Compile Include="Comp\Comp_SloadThralls.cs" />
     <Compile Include="Comp\Properties\CompProperties_SloadThralls.cs" />
     <Compile Include="DeathActionWorker\DeathActionWorker_Sload.cs" />
+    <Compile Include="Debug\DebugTools.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />

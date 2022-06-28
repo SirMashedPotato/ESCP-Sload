@@ -49,6 +49,35 @@ namespace ESCP_Sload
             }
         }
 
+        public int CleanThrallList()
+        {
+            int count = 0;
+            int num = ThrallCount();
+            List<Pawn> temp = new List<Pawn>();
+
+            for(int i = 0; i < num; i++)
+            {
+                try
+                {
+                    if (thralls[i].Name != null)
+                    {
+                        temp.Add(thralls[i]);
+                    } 
+                    else
+                    {
+                        count++;
+                    }
+                }
+                catch (NullReferenceException)
+                {
+                    count++;
+                }
+            }
+            thralls.Clear();
+            thralls = temp;
+            return count;
+        }
+
         public override void CompTick()
         {
             base.CompTick();
