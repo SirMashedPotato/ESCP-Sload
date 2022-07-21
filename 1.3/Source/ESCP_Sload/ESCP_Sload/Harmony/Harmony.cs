@@ -63,24 +63,4 @@ namespace ESCP_Sload
             return true;
         }
     }
-
-    [HarmonyPatch(typeof(Pawn_InteractionsTracker))]
-    [HarmonyPatch("CanInteractNowWith")]
-    public static class RestUtility_CanInteractNowWith_Patch
-    {
-        [HarmonyPrefix]
-        public static bool CanInteractNowWith_ThrallFix(ref Pawn ___pawn, Pawn recipient, InteractionDef interactionDef = null)
-        {
-            if (!SloadUtility.PawnIsThrall(___pawn))
-            {
-                if (interactionDef == InteractionDefOf.Insult || interactionDef == InteractionDefOf.RomanceAttempt 
-                    || interactionDef == InteractionDefOf.Chitchat || interactionDef == InteractionDefOf.DeepTalk)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
 }
-

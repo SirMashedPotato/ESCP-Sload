@@ -51,6 +51,8 @@
 	<ESCP_RaceTools_SloadThrallTrainableDecay>Disable Sload thrall trainable decay.</ESCP_RaceTools_SloadThrallTrainableDecay>
 	<ESCP_RaceTools_SloadThrallMating>Disable Sload thrall mating.</ESCP_RaceTools_SloadThrallMating>
 	<ESCP_RaceTools_SloadThrallInspirations>Disable Sload thralls receiving inspirations.</ESCP_RaceTools_SloadThrallInspirations>
+
+	<ESCP_RaceTools_SloadThrallSocialInteractions>Disable Sload thralls doing certain social interactions.</ESCP_RaceTools_SloadThrallSocialInteractions>
 	
 	<ESCP_RaceTools_SloadThrallVEF_AnimalProducts>[VEF] Disable Sload thralls producing resources.</ESCP_RaceTools_SloadThrallVEF_AnimalProducts>
 	<ESCP_RaceTools_SloadThrallVEF_AsexualReproduction>[VEF] Disable Sload thralls reproducing asexually.</ESCP_RaceTools_SloadThrallVEF_AsexualReproduction>

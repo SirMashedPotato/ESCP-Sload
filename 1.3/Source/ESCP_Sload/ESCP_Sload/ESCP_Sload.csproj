@@ -86,6 +86,7 @@
     <Compile Include="DeathActionWorker\DeathActionWorker_Sload.cs" />
     <Compile Include="Debug\DebugTools.cs" />
     <Compile Include="DefOf\HediffDefOf.cs" />
+    <Compile Include="DefOf\InteractionDefOf.cs" />
     <Compile Include="DefOf\ThingDefOf.cs" />
     <Compile Include="DefOf\ThoughtDefOf.cs" />
     <Compile Include="Gas\Gas_ThrassianPlague.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Harmony\Inspirations.cs" />
     <Compile Include="Harmony\SloadThrall_Colours.cs" />
     <Compile Include="Harmony\SloadThrall_HediffGivers.cs" />
+    <Compile Include="Harmony\SloadThrall_Interactions.cs" />
     <Compile Include="Harmony\SloadThrall_Mating.cs" />
     <Compile Include="Harmony\SloadThrall_Learning.cs" />
     <Compile Include="Harmony\SloadThrall_Misc.cs" />

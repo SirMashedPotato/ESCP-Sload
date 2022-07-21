@@ -195,6 +195,9 @@ namespace ESCP_Sload
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallInspirations".Translate(), ref settings.ESCP_RaceTools_SloadThrallInspirations);
             listing_Standard.Gap();
 
+            listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallSocialInteractions".Translate(), ref settings.ESCP_RaceTools_SloadThrallSocialInteractions);
+            listing_Standard.Gap();
+
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_SloadThrallDisableNeeds".Translate(), ref settings.ESCP_RaceTools_SloadThrallDisableNeeds);
             listing_Standard.Gap();
 

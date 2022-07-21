@@ -36,6 +36,8 @@ namespace ESCP_Sload
         public static bool SloadThrallDisableHeatstroke => _instance.ESCP_RaceTools_SloadThrallDisableHeatstroke;
         public static bool SloadThrallDisableHypothermia => _instance.ESCP_RaceTools_SloadThrallDisableHypothermia;
 
+        public static bool SloadThrallDisableSocialInteractions => _instance.ESCP_RaceTools_SloadThrallSocialInteractions;
+
         public static bool SloadThrallVEF_AnimalProducts => _instance.ESCP_RaceTools_SloadThrallVEF_AnimalProducts;
         public static bool SloadThrallVEF_AsexualReproduction => _instance.ESCP_RaceTools_SloadThrallVEF_AsexualReproduction;
 
@@ -73,6 +75,8 @@ namespace ESCP_Sload
         public bool ESCP_RaceTools_SloadThrallDisableHeatstroke = ESCP_RaceTools_SloadThrallDisableHeatstroke_def;
         public bool ESCP_RaceTools_SloadThrallDisableHypothermia = ESCP_RaceTools_SloadThrallDisableHypothermia_def;
 
+        public bool ESCP_RaceTools_SloadThrallSocialInteractions = ESCP_RaceTools_SloadThrallSocialInteractions_def;
+
         public bool ESCP_RaceTools_SloadThrallVEF_AnimalProducts = ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def;
         public bool ESCP_RaceTools_SloadThrallVEF_AsexualReproduction = ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def;
 
@@ -109,6 +113,8 @@ namespace ESCP_Sload
         private static readonly bool ESCP_RaceTools_SloadThrallDisableBloodloss_def = false;
         private static readonly bool ESCP_RaceTools_SloadThrallDisableHeatstroke_def = false;
         private static readonly bool ESCP_RaceTools_SloadThrallDisableHypothermia_def = false;
+
+        private static readonly bool ESCP_RaceTools_SloadThrallSocialInteractions_def = true;
 
         private static readonly bool ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def = true;
         private static readonly bool ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def = true;
@@ -153,6 +159,8 @@ namespace ESCP_Sload
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableBloodloss, "ESCP_RaceTools_SloadThrallDisableBloodloss", ESCP_RaceTools_SloadThrallDisableBloodloss_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableHeatstroke, "ESCP_RaceTools_SloadThrallDisableHeatstroke", ESCP_RaceTools_SloadThrallDisableHeatstroke_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallDisableHypothermia, "ESCP_RaceTools_SloadThrallDisableHypothermia", ESCP_RaceTools_SloadThrallDisableHypothermia_def);
+
+            Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallSocialInteractions, "ESCP_RaceTools_SloadThrallSocialInteractions", ESCP_RaceTools_SloadThrallSocialInteractions_def);
 
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallVEF_AnimalProducts, "ESCP_RaceTools_SloadThrallVEF_AnimalProducts", ESCP_RaceTools_SloadThrallVEF_AnimalProducts_def);
             Scribe_Values.Look(ref ESCP_RaceTools_SloadThrallVEF_AsexualReproduction, "ESCP_RaceTools_SloadThrallVEF_AsexualReproduction", ESCP_RaceTools_SloadThrallVEF_AsexualReproduction_def);
@@ -206,6 +214,8 @@ namespace ESCP_Sload
             _instance.ESCP_RaceTools_SloadThrallDisableBloodloss = ESCP_RaceTools_SloadThrallDisableBloodloss_def;
             _instance.ESCP_RaceTools_SloadThrallDisableHeatstroke = ESCP_RaceTools_SloadThrallDisableHeatstroke_def;
             _instance.ESCP_RaceTools_SloadThrallDisableHypothermia = ESCP_RaceTools_SloadThrallDisableHypothermia_def;
+
+            _instance.ESCP_RaceTools_SloadThrallSocialInteractions = ESCP_RaceTools_SloadThrallSocialInteractions_def;
 
             _instance.ESCP_RaceTools_SloadThrallNamesArePurple = ESCP_RaceTools_SloadThrallNamesArePurple_def;
             _instance.ESCP_RaceTools_SloadThrallNamesColourTranspilerA = ESCP_RaceTools_SloadThrallNamesColourTranspilerA_def;
