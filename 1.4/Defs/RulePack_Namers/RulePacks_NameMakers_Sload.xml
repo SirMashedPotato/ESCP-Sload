@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>ESCP_NamerPersonSload</defName>
+		<include>
+
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[letter][a][b]</li>
+			</rulesStrings>
+			<rulesRaw>
+
+			</rulesRaw>
+			<rulesFiles>
+				<li>letter->ESCP_SloadNames/ESCP_SloadLetters</li>
+				<li>a->ESCP_SloadNames/ESCP_SloadNamesA</li>
+				<li>b->ESCP_SloadNames/ESCP_SloadNamesB</li>
+
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

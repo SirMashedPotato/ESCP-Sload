@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IncidentDef>
+		<defName>ESCP_SloadJoins</defName>
+		<label>Sload joins</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_WandererJoin</workerClass>
+		<letterLabel>Sload joins: {PAWN_nameDef}</letterLabel>
+		<letterText>A {PAWN_title} named {PAWN_nameDef} has arrived and is joining the colony.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily. If you don't want {PAWN_nameDef}, you can banish {PAWN_objective}, sell {PAWN_objective} into slavery, or simply kill {PAWN_objective}. However, your other colonists may find this disturbing.</letterText>
+		<baseChance>0.0</baseChance>
+		<pawnKind>ESCP_SloadMedievalKind</pawnKind>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>ESCP_Disease_ThrassianPlague</defName>
+		<label>thrassian plague</label>
+		<diseaseIncident>ESCP_ThrassianPlague</diseaseIncident>
+		<letterLabel>Disease: Thrassian Plague</letterLabel>
+		<workerClass>ESCP_Sload.IncidentWorker_ThrassianPlague</workerClass>
+		<baseChance>2.0</baseChance>
+		<minRefireDays>10</minRefireDays>
+		<category>ThreatBig</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		  <!--
+		  <li>Map_TempIncident</li>
+		  <li>Map_Misc</li>
+		  <li>Map_RaidBeacon</li>
+		  <li>Caravan</li>
+		  -->
+		</targetTags>
+		<diseaseVictimFractionRange>0.2~0.5</diseaseVictimFractionRange>
+		<letterText>Due to hostilities with a Sload faction, {0} of your {1} have contracted the Thrassian Plague.\n\nEnsure you have a medical bed and a doctor. Make sure that they get proper treatment and spend as much time in bed as possible.\n\nThe following {1} have gotten sick:\n\n{3}</letterText>
+		<letterDef>NegativeEvent</letterDef>
+	</IncidentDef>
+
+</Defs>

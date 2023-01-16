@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>ESCP_SloadSoapFromGrubs</defName>
+		<label>process Sload grubs into soap</label>
+		<description>Process 10 Sload grubs into 5 Sload soap.</description>
+		<jobString>Processing Sload grubs into Sload soap.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ESCP_Egg_Sload</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ESCP_Egg_Sload</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <ESCP_SloadSoap>5</ESCP_SloadSoap>
+		</products>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ESCP_SloadSoapFromGrubs_Bulk</defName>
+		<label>process Sload grubs into soap x 4</label>
+		<description>Process 40 Sload grubs into 20 Sload soap.</description>
+		<jobString>Processing Sload grubs into Sload soap.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ESCP_Egg_Sload</li>
+			  </thingDefs>
+			</filter>
+			<count>40</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ESCP_Egg_Sload</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <ESCP_SloadSoap>20</ESCP_SloadSoap>
+		</products>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+</Defs>

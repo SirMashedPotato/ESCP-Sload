@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ConceptDef ParentName="NotedOpportunisticBase">
+    <defName>ESCP_SloadThoughts</defName>
+    <label>Sloads and emotions</label>
+    <helpText>Sload don't feel emotions, as such they don't receive many thoughts, and don't have opinions of others.</helpText>
+  </ConceptDef>
+  
+  <ConceptDef ParentName="NotedOpportunisticBase">
+    <defName>ESCP_SloadEquipment</defName>
+    <label>Sloads and equipment</label>
+    <helpText>Sload are far too large for most apparel, and are unable to wield weapons that require two hands to use.</helpText>
+  </ConceptDef>
+  
+  <ConceptDef ParentName="NotedOpportunisticBase">
+    <defName>ESCP_SloadThralls</defName>
+    <label>Sloads and thralls</label>
+    <helpText>Sload are able to puppeter fresh corpses, turning them into thralls. The Sloads intellectual skill dictates the maximum number of thralls a single Sload can have.\n\nIf a Sload is downed, or killed, any thralls will have their connection severed, effectively killing them... again.</helpText>
+  </ConceptDef>
+
+</Defs>

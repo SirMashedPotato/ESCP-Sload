@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HistoryEventDef>
+		<defName>ESCP_KilledSload</defName>
+		<label>killed Sload</label>
+	</HistoryEventDef>
+
+</Defs>

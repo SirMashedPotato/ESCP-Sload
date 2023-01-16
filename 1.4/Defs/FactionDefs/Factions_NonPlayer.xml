@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="ESCP_FactionBase" Name="ESCP_SloadFactionBase" Abstract="True">
+	<modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference">
+			<chance>1.0</chance>
+			<requiresWater>true</requiresWater>
+			<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+        </li>
+		<li Class="ESCP_RaceTools.FactionProperties">
+			<isSloadFaction>true</isSloadFaction>
+			<factionTags>
+				<li>ESCP_Sload</li>
+			</factionTags>
+        </li>
+	</modExtensions>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</factionIconPath>
+    <factionNameMaker>ESCP_NamerFactionSload</factionNameMaker>
+    <settlementNameMaker>ESCP_NamerSettlementSload</settlementNameMaker>
+    <allowedCultures>
+		<li>ESCP_Sload</li>
+	</allowedCultures>
+	<!-- HANDLED IN PAWNKINDS
+	<backstoryFilters Inherit="False">
+		<li>
+			<categories>
+			  <li>ESCP_SloadBackstory</li>
+			</categories>
+			<commonality>1</commonality>
+		</li>
+	</backstoryFilters>
+	-->
+	<structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">999</Structure_Ideological>
+    </structureMemeWeights>
+    <caravanTraderKinds Inherit="False">
+		<li>ESCP_SloadTrader</li>
+		<li>ESCP_SloadTrader_Drug</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+		<li>ESCP_SloadTrader</li>
+    </baseTraderKinds>
+    <raidLootMaker>ESCP_SloadTribeRaidLootMaker</raidLootMaker>
+	<canSiege>false</canSiege>
+	<canStageAttacks>false</canStageAttacks>
+    <pawnGroupMakers>
+	  <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Warrior>10</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+		  <ESCP_SloadKingdom_PlagueBearer>5</ESCP_SloadKingdom_PlagueBearer>
+          <ESCP_SloadKingdom_Lord>1.5</ESCP_SloadKingdom_Lord>
+	   </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+		  
+          <ESCP_SloadKingdom_Subject>5</ESCP_SloadKingdom_Subject>
+          <ESCP_SloadKingdom_Lord>1.5</ESCP_SloadKingdom_Lord>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ESCP_SloadKingdom_Trader>1</ESCP_SloadKingdom_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+		  
+          <ESCP_SloadKingdom_PlagueBearer>7</ESCP_SloadKingdom_PlagueBearer>
+          <ESCP_SloadKingdom_Lord>10</ESCP_SloadKingdom_Lord>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ESCP_SloadTribeRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>MedicineHerbal</li>
+            <li>Pemmican</li>
+			<li>ESCP_SloadSoap</li>
+            <li>ESCP_Egg_Sload</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <FactionDef ParentName="ESCP_SloadFactionBase">
+    <defName>ESCP_SloadKingdom</defName>
+    <label>Sload kingdom</label>
+	<description>A collection of Sload outposts, under the rule of a King. Sload aren't exactly the most welcoming, though most aren't exactly welcoming to Sload.\n\nThese particular outposts pursue a, relatively, gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.\n\nWhile Sload Kindgoms will not raid their enemies, they will unleash the Thrassian Plague upon them.</description>
+	<colorSpectrum>
+      <li>(0.0, 0.9, 0.7)</li>
+      <li>(0.2, 0.9, 0.5)</li>
+	  <li>(0.7, 0.2, 1.0)</li>
+    </colorSpectrum>
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ESCP_SloadicWays</li>
+	</requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+	<disallowedPrecepts>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+	</disallowedPrecepts>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>ESCP_SloadLayEggs</defName>	<!-- Change -->
+		<insertTag>Humanlike_PreMain</insertTag>
+		<insertPriority>1</insertPriority>
+		<thinkRoot Class="ThinkNode_ConditionalPlayerControlledColonist">
+			<subNodes>
+				<li Class="ThinkNode_ThingDef.ThinkNode_ConditionalThingDef">
+				  <thingDef>ESCP_SloadRace</thingDef>	<!-- Change -->
+				  <subNodes>
+						<li Class="JobGiver_LayEgg" />
+				   </subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+</Defs>

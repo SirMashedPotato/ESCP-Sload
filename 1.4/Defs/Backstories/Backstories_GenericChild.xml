@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AlienRace.BackstoryDef>
+		<defName>ESCP_Sload_PolwygleBackstory_Child</defName>
+		<title>polwygle</title>
+		<titleShort>polwygle</titleShort>
+		<baseDescription>Being a Sload, [PAWN_nameDef]'s childhood was spent as a polwygle, a strange little creature, barely sentient. [PAWN_nameDef] managed to avoid the nets, eventually  maturing, and heading to land.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<spawnCategories>
+		  <li>ESCP_SloadBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<disallowedTraits>
+		</disallowedTraits>
+		<workDisables>
+		</workDisables>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<forcedHediffs>
+			<li>ESCP_SloadDiseaseImmunity</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

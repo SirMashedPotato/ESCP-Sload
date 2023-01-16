@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- === Base === -->
+
+	<ThingDef Name="ESCP_SloadStave_Base" Abstract="True" ParentName="BaseGun">		
+		<statBases>
+		  <MaxHitPoints>10</MaxHitPoints>
+		  <Flammability>0</Flammability>
+		  <Mass>0.5</Mass>
+		  <AccuracyTouch>0.18</AccuracyTouch>
+		  <AccuracyShort>0.26</AccuracyShort>
+		  <AccuracyMedium>0.26</AccuracyMedium>
+		  <AccuracyLong>0.18</AccuracyLong>
+		  <RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+		  <MarketValue>600</MarketValue>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<tradeability>All</tradeability>
+		<thingCategories>
+		  <li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+		  <li>ESCP_SloadStaff</li>
+		</tradeTags>
+		<weaponTags>
+		  <li>ESCP_SloadStaff</li>
+		</weaponTags>
+		<stackLimit>1</stackLimit>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<!--<destroyOnDrop>true</destroyOnDrop>-->
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+		<comps>
+			<!--
+		  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+			<verticalFlipNorth>true</verticalFlipNorth>
+			<angleAdjustmentNorth>-180</angleAdjustmentNorth>
+			<angleAdjustmentEast></angleAdjustmentEast>
+			<angleAdjustmentWest></angleAdjustmentWest>
+			<angleAdjustmentSouth></angleAdjustmentSouth>
+
+			<northOffset>(0.34,0,0.70)</northOffset>
+			<southOffset>(-0.34,0,0.70)</southOffset>
+			<westOffset>(0.34,0,0.70)</westOffset>
+			<eastOffset>(-0.34,0,0.70)</eastOffset>
+		  </li	
+			-->
+		</comps>
+	</ThingDef>
+
+	<!-- -->
+	
+	<ThingDef ParentName="ESCP_SloadStave_Base">
+		<defName>ESCP_SloadStave_Miasma</defName>
+		<label>Thrassian Plague staff</label>
+		<description>An oddly ornate staff, considering it originates from Thras. The head holds a strange crystal focus, full of swirling miasma, which is used to release clouds of Thrassian Miasma.\n\nCan only be weilded by a Sload</description>
+		<graphicData>
+			  <texPath>Things/Item/Special/ESCP_SloadThrassianStaff</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+		  <li>ESCP_SloadPlagueStaff</li>
+		</weaponTags>
+		<verbs>
+		  <li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>ESCP_SloadStave_MiasmaProjectile</defaultProjectile>
+			<forcedMissRadius>3.5</forcedMissRadius>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			<warmupTime>1.25</warmupTime>
+			<range>16.9</range>
+			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>InfernoCannon_Fire</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+		  </li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>ESCP_SloadStave_MiasmaProjectile</defName>
+		<label>Thrassian Plague orb</label>
+		<graphicData>
+		  <texPath>Projectile/ESCP_SloadThrassianStaff_Projectile</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+		  <damageDef>Burn</damageDef>
+		  <!-- Use default damage from explosion def -->
+		  <speed>15</speed>
+		  <postExplosionSpawnThingDef>ESCP_Gas_ThrassianPlague</postExplosionSpawnThingDef>
+		  <postExplosionSpawnChance>1</postExplosionSpawnChance>
+		  <explosionRadius>2.6</explosionRadius>
+		  <ai_IsIncendiary>false</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+</Defs>

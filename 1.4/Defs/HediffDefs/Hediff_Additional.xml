@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Thrall -->
+
+	<HediffDef>
+		<defName>ESCP_SloadThrallPassive</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Sload thrall</label>
+		<description>A corpse puppeteered by a Sload. While the corpse is technically alive again, the mind is barely consciousness, and effectively simply an extension of its masters.\n\nDisables almost all needs and thoughts, as well as providing complete immunity to pain. While thralls will not improve skills, their skill level will not decay over time.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<!--	Now, mostly, done through Harmony patches, because doing it this way apparently breaks shit -->
+		<disablesNeeds>
+			<!--
+			<li>Mood</li>
+			<li>Food</li>
+			<li>Rest</li>
+			<li>Joy</li>
+			<li>Beauty</li>
+			<li>Comfort</li>
+			<li>Outdoors</li>
+			<li>Indoors</li>
+			<li>DrugDesire</li>
+			<li>RoomSize</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Authority</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Anonymity</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Corruption</li>
+			-->
+		</disablesNeeds>
+
+		<comps>
+		  <li>
+			<compClass>ESCP_Sload.HediffComp_SloadThrall</compClass>
+		  </li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<makeImmuneTo>
+					<li>Flu</li>
+					<li>Animal_Flu</li>
+					<li>Plague</li>
+					<li>Animal_Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>ESCP_ThrassianPlague</li>
+				</makeImmuneTo>
+				<statOffsets>
+					<ImmunityGainSpeed>3</ImmunityGainSpeed>
+					<ToxicSensitivity>-0.50</ToxicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- Sload -->
+	
+	<HediffDef>
+		<defName>ESCP_SloadDiseaseImmunity</defName>
+		<label>Sload disease immunity</label>
+		<description>Sloads are immune to many common diseases, and some less common ones.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+			  <makeImmuneTo>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>ESCP_ThrassianPlague</li>
+			  </makeImmuneTo>
+			</li>
+      </stages>
+	</HediffDef>
+	
+	<!-- Thrassian elixirs (Plague) -->
+	
+	<HediffDef>
+		<defName>ESCP_SloadPlagueLord</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Thrassian Plague bond</label>
+		<description>Intense study of diseases can occasionally give Sloads great control over plagues. Special elixirs may exist, allowing one to circumvent the many decades of study.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="ESCP_RaceTools.HediffCompProperties_AddAbility">
+				<abilityDefList>
+					<li>ESCP_SloadPlague_Release</li>
+					<li>ESCP_SloadPlague_MiasmaFog</li>
+				</abilityDefList>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>3</ImmunityGainSpeed>
+					<ToxicSensitivity>-0.25</ToxicSensitivity>
+					<MarketValue>+1000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+	
+	<!-- Thrassian elixirs (Thrall) -->
+	
+	<HediffDef>
+		<defName>ESCP_SloadThrassianElixir_Thrall</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>enhanced thrall limit</label>
+		<description>Intense study of corpses can occasionally give Sloads great control over thralls. Special elixirs may exist, allowing one to circumvent the many decades of study.\n\nIncreases a Sloads thrall limit by 5.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.15</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.25</PsychicSensitivity>
+					<MarketValue>+1000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+	<!--
+	<HediffDef>
+		<defName>ESCP_SloadThrassianElixir_Subjugation</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>enhanced mind manipulation</label>
+		<description>Intense study of corpses can occasionally give Sloads great control over thralls. Special elixirs may exist, allowing one to circumvent the many decades of study.\n\nAllows Sloads to enthrall living flesh, though only if the pawn is downed first.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.15</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
+					<MarketValue>+1000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+	-->
+	<HediffDef>
+		<defName>ESCP_SloadThrassianElixir_ThrallEmpowerment</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>enhanced thrall knowledge</label>
+		<description>Intense study of corpses can occasionally give Sloads great control over thralls. Special elixirs may exist, allowing one to circumvent the many decades of study.\n\nAllows Sloads to improve the skills of the thralls they control.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="ESCP_RaceTools.HediffCompProperties_AddAbility">
+				<abilityDefList>
+					<li>ESCP_SloadThrall_ImproveSkill</li>
+				</abilityDefList>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.15</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+					<MarketValue>+1000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>ESCP_SloadThrassianElixir_ThrallControl</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>enhanced thrall control</label>
+		<description>Intense study of corpses can occasionally give Sloads great control over thralls. Special elixirs may exist, allowing one to circumvent the many decades of study.\n\nAllows Sloads to control thralls, even when downed or unconscious.</description>
+		<defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+				  <li>
+					<capacity>Consciousness</capacity>
+					<offset>0.1</offset>
+				  </li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+					<GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<MarketValue>+5000</MarketValue>
+				</statOffsets>
+			</li>
+      </stages>
+	</HediffDef>
+
+</Defs>

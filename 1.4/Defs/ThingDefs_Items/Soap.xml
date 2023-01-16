@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ESCP_SloadSoap</defName>
+		<label>Sload soap</label>
+		<description>Soap made from Sload grubs. Quite the widely used commodity, and worth a reasonable amount due to the monopoly Sload hold over it.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/ESCP_SloadSoap</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.90</drawSize>
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <MarketValue>7</MarketValue>
+		  <Mass>0.02</Mass>
+		  <Flammability>0.5</Flammability>
+		  <DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+		  <li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Common</li>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>
