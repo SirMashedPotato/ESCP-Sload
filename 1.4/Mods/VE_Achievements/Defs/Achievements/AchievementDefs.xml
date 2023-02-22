@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementSload_SloadColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadColonists</defName>
+		<label>Sload Supremacy</label>
+		<description>Have 12 Sload in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<requireAll>false</requireAll>
+			<raceDefs>
+				<li>
+					<key>ESCP_SloadRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadColonists</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadFirstThrall</defName>
+		<label>EnThralling</label>
+		<description>Have a Sload create their first thrall</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<key>ESCP_SloadThrallPassive</key>
+			<value>1</value>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadFirstThrall</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadManyThralls</defName>
+		<label>N'Gasta! Kvata! Kvakis!</label>
+		<description>Create your 25th Sload thrall</description>
+		<tracker Class="AchievementsExpanded.HediffTracker">
+			<key>ESCP_SloadThrallPassive</key>
+			<value>25</value>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadManyThralls</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadAllUpgrades</defName>
+		<label>Thrassian Lord</label>
+		<description>Fully upgrade a Sload with Thrassian Elixirs</description>
+		<tracker Class="AchievementsExpanded.MultiHediffTracker">
+			<defs>
+				<li>
+					<key>ESCP_SloadPlagueLord</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_SloadThrassianElixir_Thrall</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_SloadThrassianElixir_ThrallEmpowerment</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>ESCP_SloadThrassianElixir_ThrallControl</key>
+					<value>1</value>
+				</li>
+			</defs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadAllUpgrades</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadLeatherCrafter]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadLeatherCrafter</defName>
+		<label>Slides Right On</label>
+		<description>Craft something out of Sload leather</description>
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<key>ESCP_LeatherSload</key>
+			<value>1</value>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadLeatherCrafter</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadSoapCollector]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadSoapCollector</defName>
+		<label>Squeaky Clean</label>
+		<description>Obtain 100 bars of Sload soap</description>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>ESCP_SloadSoap</def>
+			<count>100</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadSoapCollector</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadSoapSeller]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadSoapSeller</defName>
+		<label>Worth Its Weight In Boiled Babies</label>
+		<description>Earn 5,000 silver by selling Sload soap</description>
+		<tracker Class="AchievementsExpanded.TraderTracker">
+			<def>ESCP_SloadSoap</def>
+			<worth>5000</worth>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadSoapSeller</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_SloadSlayer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_SloadSlayer</defName>
+		<label>Time to Make Soap</label>
+		<description>Slay 50 Sload</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_SloadRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_SloadSlayer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_ThrassianPlagueIncident]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_ThrassianPlagueIncident</defName>
+		<label>From Thras, With Love</label>
+		<description>Anger a Sload faction, and have them infect your colonists with the Thrassian Plague</description>
+		<tracker Class="AchievementsExpanded.IncidentTracker">
+			<def>ESCP_Disease_ThrassianPlague</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_ThrassianPlagueIncident</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementSload_ThrassianPlagueDeath]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementSload_ThrassianPlagueDeath</defName>
+		<label>At Least They Didn't Die Hungry?</label>
+		<description>Have a pawn die of the Thrassian Plague</description>
+		<tracker Class="AchievementsExpanded.HediffDeathTracker">
+			<def>ESCP_ThrassianPlague</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementSload_ThrassianPlagueDeath</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>
