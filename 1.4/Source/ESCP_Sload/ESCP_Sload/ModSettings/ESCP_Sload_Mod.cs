@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Verse;
-using System;
 
 namespace ESCP_Sload
 {
@@ -9,7 +8,7 @@ namespace ESCP_Sload
         ESCP_Sload_ModSettings settings;
         public ESCP_Sload_Mod(ModContentPack contentPack) : base(contentPack)
         {
-            this.settings = GetSettings<ESCP_Sload_ModSettings>();
+            settings = GetSettings<ESCP_Sload_ModSettings>();
         }
 
         public override string SettingsCategory() => "ESCP_Sload_ModName".Translate();

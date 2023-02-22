@@ -6,7 +6,7 @@ namespace ESCP_Sload
     {
         public CompProperties_SloadThrallImproveSkill()
         {
-            this.compClass = typeof(CompAbilityEffect_SloadThrallImproveSkill);
+            compClass = typeof(CompAbilityEffect_SloadThrallImproveSkill);
         }
 
         public SkillDef skill;

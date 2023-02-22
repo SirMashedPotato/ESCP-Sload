@@ -1,7 +1,5 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
-using System.Linq;
 using System.Collections.Generic;
 
 namespace ESCP_Sload
@@ -10,7 +8,7 @@ namespace ESCP_Sload
     {
         public CompProperties_SloadThrallCreate()
         {
-            this.compClass = typeof(CompAbilityEffect_SloadThrallCreate);
+            compClass = typeof(CompAbilityEffect_SloadThrallCreate);
         }
 
         public SkillDef skill;

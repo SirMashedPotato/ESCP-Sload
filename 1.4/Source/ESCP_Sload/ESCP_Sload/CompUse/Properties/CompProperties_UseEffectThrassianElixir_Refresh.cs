@@ -1,6 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
+﻿using RimWorld;
 
 namespace ESCP_Sload
 {
@@ -8,7 +6,7 @@ namespace ESCP_Sload
     {
         public CompProperties_UseEffectThrassianElixir_Refresh()
         {
-            this.compClass = typeof(CompUseEffect_ThrassianElixir_Refresh);
+            compClass = typeof(CompUseEffect_ThrassianElixir_Refresh);
         }
 
         public AbilityDef ability;

@@ -16,7 +16,7 @@ namespace ESCP_Sload
         {
             get
             {
-                return (CompProperties_SloadThralls)this.props;
+                return (CompProperties_SloadThralls)props;
             }
         }
 

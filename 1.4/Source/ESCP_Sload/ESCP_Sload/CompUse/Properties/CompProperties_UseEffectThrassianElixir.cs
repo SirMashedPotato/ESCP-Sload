@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_Sload
@@ -8,7 +7,7 @@ namespace ESCP_Sload
     {
         public CompProperties_UseEffectThrassianElixir()
         {
-            this.compClass = typeof(CompUseEffect_ThrassianElixir);
+            compClass = typeof(CompUseEffect_ThrassianElixir);
         }
 
         public HediffDef hediff;

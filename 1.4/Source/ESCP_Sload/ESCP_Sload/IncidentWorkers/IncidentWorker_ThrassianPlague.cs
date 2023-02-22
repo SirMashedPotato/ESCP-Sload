@@ -10,7 +10,7 @@ namespace ESCP_Sload
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            return ESCP_Sload_ModSettings.SloadThrassianPlagueIncident && this.PotentialVictims(parms.target).Any<Pawn>() && !Immune() && Hostile();
+            return ESCP_Sload_ModSettings.SloadThrassianPlagueIncident && PotentialVictims(parms.target).Any<Pawn>() && !Immune() && Hostile();
         }
 
         private bool Immune()
@@ -23,8 +23,8 @@ namespace ESCP_Sload
             World world = Find.World;
             foreach (Faction f in world.factionManager.GetFactions().InRandomOrder())
             {
-                var props = FactionProperties.Get(f.def);
-                if (props != null && props.isSloadFaction && f.HostileTo(Faction.OfPlayer))
+                FactionProperties props = FactionProperties.Get(f.def);
+                if (props != null && props.factionTags.Contains("ESCP_SloadFaction") && f.HostileTo(Faction.OfPlayer))
                 {
 
                     return true;

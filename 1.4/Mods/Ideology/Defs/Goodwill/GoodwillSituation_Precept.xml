@@ -9,7 +9,8 @@
 		<workerClass>ESCP_Sload.GoodwillSituationWorker_Sload</workerClass>
 		<naturalGoodwillOffset>-100</naturalGoodwillOffset>
 		<modExtensions>
-			<li Class="ESCP_RaceTools.IdeoProperties">
+			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
+				<FactionTagA>ESCP_SloadFaction</FactionTagA>
 				<preceptDef>ESCP_SloadOpinion_Reviled</preceptDef>
             </li>
 		</modExtensions>
@@ -23,7 +24,8 @@
 		<workerClass>ESCP_Sload.GoodwillSituationWorker_Sload</workerClass>
 		<naturalGoodwillOffset>-50</naturalGoodwillOffset>
 		<modExtensions>
-			<li Class="ESCP_RaceTools.IdeoProperties">
+			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
+				<FactionTagA>ESCP_SloadFaction</FactionTagA>
 				<preceptDef>ESCP_SloadOpinion_Despised</preceptDef>
             </li>
 		</modExtensions>
@@ -37,7 +39,8 @@
 		<workerClass>ESCP_Sload.GoodwillSituationWorker_Sload</workerClass>
 		<naturalGoodwillOffset>-25</naturalGoodwillOffset>
 		<modExtensions>
-			<li Class="ESCP_RaceTools.IdeoProperties">
+			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
+				<FactionTagA>ESCP_SloadFaction</FactionTagA>
 				<preceptDef>ESCP_SloadOpinion_Hated</preceptDef>
             </li>
 		</modExtensions>
@@ -51,7 +54,8 @@
 		<workerClass>ESCP_Sload.GoodwillSituationWorker_Sload</workerClass>
 		<naturalGoodwillOffset>100</naturalGoodwillOffset>
 		<modExtensions>
-			<li Class="ESCP_RaceTools.IdeoProperties">
+			<li Class="ESCP_RaceTools.FactionGoodwillProperties">
+				<FactionTagA>ESCP_SloadFaction</FactionTagA>
 				<preceptDef>ESCP_SloadOpinion_Exalted</preceptDef>
             </li>
 		</modExtensions>

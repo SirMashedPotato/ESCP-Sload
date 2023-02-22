@@ -1,8 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
-using System.Linq;
-using System.Collections.Generic;
+﻿using Verse;
 
 namespace ESCP_Sload
 {
@@ -11,9 +7,7 @@ namespace ESCP_Sload
 
         public CompProperties_SloadThralls()
         {
-            this.compClass = typeof(Comp_SloadThralls);
+            compClass = typeof(Comp_SloadThralls);
         }
-
-
     }
 }

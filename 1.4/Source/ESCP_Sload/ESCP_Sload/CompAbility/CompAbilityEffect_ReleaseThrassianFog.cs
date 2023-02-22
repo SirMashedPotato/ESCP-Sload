@@ -1,8 +1,5 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace ESCP_Sload
 {
@@ -12,7 +9,7 @@ namespace ESCP_Sload
         {
             get
             {
-                return (CompProperties_ReleaseThrassianFog)this.props;
+                return (CompProperties_ReleaseThrassianFog)props;
             }
         }
 

@@ -1,6 +1,4 @@
-﻿using System;
-using Verse;
-using RimWorld;
+﻿using RimWorld;
 
 namespace ESCP_Sload
 {
@@ -8,7 +6,7 @@ namespace ESCP_Sload
     {
         public CompProperties_ReleaseThrassianFog()
         {
-            this.compClass = typeof(CompAbilityEffect_ReleaseThrassianFog);
+            compClass = typeof(CompAbilityEffect_ReleaseThrassianFog);
         }
 
         public int days = 5;

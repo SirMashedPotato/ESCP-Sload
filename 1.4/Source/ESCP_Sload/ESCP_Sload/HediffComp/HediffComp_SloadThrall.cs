@@ -78,7 +78,7 @@ namespace ESCP_Sload
 					},
 					action = delegate ()
 					{
-						GenExplosion.DoExplosion(this.Pawn.Position, this.Pawn.Map, 3, DamageDefOf.Extinguish, parent.pawn, -1, -1f, null, null, null, null, ThingDefOf.ESCP_Gas_ThrassianPlague, 1f, 1, false, null, 0f, 1, 0f, false, null, null);
+						SloadUtility.DoThrassianGasExplosion(Pawn, 3);
 						this.Pawn.Kill(null);
 					}
 				};

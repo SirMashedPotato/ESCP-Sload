@@ -85,5 +85,9 @@ namespace ESCP_Sload
             return p.health != null && p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.ESCP_SloadPlagueLord) != null;
         }
 
+        public static void DoThrassianGasExplosion(Pawn p, int radius)
+        {
+            GenExplosion.DoExplosion(p.Position, p.Map, radius, DamageDefOf.Extinguish, p, -1, -1, null, null, null, null, ThingDefOf.ESCP_Gas_ThrassianPlague, 1, 1);
+        }
     }
 }

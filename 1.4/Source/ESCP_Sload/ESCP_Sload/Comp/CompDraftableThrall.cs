@@ -12,25 +12,25 @@ namespace ESCP_Sload
     {
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            if (SloadUtility.ThingIsThrall(this.parent) && !AnimalCollectionClass.draftable_animals.Contains(this.parent))
+            if (SloadUtility.ThingIsThrall(parent) && !AnimalCollectionClass.draftable_animals.Contains(parent))
             {
-                AnimalCollectionClass.AddDraftableAnimalToList(this.parent);
+                AnimalCollectionClass.AddDraftableAnimalToList(parent);
             }
         }
 
         public override void PostDeSpawn(Map map)
         {
-            if (SloadUtility.ThingIsThrall(this.parent) && AnimalCollectionClass.draftable_animals.Contains(this.parent))
+            if (SloadUtility.ThingIsThrall(parent) && AnimalCollectionClass.draftable_animals.Contains(parent))
             {
-                AnimalCollectionClass.RemoveDraftableAnimalFromList(this.parent);
+                AnimalCollectionClass.RemoveDraftableAnimalFromList(parent);
             }
         }
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
-            if (SloadUtility.ThingIsThrall(this.parent) && AnimalCollectionClass.draftable_animals.Contains(this.parent))
+            if (SloadUtility.ThingIsThrall(parent) && AnimalCollectionClass.draftable_animals.Contains(parent))
             {
-                AnimalCollectionClass.RemoveDraftableAnimalFromList(this.parent);
+                AnimalCollectionClass.RemoveDraftableAnimalFromList(parent);
             }
         }
     }

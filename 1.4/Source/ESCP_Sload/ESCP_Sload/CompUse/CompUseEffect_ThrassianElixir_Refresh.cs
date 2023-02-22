@@ -1,5 +1,4 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using RimWorld;
 
 namespace ESCP_Sload
@@ -26,7 +25,7 @@ namespace ESCP_Sload
 			{
 				if (!usedBy.RaceProps.IsMechanoid)
 				{
-					GenExplosion.DoExplosion(usedBy.Position, usedBy.Map, 3, DamageDefOf.Extinguish, usedBy, -1, -1f, null, null, null, null, ThingDefOf.ESCP_Gas_ThrassianPlague, 1f, 1, false, null, 0f, 1, 0f, false, null, null);
+					SloadUtility.DoThrassianGasExplosion(usedBy, 3); 
 					usedBy.Kill(null);
 				}
 			}
@@ -42,7 +41,7 @@ namespace ESCP_Sload
 					return base.CanBeUsedBy(p, out failReason);
 				}
 			}
-			failReason = "ESCP_Sload_AlreadyHasHediff".Translate(p.Name, this.parent.Label);
+			failReason = "ESCP_Sload_AlreadyHasHediff".Translate(p.Name, parent.Label);
 			return false;
 		}
 	}

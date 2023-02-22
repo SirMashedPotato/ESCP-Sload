@@ -12,7 +12,7 @@ namespace ESCP_Sload
         {
             get
             {
-                return (CompProperties_SloadThrallImproveSkill)this.props;
+                return (CompProperties_SloadThrallImproveSkill)props;
             }
         }
 

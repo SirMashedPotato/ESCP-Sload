@@ -31,9 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib.Harmony.2.2.0\lib\net472\0Harmony.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="AlienRace">
       <HintPath>I:\Steam_Library\steamapps\workshop\content\294100\839005762\1.3\Assemblies\AlienRace.dll</HintPath>
@@ -44,7 +43,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ESCP_RaceTools">
-      <HintPath>..\..\..\..\..\ESCP-Race_Tools\1.3\Assemblies\ESCP_RaceTools.dll</HintPath>
+      <HintPath>..\..\..\..\..\ESCP-Race_Tools\1.4\Assemblies\ESCP_RaceTools.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -61,6 +60,10 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>I:\Steam_Library\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VFECore">
@@ -106,7 +109,6 @@
     <Compile Include="Harmony\SloadThrall_VEF.cs" />
     <Compile Include="Harmony\ThrassianFog.cs" />
     <Compile Include="HediffComp\HediffComp_SloadThrall.cs" />
-    <Compile Include="Ideo\GoodWillWorkers\GoodwillSituationWorker_Sload.cs" />
     <Compile Include="Ideo\ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInColony.cs" />
     <Compile Include="Ideo\ThoughtWorkerClass\ThoughtWorker_Situational_Precept_NoSloadInMap.cs" />
     <Compile Include="Ideo\ThoughtWorkerClass\ThoughtWorker_Situational_Precept_SloadInColony.cs" />
@@ -131,6 +133,5 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
