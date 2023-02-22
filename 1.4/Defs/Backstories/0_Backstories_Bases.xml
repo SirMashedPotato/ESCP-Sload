@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Sload_ChildhoodBase" Abstract="True" >
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<spawnCategories>
+			<li>ESCP_SloadBackstory</li>
+			<li>ESCP_SloadBackstory_Childhood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Sload_AdulthoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Sload_AdulthoodBase" Abstract="True" >
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Fat</bodyTypeGlobal>
+		<spawnCategories>
+			<li>ESCP_SloadBackstory</li>
+			<li>ESCP_SloadBackstory_Adulthood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

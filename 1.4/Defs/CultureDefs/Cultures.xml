@@ -1,52 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-  <CultureDef>
-    <defName>ESCP_Sload</defName>
-    <label>Sload</label>
-    <description>An ancient culture common among Sload kingdoms.</description>
-    <pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_NamerDeity_Sload</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
-    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Sload</leaderTitleMaker>
-    <allowedPlaceTags>
-      <li>OriginTribal</li>
-    </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</iconPath>
-    <preferredWeaponClasses>
-		<noble>Ranged</noble>
-		<despised>Melee</despised>
-    </preferredWeaponClasses>
-    <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>ESCP_SloadStyle</category>
-        <priority>2</priority>
-      </li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Morbid</category>
-        <priority>1</priority>
-      </li>
-    </thingStyleCategories>
-    <styleItemTags>
-      <li>
-        <tag>NoBeard</tag>
-        <baseWeight>10</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoTattoo</tag>
-        <baseWeight>10</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-	  <li>
-        <tag>Minimal</tag>
-        <baseWeight>10</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-    </styleItemTags>
-  </CultureDef>
-  
+	<!-- ==========[ESCP_SloadCulture]========== -->
+	<CultureDef>
+		<defName>ESCP_SloadCulture</defName>
+		<label>Sloadic</label>
+		<description>An ancient culture common among Sload kingdoms.</description>
+		<pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_Sload_Namer</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_Sload_NamerCultureDeityName</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_Sload_NamerCultureLeaderTitle</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</iconPath>
+		<preferredWeaponClasses>
+			<noble>Ranged</noble>
+			<despised>Melee</despised>
+		</preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>ESCP_SloadStyle</category>
+				<priority>2</priority>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Morbid</category>
+				<priority>1</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Minimal</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
 </Defs>

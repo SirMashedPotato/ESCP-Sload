@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
 	<AbilityGroupDef>
 		<defName>ESCP_SloadPlague</defName>
 		<cooldownTicks>800000</cooldownTicks>
 	</AbilityGroupDef>
-
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
 	<AbilityDef>
 		<defName>ESCP_SloadPlague_Release</defName>
 		<label>Thrassian cloud</label>
 		<description>Release an large cloud of Thrassian Miasma, inflicting the Thrassian Plague on anyone caught within.</description>
 		<iconPath>UI/Abilities/ESCP_SloadReleasePlague</iconPath>
-		
 		<groupDef>ESCP_SloadPlague</groupDef>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
@@ -25,38 +24,37 @@
 
 		</statBases>
 		<comps>
-		  <li Class="ESCP_RaceTools.CompProperties_ReleaseGas">
-			<gasDef>ESCP_Gas_ThrassianPlague</gasDef>
-			<radius>9.9</radius>
-		  </li>
-		  <li Class="CompProperties_AbilityFleckOnTarget">
-			<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
-			<preCastTicks>99999</preCastTicks>
-		  </li>
+			<li Class="ESCP_RaceTools.CompProperties_ReleaseGas">
+				<gasDef>ESCP_Gas_ThrassianPlague</gasDef>
+				<radius>9.9</radius>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
+				<preCastTicks>99999</preCastTicks>
+			</li>
 		</comps>
 		<verbProperties>
-		  <verbClass>Verb_CastAbility</verbClass>
-		  <warmupTime>10</warmupTime>
-		  <range>9.9</range>
-		  <drawAimPie>False</drawAimPie>
-		  <requireLineOfSight>False</requireLineOfSight>
-		  <targetParams>
-			<canTargetSelf>true</canTargetSelf>
-			<canTargetPawns>false</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetHumans>false</canTargetHumans>
-			<canTargetMechs>false</canTargetMechs>
-		  </targetParams>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>10</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-	
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
 	<AbilityDef>
 		<defName>ESCP_SloadPlague_MiasmaFog</defName>
 		<label>Thrassian fog</label>
 		<description>Release an enormous cloud of Thrassian Miasma into the atmosphere, creating a dense fog around the area that will last for 5 days. Any raiders that arrive while the fog is present will likely be infected with the Thrassian Plague.</description>
 		<iconPath>UI/Abilities/ESCP_SloadReleaseMiasma</iconPath>
-		
 		<groupDef>ESCP_SloadPlague</groupDef>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
@@ -70,33 +68,32 @@
 			<Ability_EffectRadius>0</Ability_EffectRadius>
 		</statBases>
 		<comps>
-		  <li Class="ESCP_Sload.CompProperties_ReleaseThrassianFog">
-			<days>5</days>
-		  </li>
-		  <li Class="ESCP_RaceTools.CompProperties_AbilityEffectCameraShakerOneOff">
-			<mag>0.1</mag>
-		  </li>
-		  <li Class="CompProperties_AbilityFleckOnTarget">
-			<fleckDef>ESCP_Sload_AbilityFleck_Long</fleckDef>
-			<preCastTicks>99999</preCastTicks>
-		  </li>
+			<li Class="ESCP_Sload.CompProperties_ReleaseThrassianFog">
+				<days>5</days>
+			</li>
+			<li Class="ESCP_RaceTools.CompProperties_AbilityEffectCameraShakerOneOff">
+				<mag>0.1</mag>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>ESCP_Sload_AbilityFleck_Long</fleckDef>
+				<preCastTicks>99999</preCastTicks>
+			</li>
 		</comps>
 		<verbProperties>
 			<!-- public EffecterDef warmupEffecter; -->
-		  <verbClass>Verb_CastAbility</verbClass>
-		  <warmupTime>30</warmupTime>
-		  <drawAimPie>False</drawAimPie>
-		  <requireLineOfSight>False</requireLineOfSight>
-		  <range>0</range>
-		  <targetParams>
-			<canTargetSelf>true</canTargetSelf>
-			<canTargetPawns>false</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetHumans>false</canTargetHumans>
-			<canTargetMechs>false</canTargetMechs>
-		  </targetParams>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>30</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<range>0</range>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-
 </Defs>

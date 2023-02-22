@@ -1,43 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!-- Generic -->
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_NewlyLandedBackstory]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_NewlyLandedBackstory</defName>
 		<title>late bloomer</title>
 		<titleShort>late bloomer</titleShort>
 		<baseDescription>[PAWN_nameDef] was a bit of a late bloomer, and has only just recently matured and made it to land. Even still [PAWN_nameDef] is excited to see wait mysteries await [PAWN_nameDef] on land, or they would be, if [PAWN_nameDef] actually felt emotions.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
-		<skillGains>
-		
-		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>Caring</li>
 		</workDisables>
 		<maleCommonality>30</maleCommonality>
 		<femaleCommonality>30</femaleCommonality>
 	</AlienRace.BackstoryDef>
-
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_SoapTraderBackstory</defName>
 		<title>soap trader</title>
 		<titleShort>soap trader</titleShort>
 		<baseDescription>[PAWN_nameDef] oversaw the trade of Sload Soap. [PAWN_nameDef] had many happy customers, yet even still [PAWN_nameDef] felt absolutely nothing.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Social</defName>
@@ -48,11 +28,6 @@
 				<amount>6</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Animals</li>
@@ -62,17 +37,12 @@
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_SoapMakerBackstory</defName>
 		<title>soap maker</title>
 		<titleShort>soap maker</titleShort>
 		<baseDescription>[PAWN_nameDef] turned Sload grubs into soap. [PAWN_nameDef] is responsible for the death of thousands of immature Sloads, [PAWN_nameDef] also doesn't care.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Cooking</defName>
@@ -87,11 +57,6 @@
 				<amount>3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Animals</li>
@@ -101,17 +66,12 @@
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_CoralCrafterBackstory</defName>
 		<title>coral crafter</title>
 		<titleShort>coral crafter</titleShort>
 		<baseDescription>[PAWN_nameDef] was rather skilled in the art of turning coral into abodes, and various other buildings.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Construction</defName>
@@ -126,11 +86,6 @@
 				<amount>3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>Animals</li>
 			<li>Artistic</li>
@@ -139,17 +94,12 @@
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_GrubCatcherBackstory</defName>
 		<title>grub catcher</title>
 		<titleShort>grub catcher</titleShort>
 		<baseDescription>[PAWN_nameDef] was one of many in charge of catching juvenile Sload. The caught grubs were, of course, turned into soap, which [PAWN_nameDef] made great use of.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Animals</defName>
@@ -164,11 +114,6 @@
 				<amount>3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Animals</li>
@@ -178,17 +123,12 @@
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_NetMakerBackstory</defName>
 		<title>net maker</title>
 		<titleShort>net maker</titleShort>
 		<baseDescription>[PAWN_nameDef] made many finely crafted nets, while most were used to catch Sload grubs, some were used to catch other things.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Crafting</defName>
@@ -203,11 +143,6 @@
 				<amount>3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Animals</li>
@@ -217,17 +152,12 @@
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_AlchemistBackstory</defName>
 		<title>alchemist</title>
 		<titleShort>alchemist</titleShort>
 		<baseDescription>[PAWN_nameDef] was quite skilled in the alchemical studies, and made many balms, elixirs and decoctions. Some of which were best not to be ingested.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Medicine</defName>
@@ -242,11 +172,6 @@
 				<amount>3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>Mining</li>
 			<li>Artistic</li>
@@ -255,19 +180,12 @@
 		<maleCommonality>100</maleCommonality>
 		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<!-- Getting rarer -->
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_DiplomatBackstory</defName>
 		<title>diplomat</title>
 		<titleShort>diplomat</titleShort>
 		<baseDescription>[PAWN_nameDef] was often sent on diplomatic excursions, mostly dealing with Maormer and other ill-tempered races. [PAWN_nameDef] always took their time in negotiations, much to the annoyance of the other parties involved.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Social</defName>
@@ -278,11 +196,6 @@
 				<amount>8</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Animals</li>
@@ -292,18 +205,12 @@
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_FloaterPilotBackstory</defName>
 		<title>floater pilot</title>
 		<titleShort>pilot</titleShort>
 		<baseDescription>[PAWN_nameDef] piloted, and tended to, a Sload Floater. A wide variety of cargo was transported on [PAWN_nameDef]'s floater, from soap to slaves, and food to corpses.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Construction</defName>
@@ -318,11 +225,6 @@
 				<amount>4</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>Mining</li>
 			<li>PlantWork</li>
@@ -332,17 +234,12 @@
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_MycologistBackstory</defName>
 		<title>mycologist</title>
 		<titleShort>mycologist</titleShort>
 		<baseDescription>[PAWN_nameDef] specialised in the growing and tending of the various fungi found around their home. A rather important job, because fungi has many uses, some of them much less civilised than others.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Plants</defName>
@@ -353,11 +250,6 @@
 				<amount>8</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>Mining</li>
 			<li>Crafting</li>
@@ -367,17 +259,12 @@
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_EpidemiologistBackstory</defName>
 		<title>epidemiologist</title>
 		<titleShort>epidemiologist</titleShort>
 		<baseDescription>[PAWN_nameDef] was highly knowledgeable in the field of infectious diseases, and various other health afflictions. While this knowledge was often used to tend to their fellow Sloads, it was also used in the creation of bio-weapons.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Medicine</defName>
@@ -388,11 +275,6 @@
 				<amount>8</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>ManualDumb</li>
 			<li>Mining</li>
@@ -400,30 +282,18 @@
 		<maleCommonality>80</maleCommonality>
 		<femaleCommonality>80</femaleCommonality>
 	</AlienRace.BackstoryDef>
-
-	<!-- Rarer -->
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_WiseBackstory</defName>
 		<title>wise Sload</title>
 		<titleShort>wise Sload</titleShort>
 		<baseDescription>[PAWN_nameDef] was considered to be more intelligent than most, and as such devoted most days to scholarly activities. Many fellow Sloads came to [PAWN_nameDef] for advice, and [PAWN_nameDef] always took their time in mulling over the options.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Intellectual</defName>
 				<amount>16</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-			
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Animals</li>
@@ -433,18 +303,12 @@
 		<maleCommonality>15</maleCommonality>
 		<femaleCommonality>15</femaleCommonality>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_PlagueLordBackstory</defName>
 		<title>Thrassian plague lord</title>
 		<titleShort>plague lord</titleShort>
 		<baseDescription>[PAWN_nameDef] has spent many years studying plagues, with a keen focus on one in particular. During this time, [PAWN_nameDef] developed a strange bond with the Thrassian Plague, and is now able to release immense clouds of Thrassian Miasma at will.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		  <li>ESCP_SloadPlagueLordBackstory</li>
-		</spawnCategories>
 		<skillGains>
 			<li>
 				<defName>Medicine</defName>
@@ -455,11 +319,6 @@
 				<amount>14</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-			
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>ManualDumb</li>
 			<li>Mining</li>
@@ -470,17 +329,14 @@
 			<li>ESCP_SloadPlagueLord</li>
 		</forcedHediffs>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_NecromancerBackstory</defName>
 		<title>master necromancer</title>
 		<titleShort>necromancer</titleShort>
 		<baseDescription>[PAWN_nameDef] is a master of the profane arts of necromancy, a practice despised by much of the civilised world. [PAWN_nameDef] never has to do anything themself, as they can just command a thrall to do it for them.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
 		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		  <li>ESCP_SloadMasterNecromancerBackstory</li>
+			<li>ESCP_SloadMasterNecromancerBackstory</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -488,11 +344,6 @@
 				<amount>20</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-			
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>Firefighting</li>
 			<li>ManualSkilled</li>
@@ -505,17 +356,12 @@
 			<li>ESCP_SloadThrassianElixir_Thrall</li>
 		</forcedHediffs>
 	</AlienRace.BackstoryDef>
-	
-	<AlienRace.BackstoryDef>
+	<!-- ==========[ESCP_Sload_ChildhoodBase]========== -->
+	<AlienRace.BackstoryDef ParentName="ESCP_Sload_AdulthoodBase">
 		<defName>ESCP_Sload_StuffKnowledge_BuoyantSteelBackstory</defName>
 		<title>master buoyant steel smith</title>
 		<titleShort>master smith</titleShort>
-		<baseDescription>On one of [PAWN_nameDef]'s excursions into the abyss, they came across a shipwreck, and in that shipwreck, a strange metal. The metal seemed to be a magically infused alloy, far lighter than steel, yet stronger as well. Such a metal would make for good armour, [PAWN_nameDef] thought. And so [PAWN_nameDef] decided to spend a few decades studying it, hoping to learn how best to work it.\n\nAnything [PAWN_nameDef] crafts out of buoyant steel will be one quality level higher than normal.</baseDescription>
-		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Fat</bodyTypeGlobal>
-		<spawnCategories>
-		  <li>ESCP_SloadBackstory</li>
-		</spawnCategories>
+		<baseDescription>On one of [PAWN_nameDef]'s excursions into the abyss, they came across a shipwreck, and in that shipwreck, a strange metal. The metal seemed to be a magically infused alloy, far lighter than steel, yet stronger as well. Such a metal would make for good armour, [PAWN_nameDef] thought. And so [PAWN_nameDef] decided to spend a few decades studying it, hoping to learn how best to work it.</baseDescription>
 		<skillGains>
 			<li>
 				<defName>Crafting</defName>
@@ -526,11 +372,6 @@
 				<amount>10</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
-			
-		</forcedTraits>
-		<disallowedTraits>
-		</disallowedTraits>
 		<workDisables>
 			<li>ManualDumb</li>
 			<li>Caring</li>
@@ -538,5 +379,4 @@
 		<maleCommonality>5</maleCommonality>
 		<femaleCommonality>5</femaleCommonality>
 	</AlienRace.BackstoryDef>
-
 </Defs>

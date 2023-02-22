@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
 	<AbilityGroupDef>
 		<defName>ESCP_SloadThrall</defName>
 		<cooldownTicks>200000</cooldownTicks>
 	</AbilityGroupDef>
-
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
 	<AbilityDef>
 		<defName>ESCP_SloadThrall_Create</defName>
 		<label>create thrall</label>
 		<description>Puppeteer a fresh corpse, turning it into a thrall. Thralls feel no emotions, and have no needs. The connection will be severed if the controlling Sload is downed or killed.</description>
 		<iconPath>UI/Abilities/ESCP_SloadCreateThrall</iconPath>
-		
 		<groupDef>ESCP_SloadThrall</groupDef>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
@@ -24,59 +23,58 @@
 
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_AbilityFleckOnTarget">
-			<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
-			<preCastTicks>99999</preCastTicks>
-		  </li>
-		  <li Class="ESCP_Sload.CompProperties_SloadThrallCreate">
-			<skill>Intellectual</skill>
-			<hediff>ESCP_SloadThrallPassive</hediff>
-			<disablerPrecept>ESCP_SloadThrallOpinion_Heretical</disablerPrecept>
-			<levelRequirement>
-				<li>0</li>
-				<li>6</li>
-				<li>9</li>
-				<li>12</li>
-				<li>15</li>
-				<li>18</li>
-				<li>20</li>
-			</levelRequirement>
-			<thrallLimit>
-				<li>0</li>
-				<li>3</li>
-				<li>5</li>
-				<li>7</li>
-				<li>10</li>
-				<li>12</li>
-				<li>15</li>
-			</thrallLimit>
-		  </li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
+				<preCastTicks>99999</preCastTicks>
+			</li>
+			<li Class="ESCP_Sload.CompProperties_SloadThrallCreate">
+				<skill>Intellectual</skill>
+				<hediff>ESCP_SloadThrallPassive</hediff>
+				<disablerPrecept>ESCP_SloadThrallOpinion_Heretical</disablerPrecept>
+				<levelRequirement>
+					<li>0</li>
+					<li>6</li>
+					<li>9</li>
+					<li>12</li>
+					<li>15</li>
+					<li>18</li>
+					<li>20</li>
+				</levelRequirement>
+				<thrallLimit>
+					<li>0</li>
+					<li>3</li>
+					<li>5</li>
+					<li>7</li>
+					<li>10</li>
+					<li>12</li>
+					<li>15</li>
+				</thrallLimit>
+			</li>
 		</comps>
 		<verbProperties>
-		  <drawAimPie>False</drawAimPie>
-		  <range>-1</range>
-		  <warmupTime>10.0</warmupTime>
-		  <verbClass>ESCP_Sload.Verb_CastAbilityTouch_SloadThrallCreate</verbClass>
-		   <targetParams>
-			<canTargetItems>true</canTargetItems>
-			<canTargetSelf>false</canTargetSelf>
-			<canTargetPawns>false</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetAnimals>false</canTargetAnimals>
-			<canTargetHumans>false</canTargetHumans>
-			<canTargetMechs>false</canTargetMechs>
-			<mustBeSelectable>true</mustBeSelectable>
-			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
-		  </targetParams>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>10.0</warmupTime>
+			<verbClass>ESCP_Sload.Verb_CastAbilityTouch_SloadThrallCreate</verbClass>
+			<targetParams>
+				<canTargetItems>true</canTargetItems>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-	
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
 	<AbilityDef>
 		<defName>ESCP_SloadThrall_ImproveSkill</defName>
 		<label>improve thrall skills</label>
 		<description>Improve the skills of a thrall this Sload controls by 1 level, with the chance of improvement based on the Sload's intellectual skill.</description>
 		<iconPath>UI/Abilities/ESCP_SloadImproveThrall</iconPath>
-		
 		<groupDef>ESCP_SloadThrall</groupDef>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
@@ -89,33 +87,32 @@
 
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_AbilityFleckOnTarget">
-			<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
-			<preCastTicks>99999</preCastTicks>
-		  </li>
-		  <li Class="ESCP_Sload.CompProperties_SloadThrallImproveSkill">
-			<skill>Intellectual</skill>
-			<improvement>1</improvement>
-			<chancePerLevel>0.05</chancePerLevel>
-		  </li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>ESCP_Sload_AbilityFleck</fleckDef>
+				<preCastTicks>99999</preCastTicks>
+			</li>
+			<li Class="ESCP_Sload.CompProperties_SloadThrallImproveSkill">
+				<skill>Intellectual</skill>
+				<improvement>1</improvement>
+				<chancePerLevel>0.05</chancePerLevel>
+			</li>
 		</comps>
 		<verbProperties>
-		  <drawAimPie>False</drawAimPie>
-		  <range>-1</range>
-		  <warmupTime>10.0</warmupTime>
-		  <verbClass>ESCP_Sload.Verb_CastAbilityTouch_SloadThrallImprove</verbClass>
-		   <targetParams>
-			<canTargetItems>false</canTargetItems>
-			<canTargetSelf>false</canTargetSelf>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetAnimals>true</canTargetAnimals>
-			<canTargetHumans>true</canTargetHumans>
-			<canTargetMechs>false</canTargetMechs>
-			<mustBeSelectable>true</mustBeSelectable>
-			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
-		  </targetParams>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>10.0</warmupTime>
+			<verbClass>ESCP_Sload.Verb_CastAbilityTouch_SloadThrallImprove</verbClass>
+			<targetParams>
+				<canTargetItems>false</canTargetItems>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<mustBeSelectable>true</mustBeSelectable>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-
 </Defs>

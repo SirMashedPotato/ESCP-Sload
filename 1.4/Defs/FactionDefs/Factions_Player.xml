@@ -1,167 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>ESCP_SloadPlayerColony</defName>
-		<label>Sload arrivals</label>
-		<description>A colony of survivors from the Best Soap Enterprises colonisation ship.</description>
-		<isPlayer>true</isPlayer>
-		<basicMemberKind>ESCP_SloadKind</basicMemberKind>
-		<pawnSingular>Sload offworlder</pawnSingular>
-		<pawnsPlural>Sload offworlders</pawnsPlural>
-		<techLevel>Industrial</techLevel>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Offworld</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Industrial">
+		<defName>ESCP_SloadPlayerFaction_Industrial</defName>
+		<label>New Sload Arrivals</label>
+		<basicMemberKind>ESCP_SloadPlayerPawnKind_Outlander</basicMemberKind>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</factionIconPath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
-			<li>Astropolitan</li>
-			<li>ESCP_Sload</li>
+			<li>ESCP_SloadCulture</li>
 		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
-		  <li>ClassicStart</li>
-		  <li>ESCP_SloadStart_Industrial</li>
+			<li>ESCP_SloadStart_Industrial</li>
 		</startingResearchTags>
-		<startingTechprintsResearchTags>
-		  <li>ClassicStart</li>
-		  <li>ClassicStartTechprints</li>
-		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-		  <thingDefs>
-			<li>Synthread</li>
-		  </thingDefs>
-		</apparelStuffFilter>
-		<modExtensions>
-			<li Class="ESCP_RaceTools.FactionProperties">
-				<isSloadFaction>true</isSloadFaction>
-				<factionTags>
-					<li>ESCP_Sload</li>
-				</factionTags>
-			</li>
-		</modExtensions>
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
 		</disallowedPrecepts>
-	</FactionDef>
-	
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>ESCP_SloadPlayerTribe</defName>
-		<label>New Sload Tribe</label>
-		<description>A small Sload tribe.</description>
-		<isPlayer>true</isPlayer>
-		<pawnSingular>Sload tribseman</pawnSingular>
-		<pawnsPlural>Sload tribsepeople</pawnsPlural>
-		<basicMemberKind>ESCP_SloadTribalKind</basicMemberKind>
-		<techLevel>Neolithic</techLevel>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Tribal</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
-		<factionIconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</factionIconPath>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
-		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-		<allowedCultures>
-			<li>ESCP_Sload</li>
-		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
-		<forageabilityFactor>1.7</forageabilityFactor>
-		<startingResearchTags>
-		  <li>TribalStart</li>
-		  <li>ESCP_SloadStart_Tribal</li>
-		</startingResearchTags>
-		<startingTechprintsResearchTags>
-		  <li>TribalStart</li>
-		  <li>TribalStartTechprints</li>
-		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-		  <thingDefs>
-			<li>Cloth</li>
-		  </thingDefs>
-		</apparelStuffFilter>
-		<recipePrerequisiteTags>
-		  <li>Tribal</li>
-		</recipePrerequisiteTags>
 		<modExtensions>
 			<li Class="ESCP_RaceTools.FactionProperties">
-				<isSloadFaction>true</isSloadFaction>
 				<factionTags>
-					<li>ESCP_Sload</li>
+					<li>ESCP_SloadFaction</li>
+					<li>ESCP_SloadFactionPlayer</li>
 				</factionTags>
 			</li>
 		</modExtensions>
-		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
-		</disallowedPrecepts>
 	</FactionDef>
-	
-	<FactionDef ParentName="PlayerFactionBase">
-		<defName>ESCP_SloadPlayerKingdom</defName>
+	<!-- ========== [ESCP_SloadPlayerFaction_Medieval] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Medieval">
+		<defName>ESCP_SloadPlayerFaction_Medieval</defName>
 		<label>New Sload Kingdom</label>
-		<description>A small Sload kingdom.</description>
-		<isPlayer>true</isPlayer>
-		<pawnSingular>Sload peasant</pawnSingular>
-		<pawnsPlural>Sload peasants</pawnsPlural>
-		<basicMemberKind>ESCP_SloadMedievalKind</basicMemberKind>
-		<techLevel>Medieval</techLevel>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Tribal</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
+		<basicMemberKind>ESCP_SloadPlayerPawnKind_Medieval</basicMemberKind>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</factionIconPath>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
-		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<allowedCultures>
-			<li>ESCP_Sload</li>
+			<li>ESCP_SloadCulture</li>
 		</allowedCultures>
-		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
-		  <li>TribalStart</li>
-		  <li>ESCP_SloadStart_Medieval</li>
+			<li>ESCP_SloadStart_Medieval</li>
 		</startingResearchTags>
-		<startingTechprintsResearchTags>
-		  <li>TribalStart</li>
-		  <li>TribalStartTechprints</li>
-		</startingTechprintsResearchTags>
-		<apparelStuffFilter>
-		  <thingDefs>
-			<li>Cloth</li>
-		  </thingDefs>
-		</apparelStuffFilter>
-		<recipePrerequisiteTags>
-		  <li>Tribal</li>
-		</recipePrerequisiteTags>
-		<modExtensions>
-			<li Class="ESCP_RaceTools.FactionProperties">
-				<isSloadFaction>true</isSloadFaction>
-				<factionTags>
-					<li>ESCP_Sload</li>
-				</factionTags>
-			</li>
-		</modExtensions>
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
 		</disallowedPrecepts>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_SloadFaction</li>
+					<li>ESCP_SloadFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
 	</FactionDef>
-
+	<!-- ========== [ESCP_SloadPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal">
+		<defName>ESCP_SloadPlayerFaction_Tribal</defName>
+		<label>New Sload Tribe</label>
+		<basicMemberKind>ESCP_SloadPlayerPawnKind_Tribal</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_SloadCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_SloadStart_Tribal</li>
+		</startingResearchTags>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_SloadFaction</li>
+					<li>ESCP_SloadFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
 </Defs>
